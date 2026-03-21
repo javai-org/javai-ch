@@ -13,7 +13,7 @@ The target audience is business managers, compliance officers, and IT leaders in
 
 ## Languages
 
-The site is published in three languages: **English**, **German**, and **French**.
+The site is published in four languages: **English**, **German**, **French**, and **Italian**.
 
 ### Swiss German orthography
 
@@ -37,10 +37,11 @@ This applies to all German text: content files, i18n strings, commit messages, a
 content/
 ├── en/    # English content
 ├── de/    # German content (Swiss orthography)
-└── fr/    # French content
+├── fr/    # French content
+└── it/    # Italian content
 ```
 
-Each language has its own content directory. When adding new content, it must be created in all three languages.
+Each language has its own content directory. When adding new content, it must be created in all four languages.
 
 ## Technology
 

@@ -1,0 +1,38 @@
+[explore_regulations]
+other = "Scopri le normative"
+
+[visit_javai_org]
+other = "Visita javai.org"
+
+[key_topics]
+other = "Temi principali"
+
+[topic_finma]
+other = "FINMA & Banche"
+
+[topic_finma_desc]
+other = "Come le aspettative della FINMA in materia di gestione del rischio dei modelli e governance dell'IA influenzano gli istituti finanziari svizzeri — e quali evidenze di test verificabili sono richieste."
+
+[topic_iso]
+other = "ISO 42001"
+
+[topic_iso_desc]
+other = "Lo standard internazionale per i sistemi di gestione dell'IA. Cosa richiede in termini di misurazione delle prestazioni, monitoraggio e miglioramento continuo dei sistemi di IA."
+
+[topic_testing]
+other = "Test probabilistici"
+
+[topic_testing_desc]
+other = "Perché i test tradizionali superato/non superato non possono soddisfare le esigenze normative per l'IA. Un'introduzione agli approcci statistici che producono evidenze verificabili e riproducibili."
+
+[recent_posts]
+other = "Articoli recenti"
+
+[read_more]
+other = "Continua a leggere"
+
+[cta_heading]
+other = "Cercate gli strumenti?"
+
+[cta_body]
+other = "Javai sviluppa framework open source per i test probabilistici. Visitate javai.org per la documentazione tecnica, il codice sorgente e le guide introduttive."

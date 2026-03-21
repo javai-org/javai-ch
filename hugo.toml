@@ -86,3 +86,22 @@ defaultContentLanguageInSubdir = true
     name = 'Articles'
     pageRef = '/posts'
     weight = 20
+
+[languages.it]
+  languageCode = 'it'
+  languageName = 'Italiano'
+  contentDir = 'content/it'
+  weight = 4
+
+  [languages.it.params]
+    description = "Comprendere la regolamentazione dell'IA in Svizzera — FINMA, ISO 42001 e il valore dei test probabilistici."
+    tagline = "Regolamentazione. Conformità. Fiducia."
+
+  [[languages.it.menus.main]]
+    name = 'Normative'
+    pageRef = '/regulations'
+    weight = 10
+  [[languages.it.menus.main]]
+    name = 'Articoli'
+    pageRef = '/posts'
+    weight = 20
