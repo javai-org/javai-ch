@@ -1,0 +1,38 @@
+[explore_regulations]
+other = "Explore regulations"
+
+[visit_javai_org]
+other = "Visit javai.org"
+
+[key_topics]
+other = "Key Topics"
+
+[topic_finma]
+other = "FINMA & Banking"
+
+[topic_finma_desc]
+other = "How FINMA's expectations around model risk management and AI governance affect Swiss financial institutions — and what demonstrable testing evidence is required."
+
+[topic_iso]
+other = "ISO 42001"
+
+[topic_iso_desc]
+other = "The international standard for AI management systems. What it demands in terms of performance measurement, monitoring, and continuous improvement of AI systems."
+
+[topic_testing]
+other = "Probabilistic Testing"
+
+[topic_testing_desc]
+other = "Why traditional pass/fail testing cannot satisfy regulatory demands for AI. An introduction to statistical approaches that produce auditable, reproducible evidence."
+
+[recent_posts]
+other = "Recent Posts"
+
+[read_more]
+other = "Read more"
+
+[cta_heading]
+other = "Looking for the tools?"
+
+[cta_body]
+other = "Javai develops open-source frameworks for probabilistic testing. Visit javai.org for technical documentation, source code, and getting started guides."

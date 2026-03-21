@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{- $color := "red" -}}
+{{- if eq .Section "posts" }}{{ $color = "darkred" }}{{ end -}}
+{{- if eq .Section "regulations" }}{{ $color = "slate" }}{{ end -}}
+{{ partial "section-banner.html" (dict "title" .Title "subtitle" .Description "color" $color) }}
+<section class="content-list">
+  <div class="container">
+    {{ .Content }}
+    {{ range .Pages.ByWeight }}
+      <article class="regulation-listing">
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Description }}</p>
+        <a href="{{ .Permalink }}" class="regulation-listing-link">{{ i18n "read_more" }}</a>
+      </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

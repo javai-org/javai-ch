@@ -1,0 +1,73 @@
+{{ define "main" }}
+{{ $hero := resources.Get "images/hero.jpg" }}
+{{ $heroWebp := $hero.Resize "1920x webp q80" }}
+{{ $heroSmall := $hero.Resize "960x webp q75" }}
+<section class="hero">
+  <picture class="hero-bg">
+    <source media="(max-width: 768px)" srcset="{{ $heroSmall.RelPermalink }}">
+    <source srcset="{{ $heroWebp.RelPermalink }}">
+    <img src="{{ $heroWebp.RelPermalink }}" alt="" loading="eager">
+  </picture>
+  <div class="container">
+    <h1>{{ .Site.Params.tagline }}</h1>
+    <p class="hero-sub">{{ .Site.Params.description }}</p>
+    <div class="hero-cta">
+      <a href="/{{ .Lang }}/regulations/" class="btn btn-primary">{{ i18n "explore_regulations" }}</a>
+      <a href="https://javai.org" class="btn btn-secondary">{{ i18n "visit_javai_org" }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="container">
+    <div class="intro-body">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+<section class="topics">
+  <div class="container">
+    <h2>{{ i18n "key_topics" }}</h2>
+    <div class="topics-grid">
+      <div class="topic-item">
+        <h3>{{ i18n "topic_finma" }}</h3>
+        <p>{{ i18n "topic_finma_desc" }}</p>
+      </div>
+      <div class="topic-item">
+        <h3>{{ i18n "topic_iso" }}</h3>
+        <p>{{ i18n "topic_iso_desc" }}</p>
+      </div>
+      <div class="topic-item">
+        <h3>{{ i18n "topic_testing" }}</h3>
+        <p>{{ i18n "topic_testing_desc" }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ with .Site.GetPage "/posts" }}
+  {{ if .Pages }}
+  <section class="recent-posts">
+    <div class="container">
+      <h2>{{ i18n "recent_posts" }}</h2>
+      {{ range first 3 .Pages.ByDate.Reverse }}
+        <article class="post-summary">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <p>{{ .Summary }}</p>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>{{ i18n "cta_heading" }}</h2>
+    <p>{{ i18n "cta_body" }}</p>
+    <a href="https://javai.org" class="btn btn-primary">{{ i18n "visit_javai_org" }}</a>
+  </div>
+</section>
+{{ end }}

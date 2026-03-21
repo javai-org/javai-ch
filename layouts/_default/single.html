@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{- $color := "red" -}}
+{{- if eq .Section "posts" }}{{ $color = "darkred" }}{{ end -}}
+{{- if eq .Section "regulations" }}{{ $color = "slate" }}{{ end -}}
+{{ partial "section-banner.html" (dict "title" .Title "subtitle" .Description "color" $color) }}
+<article class="content-single">
+  <div class="container">
+    <header class="content-header">
+      {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 January 2006" }}</time>{{ end }}
+      {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
+    </header>
+    <div class="content-body">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

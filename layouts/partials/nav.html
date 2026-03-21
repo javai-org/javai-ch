@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="container">
+    <a href="{{ .Site.Home.Permalink }}" class="site-logo">Javai<span class="logo-ch">.ch</span></a>
+    <nav class="site-nav">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a>
+      {{ end }}
+      <div class="lang-switcher">
+        {{ range .Site.Languages }}
+          <a href="/{{ .Lang }}/" class="{{ if eq $.Lang .Lang }}active-lang{{ end }}">{{ .Lang | upper }}</a>
+        {{ end }}
+      </div>
+    </nav>
+  </div>
+</header>

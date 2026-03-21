@@ -1,0 +1,38 @@
+[explore_regulations]
+other = "Regulierungen erkunden"
+
+[visit_javai_org]
+other = "javai.org besuchen"
+
+[key_topics]
+other = "Schwerpunkte"
+
+[topic_finma]
+other = "FINMA & Banken"
+
+[topic_finma_desc]
+other = "Wie die Erwartungen der FINMA an Modellrisikomanagement und KI-Governance Schweizer Finanzinstitute betreffen — und welche nachweisbaren Testbelege erforderlich sind."
+
+[topic_iso]
+other = "ISO 42001"
+
+[topic_iso_desc]
+other = "Der internationale Standard für KI-Managementsysteme. Was er in Bezug auf Leistungsmessung, Überwachung und kontinuierliche Verbesserung von KI-Systemen verlangt."
+
+[topic_testing]
+other = "Probabilistisches Testen"
+
+[topic_testing_desc]
+other = "Warum traditionelles Pass/Fail-Testen die regulatorischen Anforderungen an KI nicht erfüllen kann. Eine Einführung in statistische Ansätze, die prüfbare, reproduzierbare Nachweise liefern."
+
+[recent_posts]
+other = "Aktuelle Beiträge"
+
+[read_more]
+other = "Weiterlesen"
+
+[cta_heading]
+other = "Suchen Sie die Werkzeuge?"
+
+[cta_body]
+other = "Javai entwickelt Open-Source-Frameworks für probabilistisches Testen. Besuchen Sie javai.org für technische Dokumentation, Quellcode und Einstiegsanleitungen."

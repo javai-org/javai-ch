@@ -1,0 +1,88 @@
+baseURL = 'https://javai.ch/'
+title = 'Javai Schweiz'
+enableRobotsTXT = true
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+
+[outputs]
+  home = ['HTML', 'RSS']
+  section = ['HTML', 'RSS']
+
+[params]
+  author = "Javai"
+  ogImage = "images/hero.jpg"
+  keywords = [
+    "AI regulation Switzerland",
+    "FINMA AI",
+    "ISO 42001",
+    "probabilistic testing",
+    "AI compliance",
+    "AI governance Switzerland",
+    "AI risk management",
+    "non-deterministic testing",
+    "Swiss AI regulation",
+    "KI Regulierung Schweiz",
+    "réglementation IA Suisse"
+  ]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+# ── Languages ──
+
+[languages.en]
+  languageCode = 'en'
+  languageName = 'English'
+  contentDir = 'content/en'
+  weight = 1
+
+  [languages.en.params]
+    description = "Navigating AI regulation in Switzerland — FINMA, ISO 42001, and the case for probabilistic testing."
+    tagline = "Regulation. Compliance. Confidence."
+
+  [[languages.en.menus.main]]
+    name = 'Regulations'
+    pageRef = '/regulations'
+    weight = 10
+  [[languages.en.menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 20
+
+[languages.de]
+  languageCode = 'de'
+  languageName = 'Deutsch'
+  contentDir = 'content/de'
+  weight = 2
+
+  [languages.de.params]
+    description = "KI-Regulierung in der Schweiz verstehen — FINMA, ISO 42001 und der Nutzen probabilistischer Tests."
+    tagline = "Regulierung. Compliance. Vertrauen."
+
+  [[languages.de.menus.main]]
+    name = 'Regulierungen'
+    pageRef = '/regulations'
+    weight = 10
+  [[languages.de.menus.main]]
+    name = 'Beiträge'
+    pageRef = '/posts'
+    weight = 20
+
+[languages.fr]
+  languageCode = 'fr'
+  languageName = 'Français'
+  contentDir = 'content/fr'
+  weight = 3
+
+  [languages.fr.params]
+    description = "Comprendre la réglementation de l'IA en Suisse — FINMA, ISO 42001 et l'intérêt des tests probabilistes."
+    tagline = "Réglementation. Conformité. Confiance."
+
+  [[languages.fr.menus.main]]
+    name = 'Réglementations'
+    pageRef = '/regulations'
+    weight = 10
+  [[languages.fr.menus.main]]
+    name = 'Articles'
+    pageRef = '/posts'
+    weight = 20
