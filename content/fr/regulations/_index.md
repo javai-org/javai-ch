@@ -1,4 +1,4 @@
 ---
-title: "Réglementations"
-description: "Réglementations suisses et internationales exigeant des tests de performance de l'IA fondés sur des preuves."
+title: "Actualités réglementaires"
+description: "Restez informé des évolutions réglementaires en matière d'IA dans les secteurs d'activité suisses."
 ---

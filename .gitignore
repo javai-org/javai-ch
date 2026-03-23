@@ -21,6 +21,10 @@ hugo_stats.json
 # Node
 node_modules/
 
+# Gradle
+/build/
+/.gradle/
+
 # Environment
 .env
 .env.*

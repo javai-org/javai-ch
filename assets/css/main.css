@@ -329,10 +329,10 @@ code {
   line-height: 1.6;
 }
 
-/* Banner colour variants */
+/* Banner colour variants — Swiss red tint over alps image */
 .section-banner--red::after { background: #c8102e; }
-.section-banner--darkred::after { background: #8b0000; }
-.section-banner--slate::after { background: #4a3a3a; }
+.section-banner--darkred::after { background: #a00d24; }
+.section-banner--slate::after { background: #c8102e; }
 
 /* ---- Intro ---- */
 .intro {
@@ -404,6 +404,126 @@ code {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.05rem;
   margin-bottom: var(--space-md);
+}
+
+/* ---- Feed portal ---- */
+.feed-portal {
+  padding: var(--space-xxl) 0;
+}
+
+.feed-portal-intro {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  max-width: 720px;
+  line-height: 1.8;
+  margin-bottom: var(--space-lg);
+}
+
+.feed-portal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.feed-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 340px;
+  border-radius: 6px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--color-white);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feed-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  color: var(--color-white);
+}
+
+.feed-card-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Sector colour themes — gradient backgrounds as placeholders for future images */
+.feed-card--banking .feed-card-overlay {
+  background: linear-gradient(160deg, #1a2a4a 0%, #0d1b2a 60%, #c8102e 100%);
+}
+
+.feed-card--pharma .feed-card-overlay {
+  background: linear-gradient(160deg, #1a3a2a 0%, #0d2a1a 60%, #c8102e 100%);
+}
+
+.feed-card--cantons .feed-card-overlay {
+  background: linear-gradient(160deg, #2a1a2a 0%, #1a0d1a 60%, #c8102e 100%);
+}
+
+.feed-card--health .feed-card-overlay {
+  background: linear-gradient(160deg, #1a2a3a 0%, #0d1a2a 60%, #c8102e 100%);
+}
+
+.feed-card--federal-government .feed-card-overlay {
+  background: linear-gradient(160deg, #2a2a1a 0%, #1a1a0d 60%, #c8102e 100%);
+}
+
+.feed-card--all .feed-card-overlay {
+  background: linear-gradient(160deg, #c8102e 0%, #8b0000 50%, #1a1215 100%);
+}
+
+.feed-card:hover .feed-card-overlay {
+  opacity: 0.85;
+}
+
+.feed-card-content {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-lg) var(--space-md) var(--space-md);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  width: 100%;
+}
+
+.feed-card-content h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.01em;
+}
+
+.feed-card-content p {
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: var(--space-sm);
+}
+
+.feed-card-btn {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.65em 1.6em;
+  border: 2px solid var(--color-white);
+  border-radius: 3px;
+  color: var(--color-white);
+  transition: all 0.2s ease;
+}
+
+.feed-card:hover .feed-card-btn {
+  background: var(--color-white);
+  color: var(--color-dark);
+}
+
+.feed-card--full {
+  grid-column: 1 / -1;
+  min-height: 220px;
 }
 
 /* ---- Regulation listings ---- */
@@ -547,6 +667,8 @@ code {
   .site-nav { gap: var(--space-sm); flex-wrap: wrap; justify-content: center; }
   .lang-switcher { margin-left: 0; padding-left: 0; border-left: none; }
 
+  .feed-portal-grid { grid-template-columns: 1fr; }
+  .feed-card { min-height: 260px; }
   .topics-grid { grid-template-columns: 1fr; gap: var(--space-md); }
   .section-banner { height: 180px; }
   .section-banner h1 { font-size: 1.75rem; }

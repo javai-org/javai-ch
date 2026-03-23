@@ -1,4 +1,4 @@
 ---
-title: "Regulierungen"
-description: "Schweizerische und internationale Regulierungen, die nachweisbasierte KI-Leistungstests erfordern."
+title: "Regulierungsnachrichten"
+description: "Bleiben Sie über KI-Regulierungsentwicklungen in Schweizer Branchensektoren informiert."
 ---

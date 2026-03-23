@@ -1,9 +1,10 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy
 
 on:
   push:
     branches: [main]
-  workflow_dispatch:
+  pull_request:
+    branches: [main]
 
 permissions:
   contents: read
@@ -19,16 +20,39 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          path: javai-ch
+
+      - uses: actions/checkout@v4
+        with:
+          repository: javai-org/javai-newsroom
+          ref: main
+          path: javai-newsroom
+
+      # Hugo site
       - uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
       - run: hugo --minify
-      - uses: actions/upload-pages-artifact@v3
+        working-directory: javai-ch
+
+      # Java build validation
+      - uses: actions/setup-java@v4
         with:
-          path: ./public
+          distribution: temurin
+          java-version: 25-ea
+      - uses: gradle/actions/setup-gradle@v4
+      - run: ./gradlew build
+        working-directory: javai-ch
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: javai-ch/public
 
   deploy:
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

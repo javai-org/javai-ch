@@ -31,6 +31,48 @@ other = "Aktuelle Beiträge"
 [read_more]
 other = "Weiterlesen"
 
+[feed_portal_intro]
+other = "Abonnieren Sie branchenspezifische Feeds zur KI-Regulierung. Wählen Sie einen oder mehrere Sektoren, um über die für Ihre Organisation relevanten Vorschriften informiert zu bleiben."
+
+[sector_banking]
+other = "Banken & Finanzen"
+
+[sector_banking_desc]
+other = "KI-Regulierungsnachrichten für das Schweizer Bankwesen und Finanzdienstleistungen — FINMA-Rundschreiben, Modellrisikomanagement und aufsichtsrechtliche Erwartungen."
+
+[sector_pharma]
+other = "Pharma & Life Sciences"
+
+[sector_pharma_desc]
+other = "KI-Regulierungsnachrichten für die Pharmaindustrie — klinische KI-Validierung, GxP-Compliance und Leitlinien der Gesundheitsbehörden."
+
+[sector_cantons]
+other = "Kantonale Verwaltung"
+
+[sector_cantons_desc]
+other = "KI-Regulierungsnachrichten für Schweizer Kantonsverwaltungen — Bundespolitik, kantonale KI-Strategien und Governance im öffentlichen Sektor."
+
+[sector_health]
+other = "Gesundheitswesen"
+
+[sector_health_desc]
+other = "KI-Regulierungsnachrichten für das Gesundheitswesen — Patientensicherheit, klinische Entscheidungsunterstützung, KI in Medizinprodukten und Gesundheitsdaten-Governance."
+
+[sector_federal-government]
+other = "Bundesverwaltung"
+
+[sector_federal-government_desc]
+other = "KI-Regulierungsnachrichten der Schweizer Bundesbehörden — Bundesratsentscheide, EDÖB-Leitlinien und Entwicklungen der nationalen KI-Strategie."
+
+[sector_all]
+other = "Alle Sektoren"
+
+[sector_all_desc]
+other = "Alles in einem Feed — abonnieren Sie hier, um KI-Regulierungsnachrichten aus allen Sektoren zu erhalten."
+
+[subscribe_feed]
+other = "Feed abonnieren"
+
 [cta_heading]
 other = "Suchen Sie die Werkzeuge?"
 

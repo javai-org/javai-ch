@@ -31,6 +31,48 @@ other = "Articles récents"
 [read_more]
 other = "Lire la suite"
 
+[feed_portal_intro]
+other = "Abonnez-vous aux flux d'actualité réglementaire IA par secteur. Choisissez un ou plusieurs secteurs pour rester informé des réglementations qui concernent votre organisation."
+
+[sector_banking]
+other = "Banque & Finance"
+
+[sector_banking_desc]
+other = "Actualités réglementaires IA pour le secteur bancaire et financier suisse — circulaires FINMA, gestion des risques de modèles et attentes prudentielles."
+
+[sector_pharma]
+other = "Industrie pharmaceutique"
+
+[sector_pharma_desc]
+other = "Actualités réglementaires IA pour l'industrie pharmaceutique — validation clinique de l'IA, conformité GxP et directives des autorités sanitaires."
+
+[sector_cantons]
+other = "Administration cantonale"
+
+[sector_cantons_desc]
+other = "Actualités réglementaires IA pour les administrations cantonales suisses — politique fédérale, stratégies cantonales en matière d'IA et gouvernance du secteur public."
+
+[sector_health]
+other = "Santé"
+
+[sector_health_desc]
+other = "Actualités réglementaires IA pour le secteur de la santé — sécurité des patients, aide à la décision clinique, IA dans les dispositifs médicaux et gouvernance des données de santé."
+
+[sector_federal-government]
+other = "Gouvernement fédéral"
+
+[sector_federal-government_desc]
+other = "Actualités réglementaires IA des autorités fédérales suisses — décisions du Conseil fédéral, directives du PFPDT et évolutions de la stratégie nationale en matière d'IA."
+
+[sector_all]
+other = "Tous les secteurs"
+
+[sector_all_desc]
+other = "Tout dans un seul flux — abonnez-vous ici pour recevoir les actualités réglementaires IA de tous les secteurs."
+
+[subscribe_feed]
+other = "S'abonner au flux"
+
 [cta_heading]
 other = "Vous cherchez les outils ?"
 

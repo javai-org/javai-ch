@@ -1,4 +1,4 @@
 ---
-title: "Regulations"
-description: "Swiss and international regulations that demand evidence-based AI performance testing."
+title: "Regulation News"
+description: "Stay informed on AI regulation developments across Swiss industry sectors."
 ---

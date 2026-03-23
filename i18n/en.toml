@@ -31,6 +31,48 @@ other = "Recent Posts"
 [read_more]
 other = "Read more"
 
+[feed_portal_intro]
+other = "Subscribe to sector-specific AI regulation feeds. Choose one or more sectors to stay informed about the regulations that matter to your organisation."
+
+[sector_banking]
+other = "Banking & Finance"
+
+[sector_banking_desc]
+other = "AI regulation news for Swiss banking and financial services — FINMA circulars, model risk management, and supervisory expectations."
+
+[sector_pharma]
+other = "Pharmaceuticals"
+
+[sector_pharma_desc]
+other = "AI regulation news for pharmaceutical and life sciences — clinical AI validation, GxP compliance, and health authority guidance."
+
+[sector_cantons]
+other = "Cantonal Government"
+
+[sector_cantons_desc]
+other = "AI regulation news for Swiss cantonal administrations — federal policy, cantonal AI strategies, and public sector governance."
+
+[sector_health]
+other = "Healthcare"
+
+[sector_health_desc]
+other = "AI regulation news for healthcare — patient safety, clinical decision support, medical device AI, and health data governance."
+
+[sector_federal-government]
+other = "Federal Government"
+
+[sector_federal-government_desc]
+other = "AI regulation news from Swiss federal authorities — federal council decisions, FDPIC guidance, and national AI strategy developments."
+
+[sector_all]
+other = "All Sectors"
+
+[sector_all_desc]
+other = "Everything in one feed — subscribe here to receive AI regulation news across all sectors."
+
+[subscribe_feed]
+other = "Subscribe to feed"
+
 [cta_heading]
 other = "Looking for the tools?"
 
