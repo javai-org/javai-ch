@@ -1,0 +1,126 @@
+name: Fetch News
+
+on:
+  schedule:
+    # Daily at 06:00 UTC — tiers 1, 2
+    - cron: '0 6 * * *'
+    # Weekly Monday 07:00 UTC — tiers 1, 2, 3
+    - cron: '0 7 * * 1'
+    # Monthly 1st at 08:00 UTC — tiers 1, 2, 3, 4
+    - cron: '0 8 1 * *'
+  workflow_dispatch:
+    inputs:
+      tiers:
+        description: 'Comma-separated tier numbers (empty = all)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: fetch-news
+  cancel-in-progress: false
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: javai-ch
+
+      - uses: actions/checkout@v4
+        with:
+          repository: javai-org/javai-newsroom
+          ref: main
+          path: javai-newsroom
+
+      # Hugo site
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - run: hugo --minify
+        working-directory: javai-ch
+
+      # Restore feed state from the data branch
+      - name: Restore state
+        working-directory: javai-ch
+        run: |
+          git fetch origin data:data 2>/dev/null || true
+          mkdir -p newsroom/data
+          git show data:newsroom/data/state.json > newsroom/data/state.json 2>/dev/null || echo '{}' > newsroom/data/state.json
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 25-ea
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      # Determine tiers based on schedule or manual input
+      - name: Determine tiers
+        id: tiers
+        run: |
+          if [ -n "${{ github.event.inputs.tiers }}" ]; then
+            echo "tiers=${{ github.event.inputs.tiers }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 8 1 * *" ]; then
+            echo "tiers=1,2,3,4" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 7 * * 1" ]; then
+            echo "tiers=1,2,3" >> "$GITHUB_OUTPUT"
+          else
+            echo "tiers=1,2" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fetch news
+        working-directory: javai-ch
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          TIERS="${{ steps.tiers.outputs.tiers }}"
+          ARGS="fetchNews"
+          if [ -n "$TIERS" ]; then
+            ARGS="$ARGS -Ptiers=$TIERS"
+          fi
+          ./gradlew $ARGS
+
+      - name: Generate all feeds
+        working-directory: javai-ch
+        run: ./gradlew generateAllFeeds
+
+      # Merge feeds into Hugo output
+      - name: Merge feeds into public
+        run: cp -r javai-ch/build/site/* javai-ch/public/
+
+      # Save state to data branch
+      - name: Save state
+        working-directory: javai-ch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Create orphan data branch if it doesn't exist
+          if ! git show-ref --verify --quiet refs/heads/data; then
+            git checkout --orphan data
+            git rm -rf . 2>/dev/null || true
+          else
+            git checkout data
+          fi
+          mkdir -p newsroom/data
+          cp "${{ github.workspace }}/javai-ch/newsroom/data/state.json" newsroom/data/state.json
+          git add newsroom/data/state.json
+          git diff --cached --quiet || git commit -m "Update feed state [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+          git push origin data
+          git checkout -
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: javai-ch/public
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

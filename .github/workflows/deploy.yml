@@ -37,14 +37,31 @@ jobs:
       - run: hugo --minify
         working-directory: javai-ch
 
-      # Java build validation
+      # Java build + feed generation
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 25-ea
       - uses: gradle/actions/setup-gradle@v4
+
       - run: ./gradlew build
         working-directory: javai-ch
+
+      # Restore feed state from the data branch
+      - name: Restore state
+        working-directory: javai-ch
+        run: |
+          git fetch origin data:data 2>/dev/null || true
+          mkdir -p newsroom/data
+          git show data:newsroom/data/state.json > newsroom/data/state.json 2>/dev/null || echo '{}' > newsroom/data/state.json
+
+      - name: Generate all feeds
+        working-directory: javai-ch
+        run: ./gradlew generateAllFeeds
+
+      # Merge feeds into Hugo output
+      - name: Merge feeds into public
+        run: cp -r javai-ch/build/site/* javai-ch/public/
 
       - uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main'

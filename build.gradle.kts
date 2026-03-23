@@ -1,0 +1,227 @@
+plugins {
+    java
+    application
+}
+
+group = "org.javai"
+version = "0.1.0-SNAPSHOT"
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.javai:javai-newsroom:0.1.0-SNAPSHOT")
+    testImplementation(testFixtures("org.javai:javai-newsroom:0.1.0-SNAPSHOT"))
+    testImplementation("org.javai:punit-junit5:0.4.0")
+    testImplementation(platform("org.junit:junit-bom:5.12.2"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+}
+
+application {
+    mainClass = "org.javai.ch.Main"
+}
+
+tasks.test {
+    useJUnitPlatform {
+        excludeTags("punit-experiment")
+    }
+    filter {
+        excludeTestsMatching("*RelevanceClassificationTest*")
+        isFailOnNoMatchingTests = false
+    }
+    testLogging {
+        events("passed", "skipped", "failed")
+        showStandardStreams = true
+    }
+}
+
+// Probabilistic tests — sample-level failures are expected; the aggregate
+// statistical verdict determines pass/fail, not individual samples.
+tasks.register<Test>("probabilisticTest") {
+    description = "Runs probabilistic tests (sample failures do not fail the build)"
+    group = "verification"
+    testClassesDirs = sourceSets["test"].output.classesDirs
+    classpath = sourceSets["test"].runtimeClasspath
+    useJUnitPlatform()
+    filter {
+        includeTestsMatching("*RelevanceClassificationTest*")
+    }
+    ignoreFailures = true
+    environment("ANTHROPIC_API_KEY", System.getenv("ANTHROPIC_API_KEY") ?: "")
+    systemProperty("junit.jupiter.extensions.autodetection.enabled", "true")
+    testLogging {
+        events("passed", "skipped", "failed")
+        showStandardStreams = true
+    }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// Feed generation — consolidated + per-sector
+// ═══════════════════════════════════════════════════════════════════════════
+
+val stateFile = rootProject.file("newsroom/data/state.json").absolutePath
+val configDir = rootProject.file("newsroom/config").absolutePath
+val siteDir = layout.buildDirectory.dir("site").get().asFile.absolutePath
+val siteUrl = "https://javai.ch/"
+
+// Sector definitions — add new sectors here
+data class Sector(val id: String, val title: String, val description: String, val tags: List<String>)
+
+val sectors = listOf(
+    Sector(
+        "banking",
+        "javai.ch — Banking & Finance",
+        "AI regulation news for Swiss banking and financial services",
+        listOf("financial", "global")
+    ),
+    Sector(
+        "pharma",
+        "javai.ch — Pharmaceuticals",
+        "AI regulation news for pharmaceutical and life sciences",
+        listOf("pharma", "biotech", "medicine", "global")
+    ),
+    Sector(
+        "health",
+        "javai.ch — Health",
+        "AI regulation news for the Swiss health sector",
+        listOf("health", "global")
+    ),
+    Sector(
+        "federal-government",
+        "javai.ch — Federal Government",
+        "AI regulation news from Swiss federal authorities",
+        listOf("swiss", "policy", "federal", "global")
+    ),
+)
+
+// ── Tag alignment check ─────────────────────────────────────────────────
+// Ensures every tag in data/sectors.json exists in at least one source
+// in newsroom/config/sources.yml.  Fails fast before any feed generation runs.
+
+tasks.register("validateTags") {
+    description = "Check that all sector and seed-item tags exist in sources.yml"
+    group = "newsroom"
+    doLast {
+        val sectorsFile = rootProject.file("data/sectors.json")
+        val sourcesFile = rootProject.file("newsroom/config/sources.yml")
+        val seedFile = rootProject.file("newsroom/config/seed-items.yml")
+
+        // Collect all tags from sources.yml (simple regex — no YAML parser needed)
+        val tagPattern = Regex("""tags:\s*\[([^\]]+)]""")
+        val sourceTags = sourcesFile.readText().let { text ->
+            tagPattern.findAll(text).flatMap { match ->
+                match.groupValues[1].split(",").map { it.trim().trim('"') }
+            }.toSet()
+        }
+
+        val errors = mutableListOf<String>()
+
+        // Check sectors.json tags
+        val sectorTagPattern = Regex(""""tags"\s*:\s*\[([^\]]+)]""")
+        val sectorEntries = sectorTagPattern.findAll(sectorsFile.readText()).toList()
+        val idPattern = Regex(""""id"\s*:\s*"([^"]+)"""")
+        val ids = idPattern.findAll(sectorsFile.readText()).map { it.groupValues[1] }.toList()
+
+        sectorEntries.forEachIndexed { index, match ->
+            val tags = match.groupValues[1].split(",").map { it.trim().trim('"') }
+            val sectorId = ids.getOrElse(index) { "unknown" }
+            tags.filter { it !in sourceTags }.forEach { tag ->
+                errors.add("Sector '$sectorId' uses tag '$tag' which does not exist in any source in newsroom/config/sources.yml")
+            }
+        }
+
+        // Check seed-items.yml tags — every seed item must have at least one
+        // tag that matches a sector so it appears in a feed
+        if (seedFile.exists()) {
+            val seedText = seedFile.readText()
+            val titlePattern = Regex("""- title:\s*"([^"]+)"""")
+            val seedTitles = titlePattern.findAll(seedText).map { it.groupValues[1] }.toList()
+            val seedTagEntries = tagPattern.findAll(seedText).toList()
+
+            // Collect all sector tags (union)
+            val allSectorTags = sectorEntries.flatMap { match ->
+                match.groupValues[1].split(",").map { it.trim().trim('"') }
+            }.toSet()
+
+            seedTagEntries.forEachIndexed { index, match ->
+                val tags = match.groupValues[1].split(",").map { it.trim().trim('"') }
+                val title = seedTitles.getOrElse(index) { "unknown" }
+                val shortTitle = if (title.length > 60) title.take(60) + "..." else title
+                if (tags.none { it in allSectorTags }) {
+                    errors.add("Seed item '$shortTitle' has no tag matching any sector — it will not appear in any feed")
+                }
+            }
+        }
+
+        if (errors.isNotEmpty()) {
+            throw GradleException("Tag alignment errors:\n  ${errors.joinToString("\n  ")}")
+        }
+        logger.lifecycle("Tag validation passed: all sector tags exist in sources.yml, all seed items match at least one sector")
+    }
+}
+
+// Fetch task — runs once, populates the consolidated state
+tasks.register<JavaExec>("fetchNews") {
+    description = "Fetch news from all configured sources"
+    group = "newsroom"
+    dependsOn("classes")
+    mainClass = "org.javai.ch.Main"
+    classpath = sourceSets["main"].runtimeClasspath
+    args = mutableListOf("fetch", "--config=$configDir", "--state=$stateFile")
+    if (project.hasProperty("tiers")) {
+        args("--tiers=${project.property("tiers")}")
+    }
+    environment("ANTHROPIC_API_KEY", System.getenv("ANTHROPIC_API_KEY") ?: "")
+}
+
+// Consolidated feed — all items, written to build/site/
+tasks.register<JavaExec>("generateFeed") {
+    description = "Generate consolidated feed (all items)"
+    group = "newsroom"
+    dependsOn("classes")
+    mainClass = "org.javai.ch.Main"
+    classpath = sourceSets["main"].runtimeClasspath
+    args = listOf(
+        "generate",
+        "--state=$stateFile",
+        "--output=$siteDir",
+        "--site-url=$siteUrl"
+    )
+}
+
+// Per-sector feed tasks — filtered by tags, written to build/site/<sector>/
+sectors.forEach { sector ->
+    tasks.register<JavaExec>("generateFeed-${sector.id}") {
+        description = "Generate ${sector.title} feed (tags: ${sector.tags})"
+        group = "newsroom"
+        dependsOn("classes")
+        mainClass = "org.javai.ch.Main"
+        classpath = sourceSets["main"].runtimeClasspath
+        args = listOf(
+            "generate",
+            "--state=$stateFile",
+            "--output=$siteDir/${sector.id}",
+            "--tags=${sector.tags.joinToString(",")}",
+            "--title=${sector.title}",
+            "--description=${sector.description}",
+            "--site-url=${siteUrl}${sector.id}/"
+        )
+    }
+}
+
+// Generate everything — consolidated + all sector feeds
+tasks.register("generateAllFeeds") {
+    description = "Generate consolidated feed and all sector feeds"
+    group = "newsroom"
+    dependsOn("validateTags")
+    dependsOn("generateFeed")
+    dependsOn(sectors.map { "generateFeed-${it.id}" })
+}

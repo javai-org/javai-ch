@@ -1,0 +1,128 @@
+package org.javai.ch;
+
+import org.javai.newsroom.Newsroom;
+import org.javai.newsroom.NewsroomConfig;
+import org.javai.newsroom.feed.FeedMetadata;
+import org.javai.newsroom.schedule.TierFilter;
+
+import java.nio.file.Path;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+public class Main {
+
+    private static final FeedMetadata DEFAULT_FEED_METADATA = new FeedMetadata(
+            "javai.ch \u2014 AI Regulation Feed",
+            "Curated AI regulation news from Swiss and European sources",
+            "https://javai.ch/",
+            "feed.xml"
+    );
+
+    public static void main(String[] args) throws Exception {
+        if (args.length == 0) {
+            printUsage();
+            System.exit(1);
+        }
+
+        var command = args[0];
+        var params = parseArgs(args);
+
+        var feedMetadata = new FeedMetadata(
+                params.title != null ? params.title : DEFAULT_FEED_METADATA.title(),
+                params.description != null ? params.description : DEFAULT_FEED_METADATA.description(),
+                params.siteUrl != null ? params.siteUrl : DEFAULT_FEED_METADATA.siteUrl(),
+                DEFAULT_FEED_METADATA.feedPath()
+        );
+
+        var config = new NewsroomConfig(
+                Path.of(params.configDir),
+                Path.of(params.state),
+                Path.of(params.output),
+                feedMetadata
+        );
+        var newsroom = new Newsroom(config);
+
+        switch (command) {
+            case "fetch" -> newsroom.fetch(TierFilter.parseTiers(params.tiers));
+            case "generate" -> {
+                var tags = parseTags(params.tags);
+                if (tags.isEmpty()) {
+                    newsroom.generate();
+                } else {
+                    newsroom.generate(Path.of(params.output), feedMetadata, tags);
+                }
+            }
+            default -> {
+                System.err.println("Unknown command: " + command);
+                printUsage();
+                System.exit(1);
+            }
+        }
+    }
+
+    static Set<String> parseTags(String tagsArg) {
+        if (tagsArg == null || tagsArg.isBlank()) return Set.of();
+        return Arrays.stream(tagsArg.split(","))
+                .map(String::trim)
+                .filter(s -> !s.isEmpty())
+                .collect(Collectors.toCollection(LinkedHashSet::new));
+    }
+
+    private static Params parseArgs(String[] args) {
+        var params = new Params();
+        for (int i = 1; i < args.length; i++) {
+            var arg = args[i];
+            if (arg.startsWith("--config=")) {
+                params.configDir = arg.substring("--config=".length());
+            } else if (arg.startsWith("--state=")) {
+                params.state = arg.substring("--state=".length());
+            } else if (arg.startsWith("--tiers=")) {
+                params.tiers = arg.substring("--tiers=".length());
+            } else if (arg.startsWith("--output=")) {
+                params.output = arg.substring("--output=".length());
+            } else if (arg.startsWith("--tags=")) {
+                params.tags = arg.substring("--tags=".length());
+            } else if (arg.startsWith("--title=")) {
+                params.title = arg.substring("--title=".length());
+            } else if (arg.startsWith("--description=")) {
+                params.description = arg.substring("--description=".length());
+            } else if (arg.startsWith("--site-url=")) {
+                params.siteUrl = arg.substring("--site-url=".length());
+            }
+        }
+        return params;
+    }
+
+    private static void printUsage() {
+        System.err.println("""
+                Usage: javai-ch <command> [options]
+
+                Commands:
+                  fetch     Fetch news from configured sources
+                  generate  Generate RSS feed, JSON feed, and HTML page
+
+                Options:
+                  --config=<path>        Path to config directory (default: newsroom/config)
+                  --state=<path>         Path to state.json (default: newsroom/data/state.json)
+                  --tiers=<list>         Comma-separated tier numbers to fetch (default: all)
+                  --output=<path>        Output directory for generated files (default: build/site)
+                  --tags=<list>          Comma-separated tags to filter items (default: all items)
+                  --title=<text>         Feed title (overrides default)
+                  --description=<text>   Feed description (overrides default)
+                  --site-url=<url>       Site URL (overrides default)
+                """);
+    }
+
+    private static class Params {
+        String configDir = "newsroom/config";
+        String state = "newsroom/data/state.json";
+        String tiers = "";
+        String output = "build/site";
+        String tags = "";
+        String title = null;
+        String description = null;
+        String siteUrl = null;
+    }
+}

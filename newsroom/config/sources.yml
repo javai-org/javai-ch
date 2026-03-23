@@ -1,0 +1,399 @@
+sources:
+  # === Tier 1 — Essential daily/weekly sources ===
+
+  - id: finma-news
+    name: "FINMA News"
+    tier: 1
+    type: rss
+    url: "https://www.finma.ch/en/rss/news/"
+    tags: ["swiss", "financial", "supervision", "finma"]
+
+  - id: swiss-admin
+    name: "Swiss Federal Administration News"
+    tier: 1
+    type: html-scrape
+    url: "https://www.news.admin.ch/en/newnsb"
+    selectors:
+      item: ".news-item, article"
+      title: "h3, .title"
+      link: "a@href"
+      date: "time@datetime"
+    baseUrl: "https://www.news.admin.ch"
+    tags: ["swiss", "federal", "policy"]
+
+  - id: edoeb
+    name: "FDPIC / EDÖB"
+    tier: 1
+    type: html-scrape
+    url: "https://www.edoeb.admin.ch/en/latest-news"
+    selectors:
+      item: ".teaser-item, .dynamic-page-teaser"
+      title: ".teaser__title, h3"
+      link: "a@href"
+      date: "time@datetime, .metaInfo"
+    baseUrl: "https://www.edoeb.admin.ch"
+    tags: ["swiss", "data-protection", "privacy"]
+
+  - id: bag-news
+    name: "FOPH / BAG — News"
+    tier: 1
+    type: html-scrape
+    url: "https://www.bag.admin.ch/en/overview/news"
+    selectors:
+      item: ".news-item, article, .mod-teaser"
+      title: "h3, .mod-teaser__title"
+      link: "a@href"
+      date: "time@datetime, .mod-teaser__date"
+    baseUrl: "https://www.bag.admin.ch"
+    tags: ["swiss", "health", "federal", "public-health"]
+
+  - id: bag-media
+    name: "FOPH / BAG — Media Releases"
+    tier: 1
+    type: html-scrape
+    url: "https://www.bag.admin.ch/en/newnsb?sort=dateDecreasing&display=list&organization=317"
+    selectors:
+      item: ".news-item, article, .mod-teaser"
+      title: "h3, .mod-teaser__title, .title"
+      link: "a@href"
+      date: "time@datetime, .mod-teaser__date"
+    baseUrl: "https://www.bag.admin.ch"
+    tags: ["swiss", "health", "federal", "public-health"]
+
+  - id: blv
+    name: "FSVO / BLV — Press Releases"
+    tier: 1
+    type: html-scrape
+    url: "https://www.blv.admin.ch/blv/en/home/dokumentation/nsb-news-list.nsb.html"
+    selectors:
+      item: ".news-item, article, .mod-teaser"
+      title: "h3, .mod-teaser__title"
+      link: "a@href"
+      date: "time@datetime, .mod-teaser__date"
+    baseUrl: "https://www.blv.admin.ch"
+    tags: ["swiss", "health", "federal", "food-safety"]
+
+  - id: bfs-health
+    name: "FSO / BFS — Health Statistics"
+    tier: 1
+    type: html-scrape
+    url: "https://www.bfs.admin.ch/bfs/en/home/news/whats-new.html"
+    selectors:
+      item: ".news-item, article, .mod-teaser"
+      title: "h3, .mod-teaser__title"
+      link: "a@href"
+      date: "time@datetime, .mod-teaser__date"
+    baseUrl: "https://www.bfs.admin.ch"
+    tags: ["swiss", "health", "federal", "statistic"]
+
+  - id: fedlex
+    name: "Fedlex — Swiss Federal Law"
+    tier: 1
+    type: html-scrape
+    url: "https://www.fedlex.admin.ch/en/home"
+    selectors:
+      item: ".result-item, article"
+      title: "h3, h2, .title"
+      link: "a@href"
+      date: "time@datetime, .date"
+    baseUrl: "https://www.fedlex.admin.ch"
+    tags: ["swiss", "federal", "legislation"]
+    # Note: Fedlex requires JavaScript; scraper may need headless browser support
+
+  - id: seco
+    name: "SECO — State Secretariat for Economic Affairs"
+    tier: 1
+    type: html-scrape
+    url: "https://www.seco.admin.ch/seco/de/home/seco/nsb-news.html?dyn_startDate=01.01.2023"
+    selectors:
+      item: ".mod-teaser, .news-item, article"
+      title: "h3, .mod-teaser__title"
+      link: "a@href"
+      date: "time@datetime, .mod-teaser__date"
+    baseUrl: "https://www.seco.admin.ch"
+    tags: ["swiss", "federal", "policy", "economic"]
+
+  - id: ticino-diginotizie
+    name: "Cantone Ticino — Diginotizie"
+    tier: 2
+    type: html-scrape
+    url: "https://www.ti.ch/can/portale-della-trasformazione-digitale/diginotizie"
+    selectors:
+      item: "article, .news-item, .list-item"
+      title: "h3, h2, a"
+      link: "a@href"
+      date: "time@datetime, .date"
+    baseUrl: "https://www.ti.ch"
+    tags: ["swiss", "cantonal", "policy", "digital"]
+
+  - id: geneve-publications
+    name: "État de Genève — Publications IA"
+    tier: 2
+    type: html-scrape
+    url: "https://www.ge.ch/publication?items_per_page=20&organisation=103&type=460"
+    selectors:
+      item: "article, .publication-item, .views-row"
+      title: "h3, h2, .title"
+      link: "a@href"
+      date: "time@datetime, .date"
+    baseUrl: "https://www.ge.ch"
+    tags: ["swiss", "cantonal", "policy"]
+
+  - id: ec-ai-policy
+    name: "European Commission AI Policy"
+    tier: 1
+    type: html-scrape
+    url: "https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence"
+    selectors:
+      item: ".ecl-content-item, .listing__item"
+      title: ".ecl-content-item__title, .listing__title"
+      link: "a@href"
+      date: ".ecl-content-item__date, .listing__date"
+    baseUrl: "https://digital-strategy.ec.europa.eu"
+    tags: ["global", "eu", "ai-act", "legislation"]
+
+  - id: ai-office
+    name: "European AI Office"
+    tier: 1
+    type: html-scrape
+    url: "https://digital-strategy.ec.europa.eu/en/policies/ai-office"
+    selectors:
+      item: ".ecl-content-item, .listing__item"
+      title: ".ecl-content-item__title, .listing__title"
+      link: "a@href"
+      date: ".ecl-content-item__date, .listing__date"
+    baseUrl: "https://digital-strategy.ec.europa.eu"
+    tags: ["global", "eu", "ai-office", "implementation"]
+
+  - id: edpb
+    name: "EDPB"
+    tier: 1
+    type: rss
+    url: "https://www.edpb.europa.eu/feed/news_en"
+    tags: ["global", "eu", "data-protection", "privacy", "gdpr"]
+
+  - id: edps
+    name: "EDPS"
+    tier: 1
+    type: rss
+    url: "https://www.edps.europa.eu/feed/news_en"
+    tags: ["global", "eu", "data-protection", "privacy"]
+
+  - id: ec-dg-sante
+    name: "European Commission — DG SANTE"
+    tier: 1
+    type: html-scrape
+    url: "https://health.ec.europa.eu/latest-updates_en"
+    selectors:
+      item: ".ecl-content-item, .listing__item, article"
+      title: ".ecl-content-item__title, .listing__title, h3"
+      link: "a@href"
+      date: ".ecl-content-item__date, .listing__date, time@datetime"
+    baseUrl: "https://health.ec.europa.eu"
+    tags: ["eu", "health", "public-health", "medicine"]
+
+  - id: ecdc
+    name: "ECDC — European Centre for Disease Prevention and Control"
+    tier: 1
+    type: rss
+    url: "https://www.ecdc.europa.eu/en/taxonomy/term/1310/feed"
+    tags: ["eu", "health", "disease", "surveillance"]
+
+  - id: efsa
+    name: "EFSA — European Food Safety Authority"
+    tier: 1
+    type: rss
+    url: "https://www.efsa.europa.eu/en/news/rss"
+    tags: ["eu", "health", "food-safety"]
+
+  - id: swissmedic
+    name: "Swissmedic"
+    tier: 1
+    type: html-scrape
+    url: "https://www.swissmedic.ch/swissmedic/en/home/news/mitteilungen.html"
+    selectors:
+      item: ".mod-teaser, .news-item, article"
+      title: "h3, .mod-teaser__title"
+      link: "a@href"
+      date: "time@datetime, .mod-teaser__date"
+    baseUrl: "https://www.swissmedic.ch"
+    tags: ["swiss", "pharma", "medicine", "health", "regulatory"]
+
+  - id: ema
+    name: "EMA"
+    tier: 1
+    type: rss
+    url: "https://www.ema.europa.eu/en/news.xml"
+    tags: ["eu", "pharma", "medicine", "health", "regulatory"]
+
+  # === Tier 2 — Specialist reporting and analysis ===
+
+  - id: iapp
+    name: "IAPP"
+    tier: 2
+    type: html-scrape
+    url: "https://iapp.org/news/"
+    selectors:
+      item: "article, .post-item"
+      title: "h2, h3"
+      link: "a@href"
+      date: "time@datetime"
+    baseUrl: "https://iapp.org"
+    tags: ["global", "governance", "privacy", "compliance"]
+
+  - id: fda-ai
+    name: "FDA CDER AI"
+    tier: 2
+    type: rss
+    url: "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/drugs/rss.xml"
+    tags: ["us", "pharma", "health", "ai", "regulatory", "fda"]
+
+  - id: mhra
+    name: "MHRA"
+    tier: 2
+    type: atom
+    url: "https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency.atom"
+    tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+
+  - id: artificialintelligenceact
+    name: "artificialintelligenceact.eu"
+    tier: 2
+    type: html-scrape
+    url: "https://artificialintelligenceact.eu/implementation-documents/"
+    selectors:
+      item: "article, .et_pb_post"
+      title: "h2, .entry-title"
+      link: "a@href"
+      date: "time@datetime, .published"
+    baseUrl: "https://artificialintelligenceact.eu"
+    tags: ["global", "eu", "ai-act", "tracker", "implementation"]
+
+  # === Tier 3 — Testing, monitoring, conformity, and assurance ===
+
+  - id: cen-cenelec
+    name: "CEN-CENELEC AI Standards"
+    tier: 3
+    type: html-scrape
+    url: "https://www.cencenelec.eu/areas-of-work/cen-cenelec-topics/artificial-intelligence/"
+    selectors:
+      item: ".news-item, article"
+      title: "h3, h2"
+      link: "a@href"
+      date: ".date, time@datetime"
+    baseUrl: "https://www.cencenelec.eu"
+    tags: ["global", "standard", "conformity", "eu"]
+
+  - id: nist-ai
+    name: "NIST AI / Information Technology"
+    tier: 3
+    type: rss
+    url: "https://www.nist.gov/news-events/information%20technology/rss.xml"
+    tags: ["global", "standard", "risk-management", "us", "monitoring"]
+
+  - id: oecd-ai
+    name: "OECD.AI Policy Observatory"
+    tier: 3
+    type: html-scrape
+    url: "https://oecd.ai/en/wonk"
+    selectors:
+      item: "article"
+      title: "h3, h2"
+      link: "a@href"
+      date: "time@datetime"
+    baseUrl: "https://oecd.ai"
+    tags: ["global", "international", "policy", "horizon-scanning"]
+
+  - id: ich
+    name: "ICH"
+    tier: 3
+    type: html-scrape
+    url: "https://www.ich.org/page/news"
+    selectors:
+      item: ".news-item, article, .card"
+      title: "h3, h2, .card-title"
+      link: "a@href"
+      date: "time@datetime, .date"
+    baseUrl: "https://www.ich.org"
+    tags: ["international", "pharma", "standard", "harmonisation"]
+
+  - id: ispe
+    name: "ISPE"
+    tier: 3
+    type: html-scrape
+    url: "https://ispe.org/news"
+    selectors:
+      item: "article, .views-row, .news-item"
+      title: "h3, h2, .field-title"
+      link: "a@href"
+      date: "time@datetime, .date-display-single"
+    baseUrl: "https://ispe.org"
+    tags: ["pharma", "gxp", "manufacturing", "validation"]
+
+  # === Tier 4 — Adjacent sources for Swiss audience ===
+
+  - id: coe-ai
+    name: "Council of Europe AI"
+    tier: 4
+    type: html-scrape
+    url: "https://www.coe.int/en/web/artificial-intelligence/newsroom"
+    selectors:
+      item: ".asset-entry, article"
+      title: ".asset-title, h3"
+      link: "a@href"
+      date: ".asset-date, time@datetime"
+    baseUrl: "https://www.coe.int"
+    tags: ["global", "international", "convention", "treaty"]
+
+  - id: eurlex-ai
+    name: "EUR-Lex AI Act"
+    tier: 4
+    type: html-scrape
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689"
+    selectors:
+      item: ".notice, .eli-main-title"
+      title: "p, .title"
+      link: "a@href"
+      date: ".date"
+    baseUrl: "https://eur-lex.europa.eu"
+    tags: ["global", "eu", "legislation", "legal-text"]
+
+  - id: dia
+    name: "DIA Global"
+    tier: 4
+    type: html-scrape
+    url: "https://www.diaglobal.org/en/resources/news"
+    selectors:
+      item: "article, .news-item, .card"
+      title: "h3, h2, .card-title"
+      link: "a@href"
+      date: "time@datetime, .date"
+    baseUrl: "https://www.diaglobal.org"
+    tags: ["pharma", "regulatory-science", "industry"]
+
+  - id: endpoints-news
+    name: "Endpoints News"
+    tier: 4
+    type: rss
+    url: "https://endpoints.news/feed/"
+    tags: ["pharma", "biotech", "industry"]
+
+  - id: fierce-biotech
+    name: "Fierce Biotech"
+    tier: 4
+    type: rss
+    url: "https://www.fiercebiotech.com/rss/xml"
+    tags: ["biotech", "pharma", "industry"]
+
+  - id: fierce-pharma
+    name: "Fierce Pharma"
+    tier: 4
+    type: rss
+    url: "https://www.fiercepharma.com/rss/xml"
+    tags: ["pharma", "industry", "commercial"]
+
+  - id: pharmaphorum
+    name: "pharmaphorum"
+    tier: 4
+    type: rss
+    url: "https://pharmaphorum.com/rssfeed/news-and-features"
+    tags: ["pharma", "industry", "ai"]

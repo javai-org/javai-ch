@@ -1,0 +1,280 @@
+items:
+
+  # ── RELEVANT items ──────────────────────────────────────────
+
+  - title: "Commission publishes guidelines on prohibited AI practices under the AI Act"
+    summary: >-
+      The European Commission has published guidelines clarifying which AI practices
+      are prohibited under the AI Act, including social scoring and manipulative AI systems.
+    source: "European Commission"
+    relevant: true
+    justification: "Directly defines what AI software must not do — developers must check their systems against these prohibitions"
+
+  - title: "AI Act Article 15: accuracy, robustness and cybersecurity requirements for high-risk AI"
+    summary: >-
+      High-risk AI systems must achieve appropriate levels of accuracy, robustness and
+      cybersecurity. Providers must declare accuracy metrics in instructions for use.
+    source: "AI Act Service Desk"
+    relevant: true
+    justification: "Concrete engineering requirements: declared accuracy metrics, robustness testing, cybersecurity for AI systems"
+
+  - title: "EDPB adopts opinion on AI models and personal data processing"
+    summary: >-
+      The EDPB has adopted Opinion 28/2024 addressing when AI models may be considered
+      anonymous, legitimate interest for AI model training, and consequences of unlawful
+      data processing in model development.
+    source: "EDPB"
+    relevant: true
+    justification: "Directly governs how developers may train AI models with personal data"
+
+  - title: "CEN-CENELEC JTC 21 publishes draft harmonised standard for AI quality management"
+    summary: >-
+      The joint technical committee has released a draft standard for AI quality management
+      systems aligned with AI Act conformity assessment requirements.
+    source: "CEN-CENELEC"
+    relevant: true
+    justification: "Testable standard that AI software developers will need to conform to"
+
+  - title: "NIST releases updated AI Risk Management Framework guidance on measuring AI risks"
+    summary: >-
+      Updated guidance on the Measure function of the AI RMF, covering metrics for
+      monitoring deployed AI systems, detecting drift, and validating ongoing performance.
+    source: "NIST"
+    relevant: true
+    justification: "Engineering guidance on monitoring, drift detection, and performance validation for deployed AI"
+
+  - title: "FINMA publishes guidance on governance and risk management when using AI"
+    summary: >-
+      FINMA Guidance 08/2024 addresses AI governance in financial institutions, including
+      defined thresholds, validation methods, correctness of outputs, and monitoring of input data changes.
+    source: "FINMA"
+    relevant: true
+    justification: "Specific AI governance requirements: thresholds, validation, output quality monitoring"
+
+  - title: "ISO/IEC 42001 certification requirements for AI management systems published"
+    summary: >-
+      ISO has published the certification requirements for AI management systems,
+      covering risk management, documentation, and continuous improvement for AI providers.
+    source: "ISO"
+    relevant: true
+    justification: "Certification standard directly applicable to AI software vendors"
+
+  - title: "AI Act deployer obligations: Article 26 requires human oversight and monitoring"
+    summary: >-
+      Deployers of high-risk AI systems must ensure human oversight, monitor operations,
+      retain logs for at least six months, and report serious incidents.
+    source: "AI Act Service Desk"
+    relevant: true
+    justification: "Specific software requirements: logging, monitoring, oversight interfaces that developers must build"
+
+  - title: "Switzerland ratifies Council of Europe AI Convention"
+    summary: >-
+      Switzerland has ratified the Framework Convention on Artificial Intelligence,
+      committing to binding international obligations on AI risk management and transparency.
+    source: "Council of Europe"
+    relevant: true
+    justification: "New binding treaty obligations for AI systems deployed in Switzerland"
+
+  - title: "EDPS guidance on human oversight of automated decision-making systems"
+    summary: >-
+      The EDPS highlights the need for standardised frameworks and metrics to assess
+      whether human oversight of automated systems is actually effective.
+    source: "EDPS"
+    relevant: true
+    justification: "Guidance on measurable human oversight — affects how developers design oversight interfaces"
+
+  # ── AMBIGUOUS — relevant despite not mentioning AI explicitly ─
+
+  - title: "EDPB guidelines on automated individual decision-making and profiling under GDPR"
+    summary: >-
+      The EDPB has updated its guidelines on automated individual decision-making
+      and profiling under Article 22 GDPR, clarifying requirements for meaningful
+      information about the logic involved and the significance of such processing.
+    source: "EDPB"
+    relevant: true
+    justification: "Article 22 GDPR directly governs automated decision-making — the core operation of deployed ML systems"
+
+  - title: "European Commission consults on standardisation request for AI Act harmonised standards"
+    summary: >-
+      The Commission has launched a consultation on a draft standardisation request
+      to CEN-CENELEC for harmonised standards supporting the AI Act, covering risk
+      management, data governance, record-keeping, and post-market monitoring.
+    source: "European Commission"
+    relevant: true
+    justification: "Pre-standard process that will directly produce testable requirements for AI software"
+
+  - title: "Swiss OFCOM publishes position paper on sector-specific AI regulation approach"
+    summary: >-
+      OFCOM has published a position paper outlining Switzerland's sector-specific
+      approach to AI regulation, discussing how existing sectoral laws apply to AI
+      systems and where gaps may require new measures.
+    source: "Swiss Federal Administration"
+    relevant: true
+    justification: "Directly shapes the regulatory landscape for AI software deployed in Switzerland"
+
+  # ── AMBIGUOUS — not relevant despite mentioning AI ──────────
+
+  - title: "EU Parliament committee discusses AI's impact on labour markets"
+    summary: >-
+      The European Parliament's Employment Committee held a hearing on the impact
+      of artificial intelligence on European labour markets, with experts warning
+      of significant job displacement in administrative and service sectors.
+    source: "European Commission"
+    relevant: false
+    justification: "Policy discussion about AI's societal impact — no software obligations or technical requirements"
+
+  - title: "OECD publishes report on AI adoption trends across member countries"
+    summary: >-
+      The OECD has published its annual report on AI adoption, showing that 65% of
+      large enterprises now use at least one AI application, with significant variation
+      across sectors and countries.
+    source: "OECD"
+    relevant: false
+    justification: "Statistical survey of AI adoption — no regulatory, standards, or engineering content"
+
+  - title: "FINMA warns banks about risks of using AI in customer-facing applications"
+    summary: >-
+      In a speech at a banking conference, a senior FINMA official warned that banks
+      using AI in customer-facing applications must ensure adequate consumer protection
+      and fair treatment, without providing specific guidance or requirements.
+    source: "FINMA"
+    relevant: false
+    justification: "General warning speech without specific obligations — no actionable requirements for developers"
+
+  - title: "Council of Europe report on AI and democracy in member states"
+    summary: >-
+      The Council of Europe has published a report examining how AI technologies
+      affect democratic processes, including electoral manipulation, disinformation,
+      and the role of recommender systems in shaping public opinion.
+    source: "Council of Europe"
+    relevant: false
+    justification: "Political/societal analysis of AI — no software obligations or technical standards"
+
+  - title: "European Commission announces EUR 1 billion AI innovation fund"
+    summary: >-
+      The European Commission has announced a EUR 1 billion fund to support AI
+      innovation across Europe, including grants for startups, research institutions,
+      and SMEs developing AI applications in healthcare, climate, and manufacturing.
+    source: "European Commission"
+    relevant: false
+    justification: "Funding announcement — no regulatory or technical obligations for software developers"
+
+  # ── AMBIGUOUS — items that test boundary of "stochastic software" scope ─
+
+  - title: "NIST publishes guidance on validation of machine learning models in safety-critical systems"
+    summary: >-
+      NIST Special Publication on validation approaches for ML models deployed in
+      safety-critical contexts, covering statistical testing methods, coverage metrics
+      for input spaces, and ongoing performance monitoring requirements.
+    source: "NIST"
+    relevant: true
+    justification: "Directly about ML testing methodology — validation, coverage metrics, and monitoring for stochastic systems"
+
+  - title: "EBA report on machine learning model risk management in credit scoring"
+    summary: >-
+      The EBA has published a report on model risk management for machine learning
+      in credit scoring, covering validation requirements, performance monitoring,
+      explainability obligations, and ongoing governance of deployed models.
+    source: "EBA"
+    relevant: true
+    justification: "Specific ML model governance — validation, monitoring, explainability requirements applicable to AI software"
+
+  - title: "EDPB publishes guidance on data transfers to third countries post-Schrems II"
+    summary: >-
+      Updated EDPB guidance on international data transfers under Chapter V GDPR,
+      including assessment of third-country legal frameworks and supplementary
+      measures for Standard Contractual Clauses.
+    source: "EDPB"
+    relevant: false
+    justification: "General data transfer rules — applies to all data processing, not specific to AI systems"
+
+  - title: "Swiss Federal Council adopts revised Data Protection Act implementation ordinance"
+    summary: >-
+      The Federal Council has adopted the revised ordinance implementing the new
+      Federal Act on Data Protection, covering data breach notification, data
+      protection impact assessments, and cross-border data flows.
+    source: "Swiss Federal Administration"
+    relevant: false
+    justification: "General Swiss data protection implementation — not AI-specific despite DPIA relevance"
+
+  # ── NOT RELEVANT items ──────────────────────────────────────
+
+  - title: "FINMA imposes sanctions on bank for anti-money laundering failures"
+    summary: >-
+      FINMA has taken enforcement action against a Swiss bank for serious
+      deficiencies in its anti-money laundering controls.
+    source: "FINMA"
+    relevant: false
+    justification: "AML enforcement — nothing to do with AI or software development"
+
+  - title: "EDPB launches coordinated enforcement action on right to erasure"
+    summary: >-
+      The EDPB's Coordinated Enforcement Framework for 2026 will focus on
+      compliance with GDPR transparency and information obligations.
+    source: "EDPB"
+    relevant: false
+    justification: "General GDPR enforcement on erasure rights — not AI-specific"
+
+  - title: "FINMA annual report shows increase in supervised institutions"
+    summary: >-
+      FINMA's annual report for 2025 highlights an increase in the number of
+      supervised financial institutions and ongoing supervisory priorities.
+    source: "FINMA"
+    relevant: false
+    justification: "Institutional housekeeping — no relevance to AI software"
+
+  - title: "New EDPB chair elected at plenary meeting"
+    summary: >-
+      The European Data Protection Board has elected a new chair at its
+      latest plenary meeting in Brussels.
+    source: "EDPB"
+    relevant: false
+    justification: "Political appointment — no technical or regulatory substance for developers"
+
+  - title: "ESMA consults on sustainable finance disclosure requirements"
+    summary: >-
+      ESMA has launched a consultation on revised sustainability disclosure
+      requirements for investment funds and asset managers.
+    source: "ESMA"
+    relevant: false
+    justification: "Sustainable finance regulation — unrelated to AI software"
+
+  - title: "Swiss Federal Council approves new bilateral negotiations framework with EU"
+    summary: >-
+      The Federal Council has approved the mandate for new bilateral negotiations
+      with the European Union covering market access and institutional questions.
+    source: "Swiss Federal Administration"
+    relevant: false
+    justification: "Diplomatic/trade policy — no direct AI software implications"
+
+  - title: "EDPB and EDPS joint opinion on strengthening cybersecurity regulation"
+    summary: >-
+      The EDPB and EDPS have adopted a joint opinion on the European Commission's
+      Cybersecurity Act 2 and NIS2 amendments regarding data protection safeguards.
+    source: "EDPB"
+    relevant: false
+    justification: "General cybersecurity regulation — mentions no AI-specific obligations"
+
+  - title: "EIOPA reports on insurance sector climate risk stress testing"
+    summary: >-
+      EIOPA has published the results of its climate risk stress test for
+      the European insurance sector, covering physical and transition risks.
+    source: "EIOPA"
+    relevant: false
+    justification: "Climate/insurance stress testing — not about AI systems"
+
+  - title: "EBA publishes quarterly risk dashboard for European banking sector"
+    summary: >-
+      The EBA's Q4 2025 risk dashboard shows stable capital ratios and
+      improving asset quality across European banks.
+    source: "EBA"
+    relevant: false
+    justification: "Banking risk metrics — no AI or software content"
+
+  - title: "FINMA updates its circular on outsourcing requirements for banks"
+    summary: >-
+      FINMA has revised its circular on outsourcing, clarifying requirements
+      for banks delegating operational functions to third parties.
+    source: "FINMA"
+    relevant: false
+    justification: "General banking outsourcing rules — not specific to AI"

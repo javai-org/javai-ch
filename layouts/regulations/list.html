@@ -1,0 +1,50 @@
+{{ define "main" }}
+{{ partial "section-banner.html" (dict "title" .Title "subtitle" .Description "color" "slate") }}
+
+<section class="feed-portal">
+  <div class="container">
+    <p class="feed-portal-intro">{{ i18n "feed_portal_intro" }}</p>
+    <div class="feed-portal-grid">
+
+      {{ range sort site.Data.sectors "weight" }}
+        {{- $nameKey := printf "sector_%s" .id -}}
+        {{- $descKey := printf "sector_%s_desc" .id -}}
+        <a href="{{ site.BaseURL }}{{ .feed_path }}/" class="feed-card feed-card--{{ .css_modifier }}">
+          <div class="feed-card-overlay"></div>
+          <div class="feed-card-content">
+            <h2>{{ i18n $nameKey }}</h2>
+            <p>{{ i18n $descKey }}</p>
+            <span class="feed-card-btn">{{ i18n "subscribe_feed" }}</span>
+          </div>
+        </a>
+      {{ end }}
+
+      {{/* All-content feed — spans full width */}}
+      <a href="{{ site.BaseURL }}feed/" class="feed-card feed-card--all feed-card--full">
+        <div class="feed-card-overlay"></div>
+        <div class="feed-card-content">
+          <h2>{{ i18n "sector_all" }}</h2>
+          <p>{{ i18n "sector_all_desc" }}</p>
+          <span class="feed-card-btn">{{ i18n "subscribe_feed" }}</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+{{/* Keep existing regulation pages listed below */}}
+{{ if .Pages }}
+<section class="content-list">
+  <div class="container">
+    {{ range .Pages.ByWeight }}
+      <article class="regulation-listing">
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Description }}</p>
+        <a href="{{ .Permalink }}" class="regulation-listing-link">{{ i18n "read_more" }}</a>
+      </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}
