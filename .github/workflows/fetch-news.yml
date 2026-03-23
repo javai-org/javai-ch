@@ -40,6 +40,7 @@ jobs:
           repository: javai-org/javai-newsroom
           ref: main
           path: javai-newsroom
+          token: ${{ secrets.ORG_REPO_TOKEN }}
 
       # Hugo site
       - uses: peaceiris/actions-hugo@v3
