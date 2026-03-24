@@ -170,14 +170,14 @@ sources:
     tier: 1
     type: rss
     url: "https://www.edpb.europa.eu/feed/news_en"
-    tags: ["global", "eu", "data-protection", "privacy", "gdpr"]
+    tags: ["eu", "data-protection", "privacy", "gdpr"]
 
   - id: edps
     name: "EDPS"
     tier: 1
     type: rss
     url: "https://www.edps.europa.eu/feed/news_en"
-    tags: ["global", "eu", "data-protection", "privacy"]
+    tags: ["eu", "data-protection", "privacy"]
 
   - id: ec-dg-sante
     name: "European Commission — DG SANTE"
@@ -239,7 +239,7 @@ sources:
       link: "a@href"
       date: "time@datetime"
     baseUrl: "https://iapp.org"
-    tags: ["global", "governance", "privacy", "compliance"]
+    tags: ["governance", "privacy", "compliance"]
 
   - id: fda-ai
     name: "FDA CDER AI"

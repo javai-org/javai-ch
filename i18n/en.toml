@@ -73,6 +73,24 @@ other = "Everything in one feed — subscribe here to receive AI regulation news
 [subscribe_feed]
 other = "Subscribe to feed"
 
+[view_feed]
+other = "View feed"
+
+[subscribe_via]
+other = "Subscribe:"
+
+[feed_loading]
+other = "Loading feed…"
+
+[feed_no_items]
+other = "No items in this feed yet."
+
+[feed_error]
+other = "Could not load the feed. Please try again later."
+
+[feed_source]
+other = "via"
+
 [cta_heading]
 other = "Looking for the tools?"
 

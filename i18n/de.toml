@@ -73,6 +73,24 @@ other = "Alles in einem Feed — abonnieren Sie hier, um KI-Regulierungsnachrich
 [subscribe_feed]
 other = "Feed abonnieren"
 
+[view_feed]
+other = "Feed anzeigen"
+
+[subscribe_via]
+other = "Abonnieren:"
+
+[feed_loading]
+other = "Feed wird geladen…"
+
+[feed_no_items]
+other = "Noch keine Einträge in diesem Feed."
+
+[feed_error]
+other = "Der Feed konnte nicht geladen werden. Bitte versuchen Sie es später erneut."
+
+[feed_source]
+other = "via"
+
 [cta_heading]
 other = "Suchen Sie die Werkzeuge?"
 

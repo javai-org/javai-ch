@@ -73,6 +73,24 @@ other = "Tutto in un unico feed — iscrivetevi qui per ricevere notizie sulla r
 [subscribe_feed]
 other = "Iscriviti al feed"
 
+[view_feed]
+other = "Visualizza il feed"
+
+[subscribe_via]
+other = "Iscriviti:"
+
+[feed_loading]
+other = "Caricamento del feed…"
+
+[feed_no_items]
+other = "Nessun elemento in questo feed per ora."
+
+[feed_error]
+other = "Impossibile caricare il feed. Riprova più tardi."
+
+[feed_source]
+other = "via"
+
 [cta_heading]
 other = "Cercate gli strumenti?"
 

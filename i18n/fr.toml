@@ -73,6 +73,24 @@ other = "Tout dans un seul flux — abonnez-vous ici pour recevoir les actualit�
 [subscribe_feed]
 other = "S'abonner au flux"
 
+[view_feed]
+other = "Voir le flux"
+
+[subscribe_via]
+other = "S'abonner :"
+
+[feed_loading]
+other = "Chargement du flux…"
+
+[feed_no_items]
+other = "Aucun élément dans ce flux pour le moment."
+
+[feed_error]
+other = "Impossible de charger le flux. Veuillez réessayer plus tard."
+
+[feed_source]
+other = "via"
+
 [cta_heading]
 other = "Vous cherchez les outils ?"
 

@@ -2,28 +2,28 @@
   {
     "id": "banking",
     "feed_path": "banking",
-    "tags": ["financial", "global"],
+    "tags": ["financial"],
     "css_modifier": "banking",
     "weight": 1
   },
   {
     "id": "pharma",
     "feed_path": "pharma",
-    "tags": ["pharma", "biotech", "medicine", "global"],
+    "tags": ["pharma", "biotech", "medicine"],
     "css_modifier": "pharma",
     "weight": 2
   },
   {
     "id": "health",
     "feed_path": "health",
-    "tags": ["health", "global"],
+    "tags": ["health"],
     "css_modifier": "health",
     "weight": 2
   },
   {
     "id": "federal-government",
     "feed_path": "federal-government",
-    "tags": ["swiss", "policy", "federal", "global"],
+    "tags": ["swiss", "policy", "federal"],
     "css_modifier": "federal-government",
     "weight": 3
   }

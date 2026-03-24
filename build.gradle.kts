@@ -80,25 +80,25 @@ val sectors = listOf(
         "banking",
         "javai.ch — Banking & Finance",
         "AI regulation news for Swiss banking and financial services",
-        listOf("financial", "global")
+        listOf("financial")
     ),
     Sector(
         "pharma",
         "javai.ch — Pharmaceuticals",
         "AI regulation news for pharmaceutical and life sciences",
-        listOf("pharma", "biotech", "medicine", "global")
+        listOf("pharma", "biotech", "medicine")
     ),
     Sector(
         "health",
         "javai.ch — Health",
         "AI regulation news for the Swiss health sector",
-        listOf("health", "global")
+        listOf("health")
     ),
     Sector(
         "federal-government",
         "javai.ch — Federal Government",
         "AI regulation news from Swiss federal authorities",
-        listOf("swiss", "policy", "federal", "global")
+        listOf("swiss", "policy", "federal")
     ),
 )
 
@@ -155,7 +155,8 @@ tasks.register("validateTags") {
                 val tags = match.groupValues[1].split(",").map { it.trim().trim('"') }
                 val title = seedTitles.getOrElse(index) { "unknown" }
                 val shortTitle = if (title.length > 60) title.take(60) + "..." else title
-                if (tags.none { it in allSectorTags }) {
+                // Items tagged "global" appear in all feeds via the filter, so they don't need a sector-specific tag
+                if ("global" !in tags && tags.none { it in allSectorTags }) {
                     errors.add("Seed item '$shortTitle' has no tag matching any sector — it will not appear in any feed")
                 }
             }
