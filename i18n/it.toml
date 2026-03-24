@@ -91,6 +91,18 @@ other = "Impossibile caricare il feed. Riprova più tardi."
 [feed_source]
 other = "via"
 
+[featured_heading]
+other = "Documenti chiave"
+
+[rss_hint]
+other = "Non conosci RSS? Consegna gli aggiornamenti direttamente al tuo lettore — senza social media, senza algoritmi."
+
+[rss_hint_link_url]
+other = "https://aboutfeeds.com"
+
+[rss_hint_link_text]
+other = "Come iniziare"
+
 [cta_heading]
 other = "Cercate gli strumenti?"
 

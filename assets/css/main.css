@@ -647,6 +647,72 @@ code {
   gap: var(--space-md);
 }
 
+/* ---- Featured content ---- */
+.featured-items {
+  margin-bottom: var(--space-lg);
+}
+
+.featured-heading {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-md);
+}
+
+.featured-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-accent);
+  border-radius: 0 0 6px 6px;
+  overflow: hidden;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  color: var(--color-text);
+}
+
+.featured-card-image {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--color-surface);
+}
+
+.featured-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-card-body {
+  padding: var(--space-md);
+}
+
+.featured-card-body h3 {
+  font-size: 1.05rem;
+  margin-bottom: var(--space-xs);
+  color: var(--color-accent);
+}
+
+.featured-card-body p {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
 /* ---- Feed landing page ---- */
 .feed-landing {
   padding: var(--space-xxl) 0;
@@ -702,6 +768,19 @@ code {
   background: var(--color-dark);
   border-color: var(--color-dark);
   color: var(--color-white);
+}
+
+.feed-rss-hint {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--color-text-light);
+  margin-top: calc(-1 * var(--space-md));
+  margin-bottom: var(--space-lg);
+  line-height: 1.6;
+}
+
+.feed-rss-hint a {
+  font-weight: 600;
 }
 
 .feed-loading,
@@ -799,6 +878,7 @@ code {
   .section-banner h1 { font-size: 1.75rem; }
   .section-banner .container { padding-top: var(--space-lg); padding-bottom: var(--space-lg); }
 
+  .featured-grid { grid-template-columns: 1fr; }
   .feed-subscribe-bar { flex-wrap: wrap; }
 
   .site-footer .container { flex-direction: column; text-align: center; }

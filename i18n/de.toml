@@ -91,6 +91,18 @@ other = "Der Feed konnte nicht geladen werden. Bitte versuchen Sie es später er
 [feed_source]
 other = "via"
 
+[featured_heading]
+other = "Wichtige Dokumente"
+
+[rss_hint]
+other = "Neu bei RSS? RSS liefert Aktualisierungen direkt in Ihren Reader — ohne soziale Medien, ohne Algorithmen."
+
+[rss_hint_link_url]
+other = "https://aboutfeeds.com"
+
+[rss_hint_link_text]
+other = "So funktioniert es"
+
 [cta_heading]
 other = "Suchen Sie die Werkzeuge?"
 

@@ -91,6 +91,18 @@ other = "Could not load the feed. Please try again later."
 [feed_source]
 other = "via"
 
+[featured_heading]
+other = "Key Documents"
+
+[rss_hint]
+other = "New to RSS? It delivers updates directly to your reader — no social media, no algorithms."
+
+[rss_hint_link_url]
+other = "https://aboutfeeds.com"
+
+[rss_hint_link_text]
+other = "Learn how to get started"
+
 [cta_heading]
 other = "Looking for the tools?"
 

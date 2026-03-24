@@ -91,6 +91,18 @@ other = "Impossible de charger le flux. Veuillez réessayer plus tard."
 [feed_source]
 other = "via"
 
+[featured_heading]
+other = "Documents essentiels"
+
+[rss_hint]
+other = "Nouveau sur RSS ? Ce format livre les mises à jour directement dans votre lecteur — sans réseaux sociaux, sans algorithmes."
+
+[rss_hint_link_url]
+other = "https://aboutfeeds.com"
+
+[rss_hint_link_text]
+other = "Comment démarrer"
+
 [cta_heading]
 other = "Vous cherchez les outils ?"
 

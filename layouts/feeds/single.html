@@ -9,6 +9,28 @@
 <section class="feed-landing">
   <div class="container">
 
+    {{/* Featured content — renders only when present */}}
+    {{ with .Params.featured }}
+    <div class="featured-items">
+      <h2 class="featured-heading">{{ i18n "featured_heading" }}</h2>
+      <div class="featured-grid">
+        {{ range . }}
+        <a href="{{ .url }}" class="featured-card" target="_blank" rel="noopener">
+          {{ with .image }}
+          <div class="featured-card-image">
+            <img src="{{ . }}" alt="" loading="lazy">
+          </div>
+          {{ end }}
+          <div class="featured-card-body">
+            <h3>{{ .title }}</h3>
+            {{ with .summary }}<p>{{ . }}</p>{{ end }}
+          </div>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
     <div class="feed-subscribe-bar">
       <span class="feed-subscribe-label">{{ i18n "subscribe_via" }}</span>
       <a href="{{ site.BaseURL }}{{ .Params.feed_path }}/feed.xml" class="feed-subscribe-link feed-subscribe-link--rss" target="_blank" rel="noopener">
@@ -20,6 +42,13 @@
         JSON Feed
       </a>
     </div>
+
+    <p class="feed-rss-hint">
+      {{ i18n "rss_hint" }}
+      {{ with i18n "rss_hint_link_url" }}
+        <a href="{{ . }}">{{ i18n "rss_hint_link_text" }}</a>
+      {{ end }}
+    </p>
 
     <div id="feed-items" class="feed-items">
       <p class="feed-loading">{{ i18n "feed_loading" }}</p>
