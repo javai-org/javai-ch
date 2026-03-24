@@ -91,6 +91,9 @@ other = "Impossible de charger le flux. Veuillez réessayer plus tard."
 [feed_source]
 other = "via"
 
+[key_resources_heading]
+other = "Ressources clés"
+
 [featured_heading]
 other = "Documents essentiels"
 

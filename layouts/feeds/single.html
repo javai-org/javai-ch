@@ -31,6 +31,26 @@
     </div>
     {{ end }}
 
+    {{/* Key resources — collapsible grouped list, renders only when present */}}
+    {{ with .Params.resources }}
+    <div class="key-resources">
+      <h2 class="key-resources-heading">{{ i18n "key_resources_heading" }}</h2>
+      {{ range . }}
+      <details class="key-resources-group"{{ if .open }} open{{ end }}>
+        <summary>{{ .heading }}</summary>
+        <ul class="key-resources-list">
+          {{ range .items }}
+          <li>
+            <a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>
+            {{ with .summary }}<span class="key-resources-desc">{{ . }}</span>{{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </details>
+      {{ end }}
+    </div>
+    {{ end }}
+
     <div class="feed-subscribe-bar">
       <span class="feed-subscribe-label">{{ i18n "subscribe_via" }}</span>
       <a href="{{ site.BaseURL }}{{ .Params.feed_path }}/feed.xml" class="feed-subscribe-link feed-subscribe-link--rss" target="_blank" rel="noopener">

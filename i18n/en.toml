@@ -91,6 +91,9 @@ other = "Could not load the feed. Please try again later."
 [feed_source]
 other = "via"
 
+[key_resources_heading]
+other = "Key Resources"
+
 [featured_heading]
 other = "Key Documents"
 
