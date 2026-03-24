@@ -99,25 +99,27 @@ jobs:
       - name: Merge feeds into public
         run: cp -r javai-ch/build/site/* javai-ch/public/
 
-      # Save state to data branch
+      # Save state to data branch (without switching branches)
       - name: Save state
         working-directory: javai-ch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Create orphan data branch if it doesn't exist
-          if ! git show-ref --verify --quiet refs/heads/data; then
-            git checkout --orphan data
-            git rm -rf . 2>/dev/null || true
+          STATE_FILE="newsroom/data/state.json"
+          BLOB=$(git hash-object -w "$STATE_FILE")
+          # Build a tree containing newsroom/data/state.json
+          INNER_TREE=$(echo -e "100644 blob $BLOB\tstate.json" | git mktree)
+          MID_TREE=$(echo -e "040000 tree $INNER_TREE\tdata" | git mktree)
+          ROOT_TREE=$(echo -e "040000 tree $MID_TREE\tnewsroom" | git mktree)
+          # Create commit (with parent if data branch exists)
+          git fetch origin data:refs/heads/data 2>/dev/null || true
+          if git show-ref --verify --quiet refs/heads/data; then
+            COMMIT=$(git commit-tree "$ROOT_TREE" -p refs/heads/data -m "Update feed state [$(date -u +%Y-%m-%dT%H:%M:%SZ)]")
           else
-            git checkout data
+            COMMIT=$(git commit-tree "$ROOT_TREE" -m "Update feed state [$(date -u +%Y-%m-%dT%H:%M:%SZ)]")
           fi
-          mkdir -p newsroom/data
-          cp "${{ github.workspace }}/javai-ch/newsroom/data/state.json" newsroom/data/state.json
-          git add newsroom/data/state.json
-          git diff --cached --quiet || git commit -m "Update feed state [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+          git update-ref refs/heads/data "$COMMIT"
           git push origin data
-          git checkout -
 
       - uses: actions/upload-pages-artifact@v3
         with:
