@@ -39,7 +39,7 @@ ignoreFiles = ['^drafts/']
   weight = 1
 
   [languages.en.params]
-    description = "Navigating AI regulation in Switzerland — FINMA, ISO 42001, and the case for probabilistic testing."
+    description = "AI regulation in Switzerland — what's changing, what it means, and what to do about it."
     tagline = "Regulation. Compliance. Confidence."
 
   [[languages.en.menus.main]]
@@ -62,7 +62,7 @@ ignoreFiles = ['^drafts/']
   weight = 2
 
   [languages.de.params]
-    description = "KI-Regulierung in der Schweiz verstehen — FINMA, ISO 42001 und der Nutzen probabilistischer Tests."
+    description = "KI-Regulierung in der Schweiz — was sich ändert, was es bedeutet und was zu tun ist."
     tagline = "Regulierung. Compliance. Vertrauen."
 
   [[languages.de.menus.main]]
@@ -85,7 +85,7 @@ ignoreFiles = ['^drafts/']
   weight = 3
 
   [languages.fr.params]
-    description = "Comprendre la réglementation de l'IA en Suisse — FINMA, ISO 42001 et l'intérêt des tests probabilistes."
+    description = "Réglementation de l'IA en Suisse — ce qui change, ce que cela signifie et comment agir."
     tagline = "Réglementation. Conformité. Confiance."
 
   [[languages.fr.menus.main]]
@@ -108,7 +108,7 @@ ignoreFiles = ['^drafts/']
   weight = 4
 
   [languages.it.params]
-    description = "Comprendere la regolamentazione dell'IA in Svizzera — FINMA, ISO 42001 e il valore dei test probabilistici."
+    description = "Regolamentazione dell'IA in Svizzera — cosa cambia, cosa significa e come agire."
     tagline = "Regolamentazione. Conformità. Fiducia."
 
   [[languages.it.menus.main]]
