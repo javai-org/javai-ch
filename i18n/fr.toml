@@ -26,7 +26,7 @@ other = "Tests probabilistes"
 other = "Pourquoi les tests traditionnels réussite/échec ne peuvent pas satisfaire les exigences réglementaires en matière d'IA. Introduction aux approches statistiques produisant des preuves vérifiables et reproductibles."
 
 [recent_posts]
-other = "Articles récents"
+other = "Perspectives récentes"
 
 [read_more]
 other = "Lire la suite"
@@ -105,6 +105,12 @@ other = "https://aboutfeeds.com"
 
 [rss_hint_link_text]
 other = "Comment démarrer"
+
+[bulletin_label]
+other = "Actualité"
+
+[bulletin_coe_treaty]
+other = "Un an depuis la signature par la Suisse du traité mondial du Conseil de l'Europe sur l'IA — qu'est-ce qui a changé depuis ?"
 
 [cta_heading]
 other = "Vous cherchez les outils ?"

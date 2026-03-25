@@ -1,4 +1,4 @@
 ---
-title: "Beiträge"
-description: "Artikel über KI-Regulierung, Compliance und probabilistisches Testen in der Schweiz."
+title: "Einblicke"
+description: "Analysen und Kommentare zu KI-Regulierung, Compliance und Risiken im Schweizer Finanzsektor und darüber hinaus."
 ---

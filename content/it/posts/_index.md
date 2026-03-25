@@ -1,4 +1,4 @@
 ---
-title: "Articoli"
-description: "Articoli sulla regolamentazione dell'IA, la conformità e i test probabilistici in Svizzera."
+title: "Approfondimenti"
+description: "Analisi e commenti sulla regolamentazione dell'IA, la conformità e i rischi nel settore finanziario svizzero e oltre."
 ---

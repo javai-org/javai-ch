@@ -1,4 +1,4 @@
 ---
-title: "Posts"
-description: "Articles on AI regulation, compliance, and probabilistic testing in Switzerland."
+title: "Insights"
+description: "Analysis and commentary on AI regulation, compliance, and risk in the Swiss financial sector and beyond."
 ---

@@ -26,7 +26,7 @@ other = "Test probabilistici"
 other = "Perché i test tradizionali superato/non superato non possono soddisfare le esigenze normative per l'IA. Un'introduzione agli approcci statistici che producono evidenze verificabili e riproducibili."
 
 [recent_posts]
-other = "Articoli recenti"
+other = "Approfondimenti recenti"
 
 [read_more]
 other = "Continua a leggere"
@@ -105,6 +105,12 @@ other = "https://aboutfeeds.com"
 
 [rss_hint_link_text]
 other = "Come iniziare"
+
+[bulletin_label]
+other = "Attualità"
+
+[bulletin_coe_treaty]
+other = "Un anno dalla firma svizzera del trattato globale del Consiglio d'Europa sull'IA — cosa è successo da allora?"
 
 [cta_heading]
 other = "Cercate gli strumenti?"

@@ -47,7 +47,7 @@ ignoreFiles = ['^drafts/']
     pageRef = '/regulations'
     weight = 10
   [[languages.en.menus.main]]
-    name = 'Posts'
+    name = 'Insights'
     pageRef = '/posts'
     weight = 20
 
@@ -66,7 +66,7 @@ ignoreFiles = ['^drafts/']
     pageRef = '/regulations'
     weight = 10
   [[languages.de.menus.main]]
-    name = 'Beiträge'
+    name = 'Einblicke'
     pageRef = '/posts'
     weight = 20
 
@@ -85,7 +85,7 @@ ignoreFiles = ['^drafts/']
     pageRef = '/regulations'
     weight = 10
   [[languages.fr.menus.main]]
-    name = 'Articles'
+    name = 'Perspectives'
     pageRef = '/posts'
     weight = 20
 
@@ -104,6 +104,6 @@ ignoreFiles = ['^drafts/']
     pageRef = '/regulations'
     weight = 10
   [[languages.it.menus.main]]
-    name = 'Articoli'
+    name = 'Approfondimenti'
     pageRef = '/posts'
     weight = 20

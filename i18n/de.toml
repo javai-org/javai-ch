@@ -26,7 +26,7 @@ other = "Probabilistisches Testen"
 other = "Warum traditionelles Pass/Fail-Testen die regulatorischen Anforderungen an KI nicht erfüllen kann. Eine Einführung in statistische Ansätze, die prüfbare, reproduzierbare Nachweise liefern."
 
 [recent_posts]
-other = "Aktuelle Beiträge"
+other = "Aktuelle Einblicke"
 
 [read_more]
 other = "Weiterlesen"
@@ -105,6 +105,12 @@ other = "https://aboutfeeds.com"
 
 [rss_hint_link_text]
 other = "So funktioniert es"
+
+[bulletin_label]
+other = "Aktuell"
+
+[bulletin_coe_treaty]
+other = "Ein Jahr seit der Unterzeichnung des globalen KI-Abkommens des Europarats durch die Schweiz — was ist seither geschehen?"
 
 [cta_heading]
 other = "Suchen Sie die Werkzeuge?"

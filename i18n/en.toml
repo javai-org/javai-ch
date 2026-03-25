@@ -26,7 +26,7 @@ other = "Probabilistic Testing"
 other = "Why traditional pass/fail testing cannot satisfy regulatory demands for AI. An introduction to statistical approaches that produce auditable, reproducible evidence."
 
 [recent_posts]
-other = "Recent Posts"
+other = "Recent Insights"
 
 [read_more]
 other = "Read more"
@@ -105,6 +105,12 @@ other = "https://aboutfeeds.com"
 
 [rss_hint_link_text]
 other = "Learn how to get started"
+
+[bulletin_label]
+other = "News"
+
+[bulletin_coe_treaty]
+other = "One year since Switzerland signed the Council of Europe's global AI treaty — what has happened since?"
 
 [cta_heading]
 other = "Looking for the tools?"
