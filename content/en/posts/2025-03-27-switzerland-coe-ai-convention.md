@@ -1,9 +1,9 @@
 ---
 title: "One Year Since Switzerland Signed the Global AI Treaty — What Has Happened Since?"
-date: 2025-03-27
+date: 2026-03-25
 description: "A year after signing the Council of Europe's AI convention, Switzerland faces a tightening regulatory timeline, a deepfake fraud explosion, and a legislative draft due by year-end."
 summary: "On 27 March 2025, Switzerland signed the first legally binding international AI treaty. Twelve months on, no country has ratified it, the EU is moving faster, deepfake fraud in Switzerland has exploded, and a domestic legislative bill is due by the end of 2026. Here is what has happened — and what has not."
-featured_image: "images/eu-hq.jpeg"
+featured_image: "images/coe.jpg"
 featured_image_alt: "Council of Europe — headquarters in Strasbourg"
 ---
 

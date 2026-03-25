@@ -1,9 +1,9 @@
 ---
 title: "Un anno dalla firma del trattato globale sull'IA da parte della Svizzera — cosa è successo da allora?"
-date: 2025-03-27
+date: 2026-03-25
 description: "A un anno dalla firma della convenzione del Consiglio d'Europa sull'IA, la Svizzera affronta un calendario normativo serrato, un'esplosione della frode deepfake e un disegno di legge atteso entro fine anno."
 summary: "Il 27 marzo 2025 la Svizzera ha firmato il primo trattato internazionale giuridicamente vincolante sull'IA. Dodici mesi dopo, nessun Paese l'ha ratificato, l'UE procede più velocemente, la frode deepfake in Svizzera è esplosa e un disegno di legge è atteso entro fine 2026. Ecco cosa è successo — e cosa no."
-featured_image: "images/eu-hq.jpeg"
+featured_image: "images/coe.jpg"
 featured_image_alt: "Consiglio d'Europa — sede a Strasburgo"
 ---
 

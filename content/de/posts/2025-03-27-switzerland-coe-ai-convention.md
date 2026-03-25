@@ -1,9 +1,9 @@
 ---
 title: "Ein Jahr seit der Unterzeichnung des globalen KI-Abkommens durch die Schweiz — was ist seither geschehen?"
-date: 2025-03-27
+date: 2026-03-25
 description: "Ein Jahr nach der Unterzeichnung der KI-Konvention des Europarats steht die Schweiz vor einem engen regulatorischen Zeitplan, einer Deepfake-Betrugsexplosion und einem Gesetzesentwurf bis Jahresende."
 summary: "Am 27. März 2025 unterzeichnete die Schweiz den ersten rechtsverbindlichen internationalen KI-Vertrag. Zwölf Monate später hat kein Land ratifiziert, die EU ist schneller unterwegs, Deepfake-Betrug in der Schweiz ist explodiert und ein Gesetzesentwurf ist bis Ende 2026 fällig. Was geschehen ist — und was nicht."
-featured_image: "images/eu-hq.jpeg"
+featured_image: "images/coe.jpg"
 featured_image_alt: "Europarat — Hauptsitz in Strassburg"
 ---
 
