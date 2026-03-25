@@ -112,6 +112,39 @@ other = "Actualité"
 [bulletin_coe_treaty]
 other = "Un an depuis la signature par la Suisse du traité mondial du Conseil de l'Europe sur l'IA — qu'est-ce qui a changé depuis ?"
 
+[contact_nav]
+other = "Contact"
+
+[contact_name]
+other = "Nom"
+
+[contact_email]
+other = "E-mail"
+
+[contact_category]
+other = "Catégorie"
+
+[contact_category_select]
+other = "Veuillez sélectionner…"
+
+[contact_cat_topic]
+other = "Suggérer un sujet"
+
+[contact_cat_sector]
+other = "Suggérer un secteur"
+
+[contact_cat_improvement]
+other = "Amélioration du site"
+
+[contact_cat_other]
+other = "Autre"
+
+[contact_message]
+other = "Message"
+
+[contact_send]
+other = "Envoyer le message"
+
 [cta_heading]
 other = "Vous cherchez les outils ?"
 

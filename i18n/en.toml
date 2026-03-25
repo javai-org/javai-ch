@@ -112,6 +112,39 @@ other = "News"
 [bulletin_coe_treaty]
 other = "One year since Switzerland signed the Council of Europe's global AI treaty — what has happened since?"
 
+[contact_nav]
+other = "Contact"
+
+[contact_name]
+other = "Name"
+
+[contact_email]
+other = "Email"
+
+[contact_category]
+other = "Category"
+
+[contact_category_select]
+other = "Please select…"
+
+[contact_cat_topic]
+other = "Suggest a topic"
+
+[contact_cat_sector]
+other = "Suggest a sector"
+
+[contact_cat_improvement]
+other = "Site improvement"
+
+[contact_cat_other]
+other = "Other"
+
+[contact_message]
+other = "Message"
+
+[contact_send]
+other = "Send message"
+
 [cta_heading]
 other = "Looking for the tools?"
 

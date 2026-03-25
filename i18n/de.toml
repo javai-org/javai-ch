@@ -112,6 +112,39 @@ other = "Aktuell"
 [bulletin_coe_treaty]
 other = "Ein Jahr seit der Unterzeichnung des globalen KI-Abkommens des Europarats durch die Schweiz — was ist seither geschehen?"
 
+[contact_nav]
+other = "Kontakt"
+
+[contact_name]
+other = "Name"
+
+[contact_email]
+other = "E-Mail"
+
+[contact_category]
+other = "Kategorie"
+
+[contact_category_select]
+other = "Bitte wählen…"
+
+[contact_cat_topic]
+other = "Thema vorschlagen"
+
+[contact_cat_sector]
+other = "Sektor vorschlagen"
+
+[contact_cat_improvement]
+other = "Verbesserung der Website"
+
+[contact_cat_other]
+other = "Sonstiges"
+
+[contact_message]
+other = "Nachricht"
+
+[contact_send]
+other = "Nachricht senden"
+
 [cta_heading]
 other = "Suchen Sie die Werkzeuge?"
 

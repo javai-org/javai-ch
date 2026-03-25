@@ -1,0 +1,46 @@
+{{ define "main" }}
+{{ partial "section-banner.html" (dict "title" .Title "subtitle" .Description "color" "slate") }}
+<section class="contact-page">
+  <div class="container">
+    <div class="contact-body">
+      {{ .Content }}
+      <form
+        action="https://formspree.io/f/xaqlwlqn"
+        method="POST"
+        class="contact-form"
+      >
+        <!-- Honeypot field — hidden from real users, catches bots -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="form-group">
+          <label for="name">{{ i18n "contact_name" }}</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">{{ i18n "contact_email" }}</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="category">{{ i18n "contact_category" }}</label>
+          <select id="category" name="_subject" required>
+            <option value="" disabled selected>{{ i18n "contact_category_select" }}</option>
+            <option value="Topic suggestion">{{ i18n "contact_cat_topic" }}</option>
+            <option value="Sector suggestion">{{ i18n "contact_cat_sector" }}</option>
+            <option value="Site improvement">{{ i18n "contact_cat_improvement" }}</option>
+            <option value="Other">{{ i18n "contact_cat_other" }}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">{{ i18n "contact_message" }}</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">{{ i18n "contact_send" }}</button>
+      </form>
+    </div>
+  </div>
+</section>
+{{ end }}
