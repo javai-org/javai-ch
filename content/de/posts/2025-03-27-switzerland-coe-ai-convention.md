@@ -3,6 +3,8 @@ title: "Ein Jahr seit der Unterzeichnung des globalen KI-Abkommens durch die Sch
 date: 2025-03-27
 description: "Ein Jahr nach der Unterzeichnung der KI-Konvention des Europarats steht die Schweiz vor einem engen regulatorischen Zeitplan, einer Deepfake-Betrugsexplosion und einem Gesetzesentwurf bis Jahresende."
 summary: "Am 27. März 2025 unterzeichnete die Schweiz den ersten rechtsverbindlichen internationalen KI-Vertrag. Zwölf Monate später hat kein Land ratifiziert, die EU ist schneller unterwegs, Deepfake-Betrug in der Schweiz ist explodiert und ein Gesetzesentwurf ist bis Ende 2026 fällig. Was geschehen ist — und was nicht."
+featured_image: "images/eu-hq.jpeg"
+featured_image_alt: "Europarat — Hauptsitz in Strassburg"
 ---
 
 Am 27. März 2025 unterzeichnete Bundesrat Albert Rösti in Strassburg die [Rahmenkonvention des Europarats über Künstliche Intelligenz, Menschenrechte, Demokratie und Rechtsstaatlichkeit](https://www.coe.int/de/web/artificial-intelligence/-/switzerland-signs-the-council-of-europe-s-global-treaty-on-ai). Die Schweiz — die [massgeblich an der Ausarbeitung](https://www.news.admin.ch/de/nsb?id=104646) des Vertrags beteiligt war — wurde der 15. Unterzeichnerstaat des ersten rechtsverbindlichen internationalen KI-Abkommens.

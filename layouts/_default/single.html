@@ -5,6 +5,21 @@
 {{ partial "section-banner.html" (dict "title" .Title "subtitle" .Description "color" $color) }}
 <article class="content-single">
   <div class="container">
+    {{ with .Params.featured_image }}
+    {{- $img := resources.Get . -}}
+    {{ if $img }}
+    {{- $imgLg := $img.Resize "1140x webp q80" -}}
+    {{- $imgSm := $img.Resize "720x webp q75" -}}
+    <figure class="featured-image">
+      <picture>
+        <source media="(max-width: 768px)" srcset="{{ $imgSm.RelPermalink }}">
+        <source srcset="{{ $imgLg.RelPermalink }}">
+        <img src="{{ $imgLg.RelPermalink }}" alt="{{ $.Params.featured_image_alt | default $.Title }}" loading="eager">
+      </picture>
+      {{ with $.Params.featured_image_caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+    </figure>
+    {{ end }}
+    {{ end }}
     <header class="content-header">
       {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 January 2006" }}</time>{{ end }}
       {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}

@@ -3,6 +3,8 @@ title: "Un an depuis la signature du traité mondial sur l'IA par la Suisse — 
 date: 2025-03-27
 description: "Un an après la signature de la convention du Conseil de l'Europe sur l'IA, la Suisse fait face à un calendrier réglementaire serré, une explosion de la fraude par deepfake et un projet de loi attendu d'ici la fin de l'année."
 summary: "Le 27 mars 2025, la Suisse a signé le premier traité international juridiquement contraignant sur l'IA. Douze mois plus tard, aucun pays ne l'a ratifié, l'UE avance plus vite, la fraude par deepfake a explosé en Suisse et un projet de loi est attendu d'ici fin 2026. Voici ce qui s'est passé — et ce qui ne s'est pas passé."
+featured_image: "images/eu-hq.jpeg"
+featured_image_alt: "Conseil de l'Europe — siège à Strasbourg"
 ---
 
 Le 27 mars 2025, le conseiller fédéral Albert Rösti a signé à Strasbourg la [Convention-cadre du Conseil de l'Europe sur l'intelligence artificielle, les droits de l'homme, la démocratie et l'État de droit](https://www.coe.int/fr/web/artificial-intelligence/-/switzerland-signs-the-council-of-europe-s-global-treaty-on-ai). La Suisse — qui avait [joué un rôle déterminant dans la rédaction](https://www.news.admin.ch/fr/nsb?id=104646) du traité — est devenue le 15e signataire du premier accord international juridiquement contraignant sur l'IA.

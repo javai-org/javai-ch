@@ -632,6 +632,24 @@ code {
 /* ---- Content pages ---- */
 .content-single { padding: var(--space-xxl) 0; }
 
+.featured-image {
+  margin: 0 0 var(--space-lg);
+}
+
+.featured-image picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+.featured-image figcaption {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-top: var(--space-xs);
+}
+
 .content-header {
   margin-bottom: var(--space-lg);
   padding-bottom: var(--space-md);

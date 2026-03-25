@@ -3,6 +3,8 @@ title: "Un anno dalla firma del trattato globale sull'IA da parte della Svizzera
 date: 2025-03-27
 description: "A un anno dalla firma della convenzione del Consiglio d'Europa sull'IA, la Svizzera affronta un calendario normativo serrato, un'esplosione della frode deepfake e un disegno di legge atteso entro fine anno."
 summary: "Il 27 marzo 2025 la Svizzera ha firmato il primo trattato internazionale giuridicamente vincolante sull'IA. Dodici mesi dopo, nessun Paese l'ha ratificato, l'UE procede più velocemente, la frode deepfake in Svizzera è esplosa e un disegno di legge è atteso entro fine 2026. Ecco cosa è successo — e cosa no."
+featured_image: "images/eu-hq.jpeg"
+featured_image_alt: "Consiglio d'Europa — sede a Strasburgo"
 ---
 
 Il 27 marzo 2025, il consigliere federale Albert Rösti ha firmato a Strasburgo la [Convenzione quadro del Consiglio d'Europa sull'intelligenza artificiale, i diritti umani, la democrazia e lo Stato di diritto](https://www.coe.int/it/web/artificial-intelligence/-/switzerland-signs-the-council-of-europe-s-global-treaty-on-ai). La Svizzera — che aveva [svolto un ruolo determinante nella stesura](https://www.news.admin.ch/it/nsb?id=104646) del trattato — è diventata il 15° firmatario del primo accordo internazionale giuridicamente vincolante sull'IA.
