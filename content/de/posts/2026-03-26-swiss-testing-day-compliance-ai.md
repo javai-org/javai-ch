@@ -36,6 +36,36 @@ Seine zentrale Frage — wie die Dimension «Wahrscheinlichkeit» bei nicht-dete
 
 Kein Hype, kein Herumgerede — nur praktische, fundierte Orientierung für alle, die für Testen und Zuverlässigkeit in KI-gestützten Umgebungen verantwortlich sind.
 
+## Qualität definieren in einem gefährlichen Jahrzehnt
+
+Das Nachmittagspanel brachte Bertrand Meyer, Elmar Jürgens und Marcel Gygli zusammen, moderiert von Anne-Lea Marte, um eine täuschend einfache Frage zu diskutieren: Wie definieren wir Qualität in einer Welt, in der Systeme lernen?
+
+Die Antworten gingen sofort auseinander. Gygli definierte Qualität danach, ob Nutzer bekommen, was sie brauchen. Jürgens widersprach: für einfache Software vielleicht — aber geschäftskritische Systeme verlangen mehr. Meyer vertrat die breiteste Sicht und bestand darauf, dass Qualität mehrdimensional ist, in den Augen aller Stakeholder liegt und über die Zeit aufrechterhalten werden muss.
+
+Beim Thema Geschwindigkeit schlugen die Panelteilnehmer vorsichtige Töne an. Jürgens warnte vor einem Zielkonflikt, wenn Code-Generierung die Testgenerierung überholt. Gygli stellte eine schärfere Frage: Wenn 90 % des generierten Codes korrekt sind, aber die verbleibenden 10 % extrem schwer zu testen oder zu debuggen, könnte der scheinbare Geschwindigkeitsgewinn eine Illusion sein.
+
+Die Diskussion wurde beim Thema Verantwortung pointierter. Wenn KI-Systeme Schaden verursachen, wer ist rechenschaftspflichtig? Jürgens war eindeutig: diejenigen, die die Software erstellt haben. Meyer warnte, dass sowohl KI-Hype als auch KI-Verleugnung gefährlich sind und dass Entscheidungsträger sich zu leicht von Begeisterung mitreissen lassen. Alle drei waren sich einig, dass Bildung und Regulierung unerlässlich sind, um menschliche Sicherheitsmechanismen aufrechtzuerhalten.
+
+Auf die Frage, was in der Branche Unsinn ist, hielten die Panelteilnehmer nicht zurück. Meyer kritisierte es, Agenten die Kontrolle zu geben und Menschen als Backup einzusetzen. Gygli nahm Vibe Coding ins Visier. Jürgens bezeichnete die meisten Produktivitätsmessungsansätze als bedeutungslos.
+
+Was sie sich für die Zukunft wünschen, darauf konvergierten die Panelteilnehmer bei der Regulierung. Gygli forderte nutzbare Regulierung, die widerspiegelt, was die Gesellschaft tatsächlich braucht. Meyer — mit dem Scherz «Amerika innoviert, China kopiert, Europa reguliert» — äusserte Hoffnung auf mehr mathematische Beweise im Testen. Jürgens hoffte, dass Meyer recht hat, merkte aber an, dass formale Methoden in der Praxis begrenzt bleiben.
+
+## Wenn generierter Code nicht getestet werden kann
+
+Jonas Hermansson teilte einen offenen Erfahrungsbericht über die vollständige Softwareentwicklung mit KI-Agenten. Sein Team setzt mittlerweile mehrere Agententeams mit unterschiedlichen Rollen ein — Frontend, Backend, Datenbank — und hat doppelt so viele Test-Agenten wie Entwicklungs-Agenten im Einsatz.
+
+Die Erkenntnisse waren hart erarbeitet. Frühe Experimente mit Vibe-codiertem Code produzierten Lösungen, die praktisch nicht testbar waren. Ein generiertes Login-Feature enthielt einen Fehler, der auf eine mehrdeutige Anforderung zurückzuführen war. Ein QA-Wrapper, der die Absicht von den Anforderungen bis zum Endprodukt testete, übersah dennoch Nebenläufigkeitsfehler. Am Ende führte das Team manuelles Testen als letzte Plausibilitätsprüfung wieder ein — teuer, aber notwendig.
+
+Die vielleicht überraschendste Erkenntnis: Hermanssons Team wartet Code überhaupt nicht mehr. Wenn etwas geändert werden muss, wird der Code von Grund auf neu generiert. Ein radikaler Arbeitsablauf, der ebenso viele Fragen aufwirft wie er beantwortet.
+
+## Die Abschluss-Keynote: ein Aufruf zu statistischem Denken
+
+Robert Sabourin — Akademiker und erfahrener Testing-Praktiker — hielt eine Abschluss-Keynote, die den unterschwelligen Alarmton der Konferenz als Chance umformulierte. Er griff den Gefahrenton auf, den die Organisatoren bewusst gewählt hatten, und konterte mit einer positiven Botschaft über die geschäftlichen Möglichkeiten, die sich aus dem Testen KI-gestützter Systeme ergeben.
+
+{{< figure src="images/test-oracle.jpeg" alt="Folie über probabilistische Testorakel aus Robert Sabourins Abschluss-Keynote" caption="Robert Sabourin on the need for experiments and probabilistic testing" >}}
+
+Am bedeutsamsten für die Themen dieser Konferenz war Sabourins explizites Plädoyer für probabilistisches Testen. Er forderte Tester auf, ein statistisches Denken zu entwickeln, und argumentierte, dass stochastische Dienste probabilistisch getestet werden müssen — nicht mit den binären Bestanden/Nicht-bestanden-Urteilen aus der deterministischen Software. Es war ein passender Abschluss eines Tages, der diese Idee wiederholt umkreist hatte, ohne sie immer direkt beim Namen zu nennen.
+
 ## Der rote Faden
 
 Über das gesamte Tagesprogramm hinweg war ein gemeinsamer Faden unverkennbar: Die Testbranche ringt mit Systemen, die sich nicht zweimal gleich verhalten. Traditionelles Bestanden/Nicht-bestanden-Testen wurde für deterministische Software gebaut. Die heute eingesetzten Systeme — von LLM-gesteuerten Agenten bis zur Erkennung synthetischer Medien — erfordern neue Ansätze: statistische Messung, probabilistische Garantien und Governance-Rahmenwerke, die mit Unsicherheit umgehen können.

@@ -36,6 +36,36 @@ Sa question centrale — comment quantifier la dimension « probabilité » pour
 
 Pas de battage médiatique, pas de discours vague — juste des recommandations pratiques et solides pour quiconque est responsable des tests et de la fiabilité dans des environnements pilotés par l'IA.
 
+## Définir la qualité dans une décennie dangereuse
+
+Le panel de l'après-midi a réuni Bertrand Meyer, Elmar Jürgens et Marcel Gygli, modéré par Anne-Lea Marte, autour d'une question d'apparence simple : dans un monde où les systèmes apprennent, comment définir la qualité ?
+
+Les réponses ont immédiatement divergé. Gygli a défini la qualité en fonction de ce que l'utilisateur obtient. Jürgens a nuancé : pour du logiciel grand public, peut-être — mais les systèmes critiques exigent davantage. Meyer a adopté la vision la plus large, insistant sur le fait que la qualité est multidimensionnelle, qu'elle se mesure aux yeux de toutes les parties prenantes et qu'elle doit être maintenue dans le temps.
+
+Sur la question de la vitesse, les panélistes se sont montrés prudents. Jürgens a mis en garde contre un compromis si la génération de code dépasse la génération de tests. Gygli a posé une question plus incisive : si 90 % du code généré est correct mais que les 10 % restants sont extrêmement difficiles à tester ou à déboguer, le gain de vitesse apparent pourrait être illusoire.
+
+La discussion s'est tendue sur la responsabilité. Lorsqu'un système d'IA cause un préjudice, qui est responsable ? Jürgens a été catégorique : ceux qui ont créé le logiciel. Meyer a averti que le battage médiatique autour de l'IA comme son rejet sont tous deux dangereux, et que les décideurs se laissent trop facilement emporter par l'enthousiasme. Tous trois ont convenu que l'éducation et la réglementation sont essentielles pour maintenir les garde-fous humains.
+
+Interrogés sur ce qui relève de l'absurde dans l'industrie, les panélistes n'ont pas mâché leurs mots. Meyer a pointé le fait de confier le contrôle aux agents avec les humains en secours. Gygli a ciblé le vibe coding. Jürgens a qualifié la plupart des approches de mesure de la productivité de dénuées de sens.
+
+Sur leurs souhaits pour l'avenir, les panélistes ont convergé vers la réglementation. Gygli a réclamé une réglementation utilisable reflétant les besoins réels de la société. Meyer — plaisantant que « l'Amérique innove, la Chine copie, l'Europe réglemente » — a exprimé l'espoir de voir davantage de preuves mathématiques dans les tests. Jürgens espérait que Meyer ait raison, tout en notant que les méthodes formelles restent limitées en pratique.
+
+## Quand le code généré ne peut pas être testé
+
+Jonas Hermansson a partagé un retour d'expérience sans détour sur le développement logiciel entièrement réalisé par des agents IA. Son équipe utilise désormais plusieurs équipes d'agents aux rôles distincts — frontend, backend, base de données — et déploie deux fois plus d'agents de test que d'agents de développement.
+
+Les leçons ont été durement acquises. Les premières expériences de code généré par vibe coding ont produit des solutions pratiquement impossibles à tester. Une fonctionnalité de connexion générée contenait un bug lié à une exigence ambiguë. Un wrapper QA testant l'intention des exigences jusqu'au produit final a tout de même manqué des bugs de concurrence. Finalement, l'équipe a réintroduit les tests manuels comme vérification finale — coûteux, mais nécessaire.
+
+La révélation la plus frappante : l'équipe de Hermansson ne maintient plus du tout le code. Lorsqu'un changement est nécessaire, le code est régénéré de zéro. Un workflow radical qui soulève autant de questions qu'il en résout.
+
+## La keynote de clôture : un appel à la pensée statistique
+
+Robert Sabourin — universitaire et praticien chevronné du test — a livré une keynote de clôture qui a transformé le courant d'inquiétude de la conférence en opportunité. Il a repris le ton d'alerte que les organisateurs avaient délibérément choisi, en le contrebalançant par un message positif sur les opportunités commerciales liées au test des systèmes pilotés par l'IA.
+
+{{< figure src="images/test-oracle.jpeg" alt="Diapositive sur les oracles de test probabilistes de la keynote de clôture de Robert Sabourin" caption="Robert Sabourin on the need for experiments and probabilistic testing" >}}
+
+Plus significatif encore pour les thèmes de cette conférence, Sabourin a plaidé explicitement pour les tests probabilistes. Il a exhorté les testeurs à développer une pensée statistique, arguant que les services stochastiques doivent être testés de manière probabiliste — et non avec les verdicts binaires réussi/échoué hérités du logiciel déterministe. Une conclusion parfaitement adaptée à une journée qui avait tourné autour de cette idée sans toujours la nommer directement.
+
 ## Le fil conducteur
 
 Tout au long du programme, un fil conducteur était manifeste : la profession du test se confronte à des systèmes qui ne se comportent jamais deux fois de la même manière. Les tests traditionnels réussi/échoué ont été conçus pour du logiciel déterministe. Les systèmes déployés aujourd'hui — des agents pilotés par LLM à la détection de médias synthétiques — exigent de nouvelles approches : mesure statistique, garanties probabilistes et cadres de gouvernance capables de gérer l'incertitude.

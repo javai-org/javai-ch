@@ -36,6 +36,36 @@ His central question — how to quantify the "likelihood" dimension when dealing
 
 No hype, no hand-waving — just practical, grounded guidance for anyone responsible for testing and reliability in AI-driven environments.
 
+## Defining quality in a dangerous decade
+
+The afternoon panel brought together Bertrand Meyer, Elmar Jürgens, and Marcel Gygli, moderated by Anne-Lea Marte, to tackle a deceptively simple question: in a world where systems learn, how do we define quality?
+
+The answers diverged immediately. Gygli framed quality in terms of whether users get what they need. Jürgens pushed back: for casual software, perhaps — but business-critical systems demand more. Meyer took the broadest view, insisting that quality is multi-dimensional, lives in the eyes of all stakeholders, and must be sustained over time.
+
+On speed, the panellists struck a cautious note. Jürgens warned of a trade-off if code generation outpaces test generation. Gygli posed a sharper question: if 90% of generated code is correct but the remaining 10% is extremely hard to test or debug, the apparent speed gain may be illusory.
+
+The discussion grew more pointed on responsibility. When AI systems cause harm, who is accountable? Jürgens was unequivocal: those who created the software. Meyer warned that both AI hype and AI denial are dangerous, and that decision-makers are too easily swept along by enthusiasm. All three agreed that education and regulation are essential to keep human safeguards in place.
+
+Asked what is nonsense in the industry, the panel did not hold back. Meyer singled out putting agents in charge with humans as backup. Gygli took aim at vibe coding. Jürgens called most productivity measurement approaches meaningless.
+
+On what they would like to see happen, the panellists converged on regulation. Gygli called for usable regulation that reflects what society actually needs. Meyer — joking that "America innovates, China copies, Europe regulates" — expressed hope for more mathematical proofs in testing. Jürgens hoped Meyer was right, but noted that formal methods remain limited in practice.
+
+## When generated code cannot be tested
+
+Jonas Hermansson shared a candid account of building software entirely with AI agents. His team now uses multiple agent teams with distinct roles — frontend, backend, database — and deploys twice as many testing agents as development agents.
+
+The lessons were hard-won. Early experiments with vibe-coded solutions produced code that was effectively untestable. A generated login feature contained a bug traceable to an ambiguous requirement. A QA wrapper that tested intent from requirements to end product still missed concurrency bugs. In the end, the team reintroduced manual testing as a final sanity check — expensive, but necessary.
+
+Perhaps the most striking revelation: Hermansson's team no longer maintains code at all. When something needs to change, they regenerate from scratch. It is a radical workflow that raises as many questions as it answers.
+
+## The closing keynote: a call for statistical thinking
+
+Robert Sabourin — academic and veteran testing practitioner — delivered a closing keynote that reframed the conference's undercurrent of anxiety as opportunity. He addressed the danger-alert tone that the organisers had deliberately set, countering it with a positive message about the business opportunities that arise from testing AI-driven systems.
+
+{{< figure src="images/test-oracle.jpeg" alt="Slide on probabilistic test oracles from Robert Sabourin's closing keynote" caption="Robert Sabourin on the need for experiments and probabilistic testing" >}}
+
+Most significantly for the themes of this conference, Sabourin made an explicit case for probabilistic testing. He urged testers to develop a statistical mindset, arguing that stochastic services must be tested probabilistically — not with the binary pass/fail verdicts inherited from deterministic software. It was a fitting conclusion to a day that had circled this idea repeatedly without always naming it directly.
+
 ## The thread that connects it all
 
 Across the day's programme, a common thread was unmistakable: the testing profession is grappling with systems that do not behave the same way twice. Traditional pass/fail testing was built for deterministic software. The systems now being deployed — from LLM-powered agents to synthetic media detection — demand new approaches: statistical measurement, probabilistic guarantees, and governance frameworks that can accommodate uncertainty.
