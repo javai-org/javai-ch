@@ -1,5 +1,5 @@
 {
-  "lastRun" : "2026-03-28T06:29:27.491003684Z",
+  "lastRun" : "2026-03-29T06:33:29.550079891Z",
   "seen" : {
     "finma-news" : {
       "https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/4dokumentation/finma-aufsichtsmitteilungen/20241218-finma-aufsichtsmitteilung-08-2024.pdf" : {
@@ -63,6 +63,10 @@
       "https://www.edps.europa.eu/system/files/2025-09/25-09-15_techdispatch-human-oversight_en.pdf" : {
         "hash" : "b319d3c86148",
         "firstSeen" : "2026-03-24T06:32:13.210263444Z"
+      },
+      "https://www.edps.europa.eu/press-publications/press-news/news/2026/towards-trustworthy-ai-eu-public-administration-edps-compass-its-new-role-under-ai-act" : {
+        "hash" : "a0eeea7a9e74",
+        "firstSeen" : "2026-03-29T06:33:29.548431050Z"
       }
     },
     "cen-cenelec" : {
@@ -105,6 +109,15 @@
     "sourceName" : "artificialintelligenceact.eu",
     "tags" : [ "global", "eu", "ai-act", "tracker", "implementation" ],
     "relevanceReason" : "This is a hub for AI Act implementation documents that will contain concrete regulatory obligations, technical requirements, conformity assessment procedures, and guidance that AI software developers and deployers must follow to ensure their systems comply with the AI Act. Developers need to track these documents as they are published to understand what code changes, testing, documentation, monitoring, and certification their AI systems must meet."
+  }, {
+    "title" : "Towards trustworthy AI in the EU public administration: The EDPS Compass for its new role under the AI Act",
+    "url" : "https://www.edps.europa.eu/press-publications/press-news/news/2026/towards-trustworthy-ai-eu-public-administration-edps-compass-its-new-role-under-ai-act",
+    "date" : "2026-03-17T08:06:06Z",
+    "summary" : "Towards trustworthy AI in the EU public administration: The EDPS Compass for its new role under the AI Act francesco Tue, 03/17/2026 - 09:06 Tue, 03/17/2026 - 12:00 Under the AI Act (Regulation (EU) 2024/1689), the European Data Protection Supervisor is now a market surveillance authority for AI ...",
+    "sourceId" : "edps",
+    "sourceName" : "EDPS",
+    "tags" : [ "eu", "data-protection", "privacy" ],
+    "relevanceReason" : "The EDPS's new supervisory role under the AI Act creates concrete enforcement authority over AI systems in EU public administration; developers deploying AI systems to public sector clients must understand EDPS compliance expectations, conformity assessment requirements, and documentation obligations that will be defined in their surveillance activities and guidance."
   }, {
     "title" : "EDPS Guidance for Risk Management of Artificial Intelligence Systems",
     "url" : "https://www.edps.europa.eu/system/files/2025-11/2025-11-11_ai_risks_management_guidance_en.pdf",
