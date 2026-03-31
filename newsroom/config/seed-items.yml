@@ -33,7 +33,7 @@ items:
     relevanceReason: "The binding legal framework defining all provider and deployer obligations for AI software in the EU"
 
   - title: "Commission Guidelines on prohibited AI practices (C/2025/861)"
-    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202500861"
+    url: "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act"
     date: "2025-02-04T00:00:00Z"
     summary: >-
       Commission guidelines clarifying which AI practices are prohibited under
@@ -45,7 +45,7 @@ items:
     relevanceReason: "Defines what AI software must not do — developers must check systems against these prohibitions"
 
   - title: "Commission Guidelines on the definition of an AI system (C/2025/3076)"
-    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202503076"
+    url: "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application"
     date: "2025-02-06T00:00:00Z"
     summary: >-
       Commission guidelines for determining whether a software system constitutes
