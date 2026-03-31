@@ -1,5 +1,5 @@
 {
-  "lastRun" : "2026-03-31T06:38:58.932299276Z",
+  "lastRun" : "2026-03-31T19:08:29.108760497Z",
   "seen" : {
     "finma-news" : {
       "https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/4dokumentation/finma-aufsichtsmitteilungen/20241218-finma-aufsichtsmitteilung-08-2024.pdf" : {
@@ -39,6 +39,14 @@
       "https://www.eba.europa.eu/sites/default/files/2025-11/d8b999ce-a1d9-4964-9606-971bbc2aaf89/AI%20Act%20implications%20for%20the%20EU%20banking%20sector.pdf" : {
         "hash" : "1e304ddbe519",
         "firstSeen" : "2026-03-24T06:32:13.210385762Z"
+      },
+      "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act" : {
+        "hash" : "e1df34541521",
+        "firstSeen" : "2026-03-31T19:08:29.107441098Z"
+      },
+      "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application" : {
+        "hash" : "6495490e0813",
+        "firstSeen" : "2026-03-31T19:08:29.107457553Z"
       }
     },
     "edpb" : {
@@ -98,6 +106,12 @@
         "hash" : "55a72c4cca75",
         "firstSeen" : "2026-03-27T06:35:31.499847756Z"
       }
+    },
+    "efsa" : {
+      "https://www.efsa.europa.eu/en/news/new-memorandum-understanding-mou-strengthens-cooperation-between-efsa-and-fao" : {
+        "hash" : "6c7cda4a24f2",
+        "firstSeen" : "2026-03-31T19:08:29.107342299Z"
+      }
     }
   },
   "items" : [ {
@@ -118,6 +132,15 @@
     "sourceName" : "EDPS",
     "tags" : [ "eu", "data-protection", "privacy" ],
     "relevanceReason" : "The EDPS's new supervisory role under the AI Act creates concrete enforcement authority over AI systems in EU public administration; developers deploying AI systems to public sector clients must understand EDPS compliance expectations, conformity assessment requirements, and documentation obligations that will be defined in their surveillance activities and guidance."
+  }, {
+    "title" : "New Memorandum of Understanding (MoU) strengthens cooperation between EFSA and FAO",
+    "url" : "https://www.efsa.europa.eu/en/news/new-memorandum-understanding-mou-strengthens-cooperation-between-efsa-and-fao",
+    "date" : "2026-02-19T16:44:32Z",
+    "summary" : "The agreement reflects a common objective: ensuring that innovation drives competitiveness while maintaining the highest standards of safety. Amid rapid technological change and increasing complexity, the three-year partnership will promote science-based solutions for safe, sustainable, and resil...",
+    "sourceId" : "efsa",
+    "sourceName" : "EFSA — European Food Safety Authority",
+    "tags" : [ "eu", "health", "food-safety" ],
+    "relevanceReason" : null
   }, {
     "title" : "EDPS Guidance for Risk Management of Artificial Intelligence Systems",
     "url" : "https://www.edps.europa.eu/system/files/2025-11/2025-11-11_ai_risks_management_guidance_en.pdf",
@@ -182,8 +205,26 @@
     "tags" : [ "global", "eu", "ai-act", "definition", "scope", "guidelines" ],
     "relevanceReason" : "Determines whether a software system falls under AI Act obligations — the first question every developer must answer"
   }, {
+    "title" : "Commission Guidelines on the definition of an AI system (C/2025/3076)",
+    "url" : "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application",
+    "date" : "2025-02-06T00:00:00Z",
+    "summary" : "Commission guidelines for determining whether a software system constitutes an AI system under the AI Act. Essential for scope analysis — answers the threshold question of whether the Act applies.",
+    "sourceId" : "ec-ai-policy",
+    "sourceName" : "European Commission",
+    "tags" : [ "global", "eu", "ai-act", "definition", "scope", "guidelines" ],
+    "relevanceReason" : "Determines whether a software system falls under AI Act obligations — the first question every developer must answer"
+  }, {
     "title" : "Commission Guidelines on prohibited AI practices (C/2025/861)",
     "url" : "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202500861",
+    "date" : "2025-02-04T00:00:00Z",
+    "summary" : "Commission guidelines clarifying which AI practices are prohibited under the AI Act, including social scoring, manipulative AI, emotion recognition in workplaces and education, and untargeted scraping for facial recognition databases.",
+    "sourceId" : "ec-ai-policy",
+    "sourceName" : "European Commission",
+    "tags" : [ "global", "eu", "ai-act", "prohibited-practices", "guidelines" ],
+    "relevanceReason" : "Defines what AI software must not do — developers must check systems against these prohibitions"
+  }, {
+    "title" : "Commission Guidelines on prohibited AI practices (C/2025/861)",
+    "url" : "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act",
     "date" : "2025-02-04T00:00:00Z",
     "summary" : "Commission guidelines clarifying which AI practices are prohibited under the AI Act, including social scoring, manipulative AI, emotion recognition in workplaces and education, and untargeted scraping for facial recognition databases.",
     "sourceId" : "ec-ai-policy",
