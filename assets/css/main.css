@@ -664,6 +664,24 @@ code {
   margin-top: var(--space-xs);
 }
 
+.content-figure {
+  margin: var(--space-lg) 0;
+}
+
+.content-figure picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+.content-figure figcaption {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-top: var(--space-xs);
+}
+
 .content-header {
   margin-bottom: var(--space-lg);
   padding-bottom: var(--space-md);
