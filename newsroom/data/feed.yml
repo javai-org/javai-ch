@@ -1,12 +1,12 @@
 # -- New candidates --------------------------------------------------------
 - title: "Towards trustworthy AI in the EU public administration: The EDPS Compass for its new role under the AI Act"
-  url: "https://www.edps.europa.eu/press-publications/press-news/news/2026/towards-trustworthy-ai-eu-public-administration-edps-compass-its-new-role-under-ai-act"
+  url: "https://www.edps.europa.eu/system/files/2026-03/26-03-17_edps-compass-under-ai-act-2026-2027_en.pdf"
   date: "2026-03-17"
   source: "EDPS"
   summary: "Towards trustworthy AI in the EU public administration: The EDPS Compass for its new role under the AI Act francesco Tue, 03/17/2026 - 09:06 Tue, 03/17/2026 - 12:00 Under the AI Act (Regulation (EU) 2024/1689), the European Data Protection Supervisor is now a market surveillance authority for AI ..."
   tags: ["eu", "data-protection", "privacy"]
   relevance: "The EDPS's new market surveillance authority role under the AI Act creates enforcement obligations for AI system providers and deployers in EU public administration; developers need to understand what documentation, testing, and conformity requirements the EDPS will audit and enforce."
-  accepted: n
+  accepted: y
   featured: n
 
 
@@ -82,13 +82,13 @@
   featured: n
 
 - title: "Commission Guidelines on the definition of an AI system (C/2025/3076)"
-  url: "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application"
+  url: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:C_202500861"
   date: "2025-02-06"
   source: "European Commission"
   summary: "Commission guidelines for determining whether a software system constitutes an AI system under the AI Act. Essential for scope analysis — answers the threshold question of whether the Act applies."
   tags: ["global", "eu", "ai-act", "definition", "scope", "guidelines"]
   relevance: "Determines whether a software system falls under AI Act obligations — the first question every developer must answer"
-  accepted: y
+  accepted: n
   featured: n
 
 - title: "Commission Guidelines on prohibited AI practices (C/2025/861)"
@@ -98,7 +98,7 @@
   summary: "Commission guidelines clarifying which AI practices are prohibited under the AI Act, including social scoring, manipulative AI, emotion recognition in workplaces and education, and untargeted scraping for facial recognition databases."
   tags: ["global", "eu", "ai-act", "prohibited-practices", "guidelines"]
   relevance: "Defines what AI software must not do — developers must check systems against these prohibitions"
-  accepted: y
+  accepted: n
   featured: n
 
 - title: "AI Literacy obligations under Article 4 of the AI Act"
