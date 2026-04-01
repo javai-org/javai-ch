@@ -45,7 +45,7 @@ public class Main {
         var newsroom = new Newsroom(config);
 
         switch (command) {
-            case "curate" -> newsroom.curate(TierFilter.parseTiers(params.tiers));
+            case "curate" -> newsroom.curate(TierFilter.parseTiers(params.tiers), params.dryRun);
             case "generate" -> {
                 var tags = parseTags(params.tags);
                 if (tags.isEmpty()) {
@@ -90,6 +90,8 @@ public class Main {
                 params.description = arg.substring("--description=".length());
             } else if (arg.startsWith("--site-url=")) {
                 params.siteUrl = arg.substring("--site-url=".length());
+            } else if (arg.equals("--dry-run")) {
+                params.dryRun = true;
             }
         }
         return params;
@@ -112,6 +114,7 @@ public class Main {
                   --title=<text>         Feed title (overrides default)
                   --description=<text>   Feed description (overrides default)
                   --site-url=<url>       Site URL (overrides default)
+                  --dry-run              Skip LLM relevance filter (for testing)
                 """);
     }
 
@@ -124,5 +127,6 @@ public class Main {
         String title = null;
         String description = null;
         String siteUrl = null;
+        boolean dryRun = false;
     }
 }

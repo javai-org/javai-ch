@@ -14,6 +14,11 @@ on:
         description: 'Comma-separated tier numbers (empty = all)'
         required: false
         default: ''
+      dry_run:
+        description: 'Skip LLM filter (for testing without burning tokens)'
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write
@@ -69,6 +74,9 @@ jobs:
           if [ -n "$TIERS" ]; then
             ARGS="$ARGS -Ptiers=$TIERS"
           fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS -PdryRun"
+          fi
           ./gradlew $ARGS
 
       - name: Check for changes
@@ -95,7 +103,7 @@ jobs:
           git checkout -B "$BRANCH"
           git add newsroom/data/feed.yml
           git commit -m "Add new feed candidates [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
-          git push --force-with-lease origin "$BRANCH"
+          git push --force origin "$BRANCH"
 
           # Create PR if one doesn't already exist
           if gh pr view "$BRANCH" --json state -q '.state' 2>/dev/null | grep -q OPEN; then

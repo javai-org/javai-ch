@@ -155,6 +155,9 @@ tasks.register<JavaExec>("curateNews") {
     if (project.hasProperty("tiers")) {
         args("--tiers=${project.property("tiers")}")
     }
+    if (project.hasProperty("dryRun")) {
+        args("--dry-run")
+    }
     environment("ANTHROPIC_API_KEY", System.getenv("ANTHROPIC_API_KEY") ?: "")
 }
 
