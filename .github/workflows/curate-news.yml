@@ -101,19 +101,14 @@ jobs:
           if gh pr view "$BRANCH" --json state -q '.state' 2>/dev/null | grep -q OPEN; then
             echo "PR already open — updated with force push."
           else
+            BODY="New feed candidates from the automated pipeline."
+            BODY="$BODY"$'\n\n'"## Curator instructions"
+            BODY="$BODY"$'\n\n'"1. Review items under \`# -- New candidates --\` in \`newsroom/data/feed.yml\`"
+            BODY="$BODY"$'\n'"2. Change \`accepted: n\` to \`accepted: y\` for items to publish"
+            BODY="$BODY"$'\n'"3. Optionally adjust \`tags\` or set \`featured: y\`"
+            BODY="$BODY"$'\n'"4. Merge this PR to deploy"
+            BODY="$BODY"$'\n\n'"Items left as \`accepted: n\` will remain in the file to prevent re-proposal."
             gh pr create --base main --head "$BRANCH" \
               --title "Feed candidates for review" \
-              --body "$(cat <<'EOF'
-New feed candidates from the automated pipeline.
-
-## Curator instructions
-
-1. Review items under `# -- New candidates --` in `newsroom/data/feed.yml`
-2. Change `accepted: n` to `accepted: y` for items to publish
-3. Optionally adjust `tags` or set `featured: y`
-4. Merge this PR to deploy
-
-Items left as `accepted: n` will remain in the file to prevent re-proposal.
-EOF
-)"
+              --body "$BODY"
           fi
