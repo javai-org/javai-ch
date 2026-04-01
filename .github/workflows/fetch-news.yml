@@ -1,4 +1,4 @@
-name: Fetch News
+name: Curate News
 
 on:
   schedule:
@@ -17,19 +17,15 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
+  pull-requests: write
 
 concurrency:
-  group: fetch-news
+  group: curate-news
   cancel-in-progress: false
 
 jobs:
-  fetch-and-deploy:
+  curate:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -41,22 +37,6 @@ jobs:
           ref: main
           path: javai-newsroom
           token: ${{ secrets.ORG_REPO_TOKEN }}
-
-      # Hugo site
-      - uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: 'latest'
-          extended: true
-      - run: hugo --minify
-        working-directory: javai-ch
-
-      # Restore feed state from the data branch
-      - name: Restore state
-        working-directory: javai-ch
-        run: |
-          git fetch origin data:data 2>/dev/null || true
-          mkdir -p newsroom/data
-          git show data:newsroom/data/state.json > newsroom/data/state.json 2>/dev/null || echo '{}' > newsroom/data/state.json
 
       - uses: actions/setup-java@v4
         with:
@@ -79,51 +59,61 @@ jobs:
             echo "tiers=1,2" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Fetch news
+      - name: Fetch and filter news
         working-directory: javai-ch
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           TIERS="${{ steps.tiers.outputs.tiers }}"
-          ARGS="fetchNews"
+          ARGS="curateNews"
           if [ -n "$TIERS" ]; then
             ARGS="$ARGS -Ptiers=$TIERS"
           fi
           ./gradlew $ARGS
 
-      - name: Generate all feeds
-        working-directory: javai-ch
-        run: ./gradlew generateAllFeeds
-
-      # Merge feeds into Hugo output
-      - name: Merge feeds into public
-        run: cp -r javai-ch/build/site/* javai-ch/public/
-
-      # Save state to data branch (without switching branches)
-      - name: Save state
+      - name: Check for changes
+        id: changes
         working-directory: javai-ch
         run: |
+          if git diff --quiet newsroom/data/feed.yml; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No new candidates found."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "New candidates found in feed.yml."
+          fi
+
+      - name: Create or update PR
+        if: steps.changes.outputs.changed == 'true'
+        working-directory: javai-ch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="newsroom/curate"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          STATE_FILE="newsroom/data/state.json"
-          BLOB=$(git hash-object -w "$STATE_FILE")
-          # Build a tree containing newsroom/data/state.json
-          INNER_TREE=$(echo -e "100644 blob $BLOB\tstate.json" | git mktree)
-          MID_TREE=$(echo -e "040000 tree $INNER_TREE\tdata" | git mktree)
-          ROOT_TREE=$(echo -e "040000 tree $MID_TREE\tnewsroom" | git mktree)
-          # Create commit (with parent if data branch exists)
-          git fetch origin data:refs/heads/data 2>/dev/null || true
-          if git show-ref --verify --quiet refs/heads/data; then
-            COMMIT=$(git commit-tree "$ROOT_TREE" -p refs/heads/data -m "Update feed state [$(date -u +%Y-%m-%dT%H:%M:%SZ)]")
+          git checkout -B "$BRANCH"
+          git add newsroom/data/feed.yml
+          git commit -m "Add new feed candidates [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
+          git push --force-with-lease origin "$BRANCH"
+
+          # Create PR if one doesn't already exist
+          if gh pr view "$BRANCH" --json state -q '.state' 2>/dev/null | grep -q OPEN; then
+            echo "PR already open — updated with force push."
           else
-            COMMIT=$(git commit-tree "$ROOT_TREE" -m "Update feed state [$(date -u +%Y-%m-%dT%H:%M:%SZ)]")
+            gh pr create --base main --head "$BRANCH" \
+              --title "Feed candidates for review" \
+              --body "$(cat <<'EOF'
+New feed candidates from the automated pipeline.
+
+## Curator instructions
+
+1. Review items under `# -- New candidates --` in `newsroom/data/feed.yml`
+2. Change `accepted: n` to `accepted: y` for items to publish
+3. Optionally adjust `tags` or set `featured: y`
+4. Merge this PR to deploy
+
+Items left as `accepted: n` will remain in the file to prevent re-proposal.
+EOF
+)"
           fi
-          git update-ref refs/heads/data "$COMMIT"
-          git push origin data
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: javai-ch/public
-
-      - id: deployment
-        uses: actions/deploy-pages@v4

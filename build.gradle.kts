@@ -67,7 +67,7 @@ tasks.register<Test>("probabilisticTest") {
 // Feed generation — consolidated + per-sector
 // ═══════════════════════════════════════════════════════════════════════════
 
-val stateFile = rootProject.file("newsroom/data/state.json").absolutePath
+val feedFile = rootProject.file("newsroom/data/feed.yml").absolutePath
 val configDir = rootProject.file("newsroom/config").absolutePath
 val siteDir = layout.buildDirectory.dir("site").get().asFile.absolutePath
 val siteUrl = "https://javai.ch/"
@@ -104,15 +104,14 @@ val sectors = listOf(
 
 // ── Tag alignment check ─────────────────────────────────────────────────
 // Ensures every tag in data/sectors.json exists in at least one source
-// in newsroom/config/sources.yml.  Fails fast before any feed generation runs.
+// in newsroom/config/sources.yml.
 
 tasks.register("validateTags") {
-    description = "Check that all sector and seed-item tags exist in sources.yml"
+    description = "Check that all sector tags exist in sources.yml"
     group = "newsroom"
     doLast {
         val sectorsFile = rootProject.file("data/sectors.json")
         val sourcesFile = rootProject.file("newsroom/config/sources.yml")
-        val seedFile = rootProject.file("newsroom/config/seed-items.yml")
 
         // Collect all tags from sources.yml (simple regex — no YAML parser needed)
         val tagPattern = Regex("""tags:\s*\[([^\]]+)]""")
@@ -138,61 +137,37 @@ tasks.register("validateTags") {
             }
         }
 
-        // Check seed-items.yml tags — every seed item must have at least one
-        // tag that matches a sector so it appears in a feed
-        if (seedFile.exists()) {
-            val seedText = seedFile.readText()
-            val titlePattern = Regex("""- title:\s*"([^"]+)"""")
-            val seedTitles = titlePattern.findAll(seedText).map { it.groupValues[1] }.toList()
-            val seedTagEntries = tagPattern.findAll(seedText).toList()
-
-            // Collect all sector tags (union)
-            val allSectorTags = sectorEntries.flatMap { match ->
-                match.groupValues[1].split(",").map { it.trim().trim('"') }
-            }.toSet()
-
-            seedTagEntries.forEachIndexed { index, match ->
-                val tags = match.groupValues[1].split(",").map { it.trim().trim('"') }
-                val title = seedTitles.getOrElse(index) { "unknown" }
-                val shortTitle = if (title.length > 60) title.take(60) + "..." else title
-                // Items tagged "global" appear in all feeds via the filter, so they don't need a sector-specific tag
-                if ("global" !in tags && tags.none { it in allSectorTags }) {
-                    errors.add("Seed item '$shortTitle' has no tag matching any sector — it will not appear in any feed")
-                }
-            }
-        }
-
         if (errors.isNotEmpty()) {
             throw GradleException("Tag alignment errors:\n  ${errors.joinToString("\n  ")}")
         }
-        logger.lifecycle("Tag validation passed: all sector tags exist in sources.yml, all seed items match at least one sector")
+        logger.lifecycle("Tag validation passed: all sector tags exist in sources.yml")
     }
 }
 
-// Fetch task — runs once, populates the consolidated state
-tasks.register<JavaExec>("fetchNews") {
-    description = "Fetch news from all configured sources"
+// Curate task — fetch, filter, dedup, write candidates to feed.yml
+tasks.register<JavaExec>("curateNews") {
+    description = "Fetch news and write candidates to feed.yml for curation"
     group = "newsroom"
     dependsOn("classes")
     mainClass = "org.javai.ch.Main"
     classpath = sourceSets["main"].runtimeClasspath
-    args = mutableListOf("fetch", "--config=$configDir", "--state=$stateFile")
+    args = mutableListOf("curate", "--config=$configDir", "--feed=$feedFile")
     if (project.hasProperty("tiers")) {
         args("--tiers=${project.property("tiers")}")
     }
     environment("ANTHROPIC_API_KEY", System.getenv("ANTHROPIC_API_KEY") ?: "")
 }
 
-// Consolidated feed — all items, written to build/site/
+// Consolidated feed — all accepted items, written to build/site/
 tasks.register<JavaExec>("generateFeed") {
-    description = "Generate consolidated feed (all items)"
+    description = "Generate consolidated feed (all accepted items)"
     group = "newsroom"
     dependsOn("classes")
     mainClass = "org.javai.ch.Main"
     classpath = sourceSets["main"].runtimeClasspath
     args = listOf(
         "generate",
-        "--state=$stateFile",
+        "--feed=$feedFile",
         "--output=$siteDir",
         "--site-url=$siteUrl"
     )
@@ -208,7 +183,7 @@ sectors.forEach { sector ->
         classpath = sourceSets["main"].runtimeClasspath
         args = listOf(
             "generate",
-            "--state=$stateFile",
+            "--feed=$feedFile",
             "--output=$siteDir/${sector.id}",
             "--tags=${sector.tags.joinToString(",")}",
             "--title=${sector.title}",

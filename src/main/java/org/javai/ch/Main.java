@@ -38,14 +38,14 @@ public class Main {
 
         var config = new NewsroomConfig(
                 Path.of(params.configDir),
-                Path.of(params.state),
+                Path.of(params.feed),
                 Path.of(params.output),
                 feedMetadata
         );
         var newsroom = new Newsroom(config);
 
         switch (command) {
-            case "fetch" -> newsroom.fetch(TierFilter.parseTiers(params.tiers));
+            case "curate" -> newsroom.curate(TierFilter.parseTiers(params.tiers));
             case "generate" -> {
                 var tags = parseTags(params.tags);
                 if (tags.isEmpty()) {
@@ -76,8 +76,8 @@ public class Main {
             var arg = args[i];
             if (arg.startsWith("--config=")) {
                 params.configDir = arg.substring("--config=".length());
-            } else if (arg.startsWith("--state=")) {
-                params.state = arg.substring("--state=".length());
+            } else if (arg.startsWith("--feed=")) {
+                params.feed = arg.substring("--feed=".length());
             } else if (arg.startsWith("--tiers=")) {
                 params.tiers = arg.substring("--tiers=".length());
             } else if (arg.startsWith("--output=")) {
@@ -100,12 +100,12 @@ public class Main {
                 Usage: javai-ch <command> [options]
 
                 Commands:
-                  fetch     Fetch news from configured sources
-                  generate  Generate RSS feed, JSON feed, and HTML page
+                  curate    Fetch news, filter, and write candidates to feed.yml
+                  generate  Generate RSS and JSON feeds from accepted items
 
                 Options:
                   --config=<path>        Path to config directory (default: newsroom/config)
-                  --state=<path>         Path to state.json (default: newsroom/data/state.json)
+                  --feed=<path>          Path to feed.yml (default: newsroom/data/feed.yml)
                   --tiers=<list>         Comma-separated tier numbers to fetch (default: all)
                   --output=<path>        Output directory for generated files (default: build/site)
                   --tags=<list>          Comma-separated tags to filter items (default: all items)
@@ -117,7 +117,7 @@ public class Main {
 
     private static class Params {
         String configDir = "newsroom/config";
-        String state = "newsroom/data/state.json";
+        String feed = "newsroom/data/feed.yml";
         String tiers = "";
         String output = "build/site";
         String tags = "";

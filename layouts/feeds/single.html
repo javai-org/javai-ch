@@ -9,27 +9,11 @@
 <section class="feed-landing">
   <div class="container">
 
-    {{/* Featured content — renders only when present */}}
-    {{ with .Params.featured }}
-    <div class="featured-items">
+    {{/* Featured items — rendered dynamically from feed data */}}
+    <div id="feed-featured" class="featured-items" style="display:none;">
       <h2 class="featured-heading">{{ i18n "featured_heading" }}</h2>
-      <div class="featured-grid">
-        {{ range . }}
-        <a href="{{ .url }}" class="featured-card" target="_blank" rel="noopener">
-          {{ with .image }}
-          <div class="featured-card-image">
-            <img src="{{ . }}" alt="" loading="lazy">
-          </div>
-          {{ end }}
-          <div class="featured-card-body">
-            <h3>{{ .title }}</h3>
-            {{ with .summary }}<p>{{ . }}</p>{{ end }}
-          </div>
-        </a>
-        {{ end }}
-      </div>
+      <div class="featured-grid"></div>
     </div>
-    {{ end }}
 
     {{/* Key resources — collapsible grouped list, renders only when present */}}
     {{ with .Params.resources }}
@@ -81,6 +65,8 @@
 (function() {
   var feedUrl = '{{ site.BaseURL }}{{ .Params.feed_path }}/feed.json';
   var container = document.getElementById('feed-items');
+  var featuredSection = document.getElementById('feed-featured');
+  var featuredGrid = featuredSection ? featuredSection.querySelector('.featured-grid') : null;
   var labels = {
     source: '{{ i18n "feed_source" }}',
     noItems: '{{ i18n "feed_no_items" }}',
@@ -96,8 +82,35 @@
         container.innerHTML = '<p class="feed-empty">' + labels.noItems + '</p>';
         return;
       }
-      var html = '';
+
+      // Separate featured items from regular items
+      var featured = [];
+      var regular = [];
       items.forEach(function(item) {
+        if (item._featured) {
+          featured.push(item);
+        }
+        // All items also appear in the regular feed list
+        regular.push(item);
+      });
+
+      // Render featured cards
+      if (featured.length > 0 && featuredGrid) {
+        var fhtml = '';
+        featured.forEach(function(item) {
+          fhtml += '<a href="' + item.url + '" class="featured-card" target="_blank" rel="noopener">';
+          fhtml += '<div class="featured-card-body">';
+          fhtml += '<h3>' + item.title + '</h3>';
+          if (item.summary) fhtml += '<p>' + item.summary + '</p>';
+          fhtml += '</div></a>';
+        });
+        featuredGrid.innerHTML = fhtml;
+        featuredSection.style.display = '';
+      }
+
+      // Render feed items
+      var html = '';
+      regular.forEach(function(item) {
         var date = item.date_published ? new Date(item.date_published) : null;
         var dateStr = date ? date.toLocaleDateString(document.documentElement.lang || 'en', { year: 'numeric', month: 'long', day: 'numeric' }) : '';
         var source = item._source || '';

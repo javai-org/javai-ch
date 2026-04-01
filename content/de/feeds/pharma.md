@@ -4,13 +4,6 @@ type: feeds
 sector_id: pharma
 feed_path: pharma
 css_modifier: pharma
-featured:
-  - title: "Swissmedic: Rahmenbedingungen für den Einsatz von KI in der Arzneimittelentwicklung und im regulatorischen Prozess"
-    url: "https://www.swissmedic.ch/swissmedic/de/home/humanarzneimittel/authorisations/artificiel-intelligence.html"
-    summary: "Die zentrale Swissmedic-Seite zu KI im Arzneimittelbereich — Entwicklung, Herstellung und regulatorischer Prozess."
-  - title: "EMA: Reflexionspapier zum Einsatz von KI im Arzneimittel-Lebenszyklus"
-    url: "https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-use-artificial-intelligence-ai-medicinal-product-lifecycle_en.pdf"
-    summary: "Zentrale EU-Leitlinie für Pharmateams, die KI in Forschung, klinischer Entwicklung, Herstellung, Pharmakovigilanz oder regulatorischen Einreichungen einsetzen."
 resources:
   - heading: "Höchste Priorität"
     open: true

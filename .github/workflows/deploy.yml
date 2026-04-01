@@ -49,14 +49,6 @@ jobs:
       - run: ./gradlew build
         working-directory: javai-ch
 
-      # Restore feed state from the data branch
-      - name: Restore state
-        working-directory: javai-ch
-        run: |
-          git fetch origin data:data 2>/dev/null || true
-          mkdir -p newsroom/data
-          git show data:newsroom/data/state.json > newsroom/data/state.json 2>/dev/null || echo '{}' > newsroom/data/state.json
-
       - name: Generate all feeds
         working-directory: javai-ch
         run: ./gradlew generateAllFeeds

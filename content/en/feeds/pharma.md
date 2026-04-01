@@ -4,13 +4,6 @@ type: feeds
 sector_id: pharma
 feed_path: pharma
 css_modifier: pharma
-featured:
-  - title: "Swissmedic: Framework conditions for the use of AI in medicinal product development and the regulatory process"
-    url: "https://www.swissmedic.ch/swissmedic/en/home/humanarzneimittel/authorisations/artificiel-intelligence.html"
-    summary: "The key Swissmedic page on AI in the medicinal-product context — development, manufacture, and regulatory process."
-  - title: "EMA: Reflection paper on the use of AI in the medicinal product lifecycle"
-    url: "https://www.ema.europa.eu/en/documents/scientific-guideline/reflection-paper-use-artificial-intelligence-ai-medicinal-product-lifecycle_en.pdf"
-    summary: "Central EU guidance for pharma teams using AI in R&D, clinical development, manufacturing, pharmacovigilance, or regulatory submissions."
 resources:
   - heading: "Highest priority"
     open: true
