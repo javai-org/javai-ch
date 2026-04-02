@@ -7,7 +7,10 @@ image: /images/swiss-risk-matrix-en.svg
 author: "Mike Mannion"
 ---
 
-![NASA-style risk matrix — consequence on the horizontal axis, likelihood on the vertical](/images/swiss-risk-matrix-en.svg)
+<figure>
+<img src="/images/swiss-risk-matrix-en.svg" alt="NASA-style risk matrix — consequence on the horizontal axis, likelihood on the vertical">
+<figcaption>NASA's risk matrix: as relevant as ever</figcaption>
+</figure>
 
 The NASA risk matrix plots consequence on one axis and likelihood on the other. It appears in everything from spacecraft engineering to financial regulation. But the two axes are not equally difficult to assess.
 
@@ -25,7 +28,7 @@ This is not a niche concern. LLMs are being deployed in customer service, medica
 
 FINMA issued Guidance 08/2024 [1] in December 2024, setting expectations for AI governance in supervised institutions. Notably, FINMA expects institutions to use *performance indicators* — quantitative measures of how well a system achieves its objectives. This is a significant departure from pass/fail testing. It requires measurement, not merely verification.
 
-The EU AI Act's obligations for high-risk AI systems — including those in finance, healthcare, and public administration — apply from August 2026 [2], with requirements for declared accuracy levels, ongoing performance monitoring, and risk management testing (Articles 9, 15, and 72 of Regulation 2024/1689). ISO 42001 [3] requires organisations to define and track performance metrics.
+The EU AI Act's obligations for high-risk AI systems — including those in finance, healthcare, and public administration — apply from August 2026 [2], and Swiss organisations serving EU customers must comply regardless of Switzerland's non-member status. Requirements include declared accuracy levels, ongoing performance monitoring, and risk management testing (Articles 9, 15, and 72 of Regulation 2024/1689). ISO 42001 [3] requires organisations to define and track performance metrics.
 
 The regulatory direction is clear: organisations must demonstrate, with evidence, that their AI systems perform within acceptable bounds. "We think it works" will not satisfy auditors.
 

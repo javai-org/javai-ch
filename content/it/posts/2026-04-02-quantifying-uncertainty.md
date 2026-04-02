@@ -7,7 +7,10 @@ image: /images/swiss-risk-matrix-it.svg
 author: "Mike Mannion"
 ---
 
-![Matrice di rischio NASA — conseguenza sull'asse orizzontale, probabilità sull'asse verticale](/images/swiss-risk-matrix-it.svg)
+<figure>
+<img src="/images/swiss-risk-matrix-it.svg" alt="Matrice di rischio NASA — conseguenza sull'asse orizzontale, probabilità sull'asse verticale">
+<figcaption>La matrice di rischio della NASA: più rilevante che mai</figcaption>
+</figure>
 
 La matrice di rischio della NASA pone la conseguenza su un asse e la probabilità sull'altro. Si ritrova in tutto, dall'ingegneria aerospaziale alla regolamentazione finanziaria. Ma i due assi non sono ugualmente difficili da valutare.
 
@@ -25,7 +28,7 @@ Non è una preoccupazione di nicchia. I LLM vengono impiegati nel servizio clien
 
 La FINMA ha pubblicato la Comunicazione 08/2024 [1] nel dicembre 2024, definendo le aspettative per la governance dell'IA negli istituti vigilati. In particolare, la FINMA si aspetta che gli istituti utilizzino *indicatori di prestazione* — misure quantitative di quanto un sistema raggiunge i propri obiettivi. Si tratta di un cambiamento significativo rispetto ai test pass/fail. Richiede misurazione, non mera verifica.
 
-Gli obblighi del regolamento europeo sull'IA per i sistemi di IA ad alto rischio — compresi quelli nei settori finanziario, sanitario e della pubblica amministrazione — si applicano da agosto 2026 [2], con requisiti relativi a livelli di accuratezza dichiarati, monitoraggio continuo delle prestazioni e test di gestione del rischio (articoli 9, 15 e 72 del regolamento 2024/1689). La norma ISO 42001 [3] richiede alle organizzazioni di definire e monitorare metriche di prestazione.
+Gli obblighi del regolamento europeo sull'IA per i sistemi di IA ad alto rischio — compresi quelli nei settori finanziario, sanitario e della pubblica amministrazione — si applicano da agosto 2026 [2], e le organizzazioni svizzere che servono clienti nell'UE devono conformarsi indipendentemente dallo status di non membro della Svizzera. I requisiti comprendono livelli di accuratezza dichiarati, monitoraggio continuo delle prestazioni e test di gestione del rischio (articoli 9, 15 e 72 del regolamento 2024/1689). La norma ISO 42001 [3] richiede alle organizzazioni di definire e monitorare metriche di prestazione.
 
 La direzione normativa è chiara: le organizzazioni devono dimostrare, con prove, che i loro sistemi di IA operano entro limiti accettabili. «Pensiamo che funzioni» non soddisferà i revisori.
 

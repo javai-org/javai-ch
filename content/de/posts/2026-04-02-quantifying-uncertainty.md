@@ -7,7 +7,10 @@ image: /images/swiss-risk-matrix-de.svg
 author: "Mike Mannion"
 ---
 
-![NASA-Risikomatrix — Auswirkung auf der horizontalen Achse, Wahrscheinlichkeit auf der vertikalen](/images/swiss-risk-matrix-de.svg)
+<figure>
+<img src="/images/swiss-risk-matrix-de.svg" alt="NASA-Risikomatrix — Auswirkung auf der horizontalen Achse, Wahrscheinlichkeit auf der vertikalen">
+<figcaption>Die NASA-Risikomatrix: relevanter denn je</figcaption>
+</figure>
 
 Die NASA-Risikomatrix stellt Auswirkung auf einer Achse und Wahrscheinlichkeit auf der anderen dar. Sie findet sich in allem von der Raumfahrttechnik bis zur Finanzregulierung. Aber die beiden Achsen sind nicht gleich schwer zu bewerten.
 
@@ -25,7 +28,7 @@ Das ist kein Nischenthema. LLMs werden im Kundenservice, in der medizinischen Tr
 
 Die FINMA hat im Dezember 2024 die Aufsichtsmitteilung 08/2024 [1] veröffentlicht und damit Erwartungen an die KI-Governance in beaufsichtigten Instituten formuliert. Bemerkenswert ist, dass die FINMA von den Instituten den Einsatz von *Leistungsindikatoren* erwartet — quantitative Masse dafür, wie gut ein System seine Ziele erreicht. Das ist eine deutliche Abkehr vom Pass/Fail-Testen. Es erfordert Messung, nicht bloss Verifikation.
 
-Die Pflichten des EU AI Act für Hochrisiko-KI-Systeme — einschliesslich solcher in Finanzwesen, Gesundheitswesen und öffentlicher Verwaltung — gelten ab August 2026 [2], mit Anforderungen an deklarierte Genauigkeitsniveaus, laufende Leistungsüberwachung und Risikomanagement-Tests (Artikel 9, 15 und 72 der Verordnung 2024/1689). ISO 42001 [3] verlangt von Organisationen die Definition und Verfolgung von Leistungskennzahlen.
+Die Pflichten des EU AI Act für Hochrisiko-KI-Systeme — einschliesslich solcher in Finanzwesen, Gesundheitswesen und öffentlicher Verwaltung — gelten ab August 2026 [2], und Schweizer Organisationen mit EU-Kunden müssen ungeachtet des Nicht-Mitgliedsstatus der Schweiz die Vorschriften einhalten. Die Anforderungen umfassen deklarierte Genauigkeitsniveaus, laufende Leistungsüberwachung und Risikomanagement-Tests (Artikel 9, 15 und 72 der Verordnung 2024/1689). ISO 42001 [3] verlangt von Organisationen die Definition und Verfolgung von Leistungskennzahlen.
 
 Die regulatorische Richtung ist klar: Organisationen müssen mit Belegen nachweisen, dass ihre KI-Systeme innerhalb akzeptabler Grenzen arbeiten. «Wir glauben, dass es funktioniert» wird Prüfer nicht zufriedenstellen.
 
