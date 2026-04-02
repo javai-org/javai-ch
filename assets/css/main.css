@@ -717,6 +717,14 @@ code {
 .content-body h2 { margin-top: var(--space-xl); }
 .content-body h3 { margin-top: var(--space-lg); }
 .content-body img { max-width: 100%; margin: var(--space-md) 0; }
+.content-body figcaption {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  text-align: center;
+  margin-top: var(--space-xs);
+  font-style: italic;
+}
 
 .content-footer { max-width: 720px; margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--muted); }
 
