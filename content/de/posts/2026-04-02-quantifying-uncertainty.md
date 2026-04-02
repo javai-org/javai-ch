@@ -3,12 +3,11 @@ title: "Risiko messen: einfach. Wahrscheinlichkeit messen: schwer."
 date: 2026-04-02
 description: "Die meisten Organisationen, die KI einsetzen, können eine grundlegende Frage nicht beantworten: Wie oft versagt dieses System? Probabilistisches Testen liefert die Antwort — und die Regulierungsbehörden beginnen, dies einzufordern."
 summary: "Die NASA-Risikomatrix hat zwei Achsen. Auswirkung ist handhabbar. Wahrscheinlichkeit — insbesondere bei stochastischen KI-Systemen — nicht. Regulierungsbehörden verlangen jetzt quantitative Nachweise, und probabilistisches Testen ist der Weg dorthin."
-image: /images/NASA-Risk-Matrix-Consequence-Overview.svg
+image: /images/swiss-risk-matrix-de.svg
+author: "Mike Mannion"
 ---
 
-*Mike Mannion*
-
-![NASA-Risikomatrix — Auswirkung auf der horizontalen Achse, Wahrscheinlichkeit auf der vertikalen](/images/NASA-Risk-Matrix-Consequence-Overview.svg)
+![NASA-Risikomatrix — Auswirkung auf der horizontalen Achse, Wahrscheinlichkeit auf der vertikalen](/images/swiss-risk-matrix-de.svg)
 
 Die NASA-Risikomatrix stellt Auswirkung auf einer Achse und Wahrscheinlichkeit auf der anderen dar. Sie findet sich in allem von der Raumfahrttechnik bis zur Finanzregulierung. Aber die beiden Achsen sind nicht gleich schwer zu bewerten.
 

@@ -3,12 +3,11 @@ title: "Quantifying Risk: Easy. Quantifying Likelihood: Hard."
 date: 2026-04-02
 description: "Most organisations deploying AI cannot answer a basic question: how often does this system fail? Probabilistic testing provides the answer — and regulators are starting to demand it."
 summary: "The NASA risk matrix has two axes. Consequence is tractable. Likelihood — especially for stochastic AI systems — is not. Regulators are now demanding quantitative evidence, and probabilistic testing is how you produce it."
-image: /images/NASA-Risk-Matrix-Consequence-Overview.svg
+image: /images/swiss-risk-matrix-en.svg
+author: "Mike Mannion"
 ---
 
-*Mike Mannion*
-
-![NASA-style risk matrix — consequence on the horizontal axis, likelihood on the vertical](/images/NASA-Risk-Matrix-Consequence-Overview.svg)
+![NASA-style risk matrix — consequence on the horizontal axis, likelihood on the vertical](/images/swiss-risk-matrix-en.svg)
 
 The NASA risk matrix plots consequence on one axis and likelihood on the other. It appears in everything from spacecraft engineering to financial regulation. But the two axes are not equally difficult to assess.
 

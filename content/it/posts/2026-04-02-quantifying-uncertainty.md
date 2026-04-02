@@ -3,12 +3,11 @@ title: "Quantificare il rischio: facile. Quantificare la probabilità: difficile
 date: 2026-04-02
 description: "La maggior parte delle organizzazioni che utilizzano l'IA non sa rispondere a una domanda fondamentale: quanto spesso questo sistema fallisce? I test probabilistici forniscono la risposta — e le autorità di regolamentazione iniziano a richiederlo."
 summary: "La matrice di rischio della NASA ha due assi. La conseguenza è gestibile. La probabilità — specialmente per i sistemi di IA stocastici — no. Le autorità di regolamentazione richiedono ora prove quantitative, e i test probabilistici sono il modo per produrle."
-image: /images/NASA-Risk-Matrix-Consequence-Overview.svg
+image: /images/swiss-risk-matrix-it.svg
+author: "Mike Mannion"
 ---
 
-*Mike Mannion*
-
-![Matrice di rischio NASA — conseguenza sull'asse orizzontale, probabilità sull'asse verticale](/images/NASA-Risk-Matrix-Consequence-Overview.svg)
+![Matrice di rischio NASA — conseguenza sull'asse orizzontale, probabilità sull'asse verticale](/images/swiss-risk-matrix-it.svg)
 
 La matrice di rischio della NASA pone la conseguenza su un asse e la probabilità sull'altro. Si ritrova in tutto, dall'ingegneria aerospaziale alla regolamentazione finanziaria. Ma i due assi non sono ugualmente difficili da valutare.
 
