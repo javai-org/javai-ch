@@ -696,6 +696,17 @@ code {
   letter-spacing: 0.08em;
 }
 
+.content-header .byline {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  letter-spacing: 0.08em;
+}
+
+.content-header .byline::before {
+  content: " · ";
+}
+
 .content-header .lead {
   font-size: 1.15rem;
   color: var(--color-text-secondary);

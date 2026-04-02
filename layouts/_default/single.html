@@ -22,6 +22,7 @@
     {{ end }}
     <header class="content-header">
       {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2 January 2006" }}</time>{{ end }}
+      {{ with .Params.author }}<span class="byline">{{ . }}</span>{{ end }}
       {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
     </header>
     <div class="content-body">

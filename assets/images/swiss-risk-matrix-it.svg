@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 10 420 400" font-family="Arial, Helvetica, sans-serif" font-weight="bold">
+  <!-- Grid cells: 5x5, each 70x70, origin at (80, 20) -->
+  <!-- Row 5 (top, highest likelihood) -->
+  <rect x="80"  y="20"  width="70" height="70" fill="#4caf50"/>
+  <rect x="150" y="20"  width="70" height="70" fill="#ff9800"/>
+  <rect x="220" y="20"  width="70" height="70" fill="#e53935"/>
+  <rect x="290" y="20"  width="70" height="70" fill="#e53935"/>
+  <rect x="360" y="20"  width="70" height="70" fill="#e53935"/>
+
+  <!-- Row 4 -->
+  <rect x="80"  y="90"  width="70" height="70" fill="#4caf50"/>
+  <rect x="150" y="90"  width="70" height="70" fill="#ffca28"/>
+  <rect x="220" y="90"  width="70" height="70" fill="#ff9800"/>
+  <rect x="290" y="90"  width="70" height="70" fill="#e53935"/>
+  <rect x="360" y="90"  width="70" height="70" fill="#e53935"/>
+
+  <!-- Row 3 (middle) -->
+  <rect x="80"  y="160" width="70" height="70" fill="#4caf50"/>
+  <rect x="150" y="160" width="70" height="70" fill="#8bc34a"/>
+  <rect x="220" y="160" width="70" height="70" fill="#ffca28"/>
+  <rect x="290" y="160" width="70" height="70" fill="#ff9800"/>
+  <rect x="360" y="160" width="70" height="70" fill="#e53935"/>
+
+  <!-- Row 2 -->
+  <rect x="80"  y="230" width="70" height="70" fill="#4caf50"/>
+  <rect x="150" y="230" width="70" height="70" fill="#8bc34a"/>
+  <rect x="220" y="230" width="70" height="70" fill="#8bc34a"/>
+  <rect x="290" y="230" width="70" height="70" fill="#ffca28"/>
+  <rect x="360" y="230" width="70" height="70" fill="#ff9800"/>
+
+  <!-- Row 1 (bottom, lowest likelihood) -->
+  <rect x="80"  y="300" width="70" height="70" fill="#4caf50"/>
+  <rect x="150" y="300" width="70" height="70" fill="#4caf50"/>
+  <rect x="220" y="300" width="70" height="70" fill="#4caf50"/>
+  <rect x="290" y="300" width="70" height="70" fill="#8bc34a"/>
+  <rect x="360" y="300" width="70" height="70" fill="#ffca28"/>
+
+  <!-- Ghost Swiss cross — centred on grid (255, 195), Swiss proportions -->
+  <!-- Vertical bar: 70px wide (= one grid square), 3 squares tall -->
+  <rect x="220" y="90" width="70" height="210" rx="4" fill="white" opacity="0.9"/>
+  <!-- Horizontal bar: 70px tall (= one grid square), 3 squares wide -->
+  <rect x="150" y="160" width="210" height="70" rx="4" fill="white" opacity="0.9"/>
+
+  <!-- Y-axis: arrow then label on top (20px gap from grid) -->
+  <line x1="60" y1="355" x2="60" y2="38" stroke="#999" stroke-width="3"/>
+  <polygon points="60,22 51,38 69,38" fill="#999"/>
+  <text x="60" y="199" text-anchor="middle" font-size="18" paint-order="stroke" stroke="white" stroke-width="8" stroke-linejoin="round" fill="#999" transform="rotate(-90 60 195)">PROBABILITÀ</text>
+
+  <!-- X-axis: arrow then label on top (20px gap from grid) -->
+  <line x1="95" y1="390" x2="415" y2="390" stroke="#999" stroke-width="3"/>
+  <polygon points="428,390 412,381 412,399" fill="#999"/>
+  <text x="255" y="395" text-anchor="middle" font-size="18" paint-order="stroke" stroke="white" stroke-width="8" stroke-linejoin="round" fill="#999">CONSEGUENZA</text>
+</svg>
