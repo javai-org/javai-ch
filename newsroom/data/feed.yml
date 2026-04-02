@@ -1,4 +1,4 @@
-# -- New candidates --------------------------------------------------------
+# -- Published feed ---------------------------------------------------------
 - title: "Towards trustworthy AI in the EU public administration: The EDPS Compass for its new role under the AI Act"
   url: "https://www.edps.europa.eu/system/files/2026-03/26-03-17_edps-compass-under-ai-act-2026-2027_en.pdf"
   date: "2026-03-17"
@@ -9,8 +9,6 @@
   accepted: y
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "Implementation Documents"
   url: "https://artificialintelligenceact.eu/ai-act-explorer/"
   date: "2026-03-23"
