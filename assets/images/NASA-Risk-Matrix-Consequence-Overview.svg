@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 420" font-family="Arial, Helvetica, sans-serif" font-weight="bold">
+  <!-- Grid cells: 5x5, each 70x70, origin at (80, 20) -->
+  <!-- Row 5 (top, highest likelihood) -->
+  <rect x="80"  y="20"  width="70" height="70" fill="#4caf50"/>
+  <rect x="150" y="20"  width="70" height="70" fill="#ff9800"/>
+  <rect x="220" y="20"  width="70" height="70" fill="#e53935"/>
+  <rect x="290" y="20"  width="70" height="70" fill="#e53935"/>
+  <rect x="360" y="20"  width="70" height="70" fill="#e53935"/>
+
+  <!-- Row 4 -->
+  <rect x="80"  y="90"  width="70" height="70" fill="#4caf50"/>
+  <rect x="150" y="90"  width="70" height="70" fill="#ffca28"/>
+  <rect x="220" y="90"  width="70" height="70" fill="#ff9800"/>
+  <rect x="290" y="90"  width="70" height="70" fill="#e53935"/>
+  <rect x="360" y="90"  width="70" height="70" fill="#e53935"/>
+
+  <!-- Row 3 (middle) -->
+  <rect x="80"  y="160" width="70" height="70" fill="#4caf50"/>
+  <rect x="150" y="160" width="70" height="70" fill="#8bc34a"/>
+  <rect x="220" y="160" width="70" height="70" fill="#ffca28"/>
+  <rect x="290" y="160" width="70" height="70" fill="#ff9800"/>
+  <rect x="360" y="160" width="70" height="70" fill="#e53935"/>
+
+  <!-- Row 2 -->
+  <rect x="80"  y="230" width="70" height="70" fill="#4caf50"/>
+  <rect x="150" y="230" width="70" height="70" fill="#8bc34a"/>
+  <rect x="220" y="230" width="70" height="70" fill="#8bc34a"/>
+  <rect x="290" y="230" width="70" height="70" fill="#ffca28"/>
+  <rect x="360" y="230" width="70" height="70" fill="#ff9800"/>
+
+  <!-- Row 1 (bottom, lowest likelihood) -->
+  <rect x="80"  y="300" width="70" height="70" fill="#4caf50"/>
+  <rect x="150" y="300" width="70" height="70" fill="#4caf50"/>
+  <rect x="220" y="300" width="70" height="70" fill="#4caf50"/>
+  <rect x="290" y="300" width="70" height="70" fill="#8bc34a"/>
+  <rect x="360" y="300" width="70" height="70" fill="#ffca28"/>
+
+  <!-- Y-axis label: LIKELIHOOD -->
+  <text x="18" y="210" text-anchor="middle" font-size="18" transform="rotate(-90 18 210)">LIKELIHOOD</text>
+  <!-- Y-axis arrow -->
+  <line x1="45" y1="360" x2="45" y2="30" stroke="black" stroke-width="2.5"/>
+  <polygon points="45,20 39,35 51,35" fill="black"/>
+
+  <!-- X-axis label: CONSEQUENCE -->
+  <text x="265" y="410" text-anchor="middle" font-size="18">CONSEQUENCE</text>
+  <!-- X-axis arrow -->
+  <line x1="90" y1="388" x2="420" y2="388" stroke="black" stroke-width="2.5"/>
+  <polygon points="430,388 415,382 415,394" fill="black"/>
+</svg>

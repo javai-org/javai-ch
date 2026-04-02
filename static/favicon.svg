@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="rounded">
+      <rect width="100" height="100" rx="12" ry="12"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#rounded)">
+    <!-- Row 5 (top, highest likelihood) -->
+    <rect x="0"  y="0"  width="19" height="19" fill="#4caf50"/>
+    <rect x="20" y="0"  width="19" height="19" fill="#ff9800"/>
+    <rect x="40" y="0"  width="19" height="19" fill="#e53935"/>
+    <rect x="60" y="0"  width="19" height="19" fill="#e53935"/>
+    <rect x="80" y="0"  width="19" height="19" fill="#e53935"/>
+
+    <!-- Row 4 -->
+    <rect x="0"  y="20" width="19" height="19" fill="#4caf50"/>
+    <rect x="20" y="20" width="19" height="19" fill="#ffca28"/>
+    <rect x="40" y="20" width="19" height="19" fill="#ff9800"/>
+    <rect x="60" y="20" width="19" height="19" fill="#e53935"/>
+    <rect x="80" y="20" width="19" height="19" fill="#e53935"/>
+
+    <!-- Row 3 -->
+    <rect x="0"  y="40" width="19" height="19" fill="#4caf50"/>
+    <rect x="20" y="40" width="19" height="19" fill="#8bc34a"/>
+    <rect x="40" y="40" width="19" height="19" fill="#ffca28"/>
+    <rect x="60" y="40" width="19" height="19" fill="#ff9800"/>
+    <rect x="80" y="40" width="19" height="19" fill="#e53935"/>
+
+    <!-- Row 2 -->
+    <rect x="0"  y="60" width="19" height="19" fill="#4caf50"/>
+    <rect x="20" y="60" width="19" height="19" fill="#8bc34a"/>
+    <rect x="40" y="60" width="19" height="19" fill="#8bc34a"/>
+    <rect x="60" y="60" width="19" height="19" fill="#ffca28"/>
+    <rect x="80" y="60" width="19" height="19" fill="#ff9800"/>
+
+    <!-- Row 1 (bottom, lowest likelihood) -->
+    <rect x="0"  y="80" width="19" height="19" fill="#4caf50"/>
+    <rect x="20" y="80" width="19" height="19" fill="#4caf50"/>
+    <rect x="40" y="80" width="19" height="19" fill="#4caf50"/>
+    <rect x="60" y="80" width="19" height="19" fill="#8bc34a"/>
+    <rect x="80" y="80" width="19" height="19" fill="#ffca28"/>
+  </g>
+</svg>
