@@ -51,6 +51,10 @@ ignoreFiles = ['^drafts/']
     pageRef = '/posts'
     weight = 20
   [[languages.en.menus.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 25
+  [[languages.en.menus.main]]
     name = 'Contact'
     pageRef = '/contact'
     weight = 30
@@ -73,6 +77,10 @@ ignoreFiles = ['^drafts/']
     name = 'Einblicke'
     pageRef = '/posts'
     weight = 20
+  [[languages.de.menus.main]]
+    name = 'Über uns'
+    pageRef = '/about'
+    weight = 25
   [[languages.de.menus.main]]
     name = 'Kontakt'
     pageRef = '/contact'
@@ -97,6 +105,10 @@ ignoreFiles = ['^drafts/']
     pageRef = '/posts'
     weight = 20
   [[languages.fr.menus.main]]
+    name = 'À propos'
+    pageRef = '/about'
+    weight = 25
+  [[languages.fr.menus.main]]
     name = 'Contact'
     pageRef = '/contact'
     weight = 30
@@ -119,6 +131,10 @@ ignoreFiles = ['^drafts/']
     name = 'Approfondimenti'
     pageRef = '/posts'
     weight = 20
+  [[languages.it.menus.main]]
+    name = 'Chi siamo'
+    pageRef = '/about'
+    weight = 25
   [[languages.it.menus.main]]
     name = 'Contatto'
     pageRef = '/contact'

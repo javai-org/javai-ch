@@ -1,0 +1,34 @@
+---
+title: "Chi siamo"
+description: "Chi cura javai.ch e perché questo sito esiste."
+---
+
+## Informazioni su javai.ch
+
+**javai.ch** segue gli sviluppi in materia di regolamentazione e conformità dell'IA che hanno un impatto sulla Svizzera — che abbiano origine a livello nazionale, europeo o internazionale. Il sito si rivolge a dirigenti aziendali, responsabili della conformità e responsabili IT nelle imprese svizzere e nelle amministrazioni cantonali.
+
+Il sito fa parte della famiglia di progetti [Javai](https://javai.org), che sviluppa strumenti open source per testare sistemi di IA non deterministici.
+
+## Contributrice e curatrice
+
+{{< figure src="images/helena-mannion.jpg" alt="Helena Mannion" >}}
+
+**Helena Mannion** è la curatrice di javai.ch. Sta conseguendo un Master in World Studies con specializzazione in sicurezza e regolamentazione dell'IA. La sua ricerca si concentra su come i quadri normativi internazionali si traducono in obblighi pratici per le organizzazioni che utilizzano sistemi di IA — in particolare in Svizzera e nell'UE.
+
+Helena monitora gli sviluppi normativi della FINMA, del regolamento europeo sull'IA, degli standard ISO e della politica federale svizzera, e li sintetizza nelle analisi e nei feed di notizie pubblicati su questo sito.
+
+[Connettiti con Helena su LinkedIn](https://www.linkedin.com/in/helena-mannion-764348261/)
+
+## Fondatore e contributore
+
+{{< figure src="images/mike-mannion.jpg" alt="Mike Mannion" >}}
+
+**Mike Mannion** ha fondato la famiglia di progetti Javai, [javai.org](https://javai.org) e javai.ch. È un ingegnere del software specializzato nell'applicazione del rigore statistico ai test dei sistemi di IA. Mike ha creato [punit](https://github.com/javai-org/punit), il framework di test probabilistici per Java, e scrive sull'intersezione tra regolamentazione dell'IA, conformità e pratiche di ingegneria del software.
+
+[Connettiti con Mike su LinkedIn](https://www.linkedin.com/in/mike-franz-mannion/)
+
+## Contattaci
+
+Hai una domanda, un suggerimento o una correzione? Accogliamo con piacere ogni feedback costruttivo — ci aiuta a rendere il sito più utile.
+
+[Contattaci →](/it/contact/)
