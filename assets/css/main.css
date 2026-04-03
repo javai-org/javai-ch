@@ -665,14 +665,19 @@ code {
 }
 
 .content-figure {
-  margin: var(--space-lg) 0;
+  float: left;
+  margin: 0.15em var(--space-lg) var(--space-sm) 0;
+  width: 180px;
 }
 
+.content-figure picture,
 .content-figure picture img {
   width: 100%;
   height: auto;
   border-radius: 6px;
   display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .content-figure figcaption {
@@ -714,11 +719,11 @@ code {
 }
 
 .content-body { max-width: 720px; }
-.content-body h2 { margin-top: var(--space-xl); }
+.content-body h2 { margin-top: var(--space-xl); clear: both; }
 .content-body h3 { margin-top: var(--space-lg); }
 .content-body img { max-width: 100%; margin: var(--space-md) 0; }
-.content-body figure { margin: var(--space-md) 0 var(--space-lg) 0; text-align: center; }
-.content-body figure img { margin-bottom: 0; max-width: 75%; }
+.content-body figure:not(.content-figure) { margin: var(--space-md) 0 var(--space-lg) 0; text-align: center; }
+.content-body figure:not(.content-figure) img { margin-bottom: 0; max-width: 75%; }
 .content-body figcaption {
   font-family: var(--font-ui);
   font-size: 0.8rem;

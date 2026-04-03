@@ -13,9 +13,11 @@ The site is part of the [Javai](https://javai.org) project family, which develop
 
 {{< figure src="images/helena-mannion.jpg" alt="Helena Mannion" >}}
 
-**Helena Mannion** curates javai.ch. She is a Master's student in World Studies, specialising in AI safety and regulation. Her research focuses on how international regulatory frameworks translate into practical obligations for organisations deploying AI systems — particularly in Switzerland and the EU.
+**Helena Mannion** curates javai.ch. She is a Master's student in Global Studies, specialising in AI safety and regulation. Her research focuses on how international regulatory frameworks translate into practical obligations for organisations deploying AI systems — particularly in Switzerland and the EU.
 
 Helena monitors regulatory developments across FINMA, the EU AI Act, ISO standards, and Swiss federal policy, and distils them into the analysis and news feeds published on this site.
+
+Helena holds a Bachelor's degree in History and English from the University of Basel, Switzerland.
 
 [Connect with Helena on LinkedIn](https://www.linkedin.com/in/helena-mannion-764348261/)
 
@@ -24,6 +26,8 @@ Helena monitors regulatory developments across FINMA, the EU AI Act, ISO standar
 {{< figure src="images/mike-mannion.jpg" alt="Mike Mannion" >}}
 
 **Mike Mannion** founded the Javai project family, [javai.org](https://javai.org), and javai.ch. He is a software engineer with a focus on bringing statistical rigour to the testing of AI systems. Mike created [punit](https://github.com/javai-org/punit), the probabilistic testing framework for Java, and writes about the intersection of AI regulation, compliance, and software engineering practice.
+
+Mike holds a Bachelor's degree with Honours in Computer Science from Brunel University, a dual Master's in Business Administration from the universities of Bern, Switzerland and Rochester, NY, USA, and a professional certificate in Machine Learning and Artificial Intelligence from Imperial College London.
 
 [Connect with Mike on LinkedIn](https://www.linkedin.com/in/mike-franz-mannion/)
 

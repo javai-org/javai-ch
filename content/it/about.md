@@ -13,9 +13,11 @@ Il sito fa parte della famiglia di progetti [Javai](https://javai.org), che svil
 
 {{< figure src="images/helena-mannion.jpg" alt="Helena Mannion" >}}
 
-**Helena Mannion** è la curatrice di javai.ch. Sta conseguendo un Master in World Studies con specializzazione in sicurezza e regolamentazione dell'IA. La sua ricerca si concentra su come i quadri normativi internazionali si traducono in obblighi pratici per le organizzazioni che utilizzano sistemi di IA — in particolare in Svizzera e nell'UE.
+**Helena Mannion** è la curatrice di javai.ch. Sta conseguendo un Master in Global Studies con specializzazione in sicurezza e regolamentazione dell'IA. La sua ricerca si concentra su come i quadri normativi internazionali si traducono in obblighi pratici per le organizzazioni che utilizzano sistemi di IA — in particolare in Svizzera e nell'UE.
 
 Helena monitora gli sviluppi normativi della FINMA, del regolamento europeo sull'IA, degli standard ISO e della politica federale svizzera, e li sintetizza nelle analisi e nei feed di notizie pubblicati su questo sito.
+
+Helena ha conseguito un Bachelor in storia e inglese presso l'Università di Basilea, Svizzera.
 
 [Connettiti con Helena su LinkedIn](https://www.linkedin.com/in/helena-mannion-764348261/)
 
@@ -24,6 +26,8 @@ Helena monitora gli sviluppi normativi della FINMA, del regolamento europeo sull
 {{< figure src="images/mike-mannion.jpg" alt="Mike Mannion" >}}
 
 **Mike Mannion** ha fondato la famiglia di progetti Javai, [javai.org](https://javai.org) e javai.ch. È un ingegnere del software specializzato nell'applicazione del rigore statistico ai test dei sistemi di IA. Mike ha creato [punit](https://github.com/javai-org/punit), il framework di test probabilistici per Java, e scrive sull'intersezione tra regolamentazione dell'IA, conformità e pratiche di ingegneria del software.
+
+Mike ha conseguito un Bachelor's degree with Honours in informatica presso la Brunel University, un dual Master in Business Administration dalle università di Berna, Svizzera e Rochester, NY, USA, e un Professional Certificate in Machine Learning and Artificial Intelligence dall'Imperial College London.
 
 [Connettiti con Mike su LinkedIn](https://www.linkedin.com/in/mike-franz-mannion/)
 
