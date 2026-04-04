@@ -1,3 +1,16 @@
+# -- New candidates --------------------------------------------------------
+# WARNING: POTENTIAL DUPLICATE (see "Towards trustworthy AI in the EU public administration: The EDPS Compass for its new role under the AI Act" below)
+- title: "Towards trustworthy AI in the EU public administration: The EDPS Compass for its new role under the AI Act"
+  url: "https://www.edps.europa.eu/press-publications/press-news/news/2026/towards-trustworthy-ai-eu-public-administration-edps-compass-its-new-role-under-ai-act"
+  date: "2026-03-17"
+  source: "EDPS"
+  summary: "Towards trustworthy AI in the EU public administration: The EDPS Compass for its new role under the AI Act francesco Tue, 03/17/2026 - 09:06 Tue, 03/17/2026 - 12:00 Under the AI Act (Regulation (EU) 2024/1689), the European Data Protection Supervisor is now a market surveillance authority for AI ..."
+  tags: ["eu", "data-protection", "privacy"]
+  relevance: "The EDPS's role as a market surveillance authority under the AI Act (Regulation (EU) 2024/1689) creates concrete enforcement obligations for AI system providers and deployers; developers must understand the EDPS's surveillance scope and compliance requirements, including documentation and conformity assessment procedures that directly affect how AI software is built, tested, and deployed in EU public administration contexts."
+  accepted: n
+  featured: n
+
+
 # -- Published feed ---------------------------------------------------------
 - title: "Towards trustworthy AI in the EU public administration: The EDPS Compass for its new role under the AI Act"
   url: "https://www.edps.europa.eu/system/files/2026-03/26-03-17_edps-compass-under-ai-act-2026-2027_en.pdf"
