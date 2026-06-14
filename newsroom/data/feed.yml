@@ -16,7 +16,7 @@
   summary: "The MHRA is seeking evidence on the regulation of AI in healthcare to inform the recommendations of the National Commission into the Regulation of AI in Healthcare."
   tags: ["uk", "pharma", "medicine", "health", "regulatory"]
   relevance: "UK healthcare regulator is actively gathering evidence to develop AI-specific regulatory recommendations for healthcare—directly affecting how AI systems in medical devices and clinical applications will be governed, which is essential for healthcare compliance officers and medical device managers in Swiss organisations planning cross-border or internationally aligned AI deployments."
-  accepted: n
+  accepted: y
   featured: n
 
 - title: "Research: National Commission into the Regulation of AI in Healthcare: research, engagement and call for evidence findings"
@@ -26,7 +26,7 @@
   summary: "Findings from the National Commission into the Regulation of AI in Healthcare's call for evidence and wider research and engagement activities."
   tags: ["uk", "pharma", "medicine", "health", "regulatory"]
   relevance: "This addresses sector-specific AI regulation in healthcare, directly relevant to healthcare project managers, compliance officers, and medical device vendors who need to understand emerging AI governance frameworks, regulatory obligations, and approval processes specific to AI systems in the healthcare sector."
-  accepted: n
+  accepted: y
   featured: n
 
 - title: "Pioneering AI health innovations regulatory sandbox launched"
@@ -56,7 +56,7 @@
   summary: "The MHRA’s AI Airlock second phase ran between April 2025 and May 2026. This report does not constitute formal MHRA guidance."
   tags: ["uk", "pharma", "medicine", "health", "regulatory"]
   relevance: "This report documents the MHRA's second phase of its AI Airlock sandbox programme, a regulatory pathway for AI/ML medical device developers to test compliance with UK AI and medical device regulations in a controlled environment. Healthcare and medical device compliance officers, product managers, and AI vendors deploying AI systems in the UK medical device sector need to understand sandbox outcomes, regulatory expectations, and conformity pathways that the MHRA is validating through this programme."
-  accepted: n
+  accepted: y
   featured: n
 
 
