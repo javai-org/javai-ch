@@ -176,8 +176,12 @@ jobs:
       # bypasses that restriction — same reasoning as the issue steps above.
       # (The git push still works under the checkout's default GITHUB_TOKEN
       # via contents: write; only PR creation needs the PAT.)
+      # dry_run is for verifying fetches without burning LLM tokens; it must
+      # not publish. Since dry-run treats every fetched item as relevant, it
+      # would otherwise push an unfiltered candidate dump to the curate branch
+      # and open a PR — so skip PR creation entirely when dry_run is set.
       - name: Create or update PR
-        if: steps.changes.outputs.changed == 'true'
+        if: steps.changes.outputs.changed == 'true' && inputs.dry_run != true
         working-directory: javai-ch
         env:
           GH_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
