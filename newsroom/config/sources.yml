@@ -229,39 +229,40 @@ sources:
   - id: european-council-press
     name: "European Council Press Releases"
     tier: 2
-    type: html-scrape
-    url: "https://www.consilium.europa.eu/en/press/press-releases/"
-    selectors:
-      item: "article, .news-item, .listing__item"
-      title: "h2, h3, .listing__title"
-      link: "a@href"
-      date: "time@datetime, .date"
-    baseUrl: "https://www.consilium.europa.eu"
+    type: rss
+    # consilium.europa.eu sits behind a JS-challenge WAF that returns HTTP 403
+    # to every scripted client (Jsoup scrape and the site's own RSS alike), so
+    # the source cannot be fetched directly without a headless browser. This
+    # Google News query is a proxy: it surfaces consilium AI items as RSS, with
+    # google.com/rss/articles redirect URLs rather than canonical consilium URLs.
+    # If a JS-capable fetcher is ever added, point this back at the canonical feed.
+    url: "https://news.google.com/rss/search?q=site:consilium.europa.eu+artificial+intelligence&hl=en"
     tags: ["global", "eu", "policy"]
 
   - id: ec-press-releases
     name: "European Commission Press Releases"
     tier: 2
-    type: html-scrape
-    url: "https://ec.europa.eu/commission/presscorner/home/en"
-    selectors:
-      item: "article, .news-item, .listing__item, .news-list-item"
-      title: "h2, h3, .listing__title"
-      link: "a@href"
-      date: "time@datetime, .date"
-    baseUrl: "https://ec.europa.eu"
+    type: rss
+    # presscorner/home/en is a JS-rendered SPA (static HTML has no article
+    # markup, so html-scrape yielded nothing); this is the official RSS API.
+    # It returns the latest releases across all topics — the relevance filter
+    # discards the non-AI ones.
+    url: "https://ec.europa.eu/commission/presscorner/api/rss?language=en"
     tags: ["global", "eu", "policy"]
 
   - id: eurohpc-ju
     name: "EuroHPC JU Press Releases"
-    tier: 3
+    tier: 2
     type: html-scrape
     url: "https://www.eurohpc-ju.europa.eu/media-events/press-releases_en"
+    # EuroHPC serves static HTML built on the Europa Component Library (ECL),
+    # so it uses the same .ecl-content-item selectors as the other working
+    # EC sources (ec-ai-policy, ai-office) rather than the generic ones.
     selectors:
-      item: "article, .news-item, .listing__item"
-      title: "h2, h3, .listing__title"
+      item: ".ecl-content-item, article"
+      title: ".ecl-content-item__title, h2, h3"
       link: "a@href"
-      date: "time@datetime, .date"
+      date: ".ecl-content-item__date, time@datetime"
     baseUrl: "https://www.eurohpc-ju.europa.eu"
     tags: ["global", "eu", "computing", "infrastructure"]
 

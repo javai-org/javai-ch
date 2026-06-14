@@ -151,6 +151,16 @@
   accepted: y
   featured: n
 
+- title: "AI Continent Action Plan (COM(2025)165)"
+  url: "https://digital-strategy.ec.europa.eu/en/library/ai-continent-action-plan"
+  date: "2025-04-09"
+  source: "European Commission"
+  summary: "European Commission communication setting out strategic actions for the EU to build AI capacity — computing infrastructure and AI factories, data, skills, and the uptake of trustworthy AI — while aiming to strengthen competitiveness and safeguard fundamental rights."
+  tags: ["global", "eu", "policy", "strategy", "ai-governance"]
+  relevance: "Signals the EU's intended direction for AI investment, infrastructure, and adoption, which could shape the competitive and regulatory environment Swiss organisations operate in. Useful context for compliance and strategy teams tracking how EU AI policy may influence cross-border obligations and standards."
+  accepted: y
+  featured: n
+
 - title: "EDPB: AI Privacy Risks & Mitigations — Large Language Models"
   url: "https://www.edpb.europa.eu/system/files/2025-04/ai-privacy-risks-and-mitigations-in-llms.pdf"
   date: "2025-04-01"
