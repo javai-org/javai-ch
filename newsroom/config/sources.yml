@@ -255,14 +255,17 @@ sources:
     tier: 2
     type: html-scrape
     url: "https://www.eurohpc-ju.europa.eu/media-events/press-releases_en"
-    # EuroHPC serves static HTML built on the Europa Component Library (ECL),
-    # so it uses the same .ecl-content-item selectors as the other working
-    # EC sources (ec-ai-policy, ai-office) rather than the generic ones.
+    # EuroHPC serves static HTML on the Europa Component Library (ECL), but its
+    # markup differs from the digital-strategy EC sources: items are
+    # .ecl-content-item, yet the title/link live in a nested .ecl-content-block.
+    # The <time> element carries no datetime attribute (text only, e.g.
+    # "11 June 2026"), which the parser can't read — so item dates fall back to
+    # fetch time. Acceptable for surfacing items; revisit if precise dates matter.
     selectors:
-      item: ".ecl-content-item, article"
-      title: ".ecl-content-item__title, h2, h3"
-      link: "a@href"
-      date: ".ecl-content-item__date, time@datetime"
+      item: ".ecl-content-item"
+      title: ".ecl-content-block__title"
+      link: ".ecl-content-block__title a@href"
+      date: "time@datetime"
     baseUrl: "https://www.eurohpc-ju.europa.eu"
     tags: ["global", "eu", "computing", "infrastructure"]
 
