@@ -36,8 +36,8 @@
   summary: "Artificial intelligence act&nbsp;&nbsp;consilium.europa.eu"
   tags: ["global", "eu", "policy"]
   relevance: "This concerns the EU AI Act, which directly establishes concrete obligations on AI software providers and deployers across conformity assessment, technical documentation, risk classification, and enforcement. Swiss software vendors and enterprises deploying AI systems need to understand EU AI Act requirements as it affects their market access and operational compliance, and Swiss regulators need to track international AI governance frameworks."
-  accepted: n
-  featured: n
+  accepted: y
+  featured: y
 
 - title: "Artificial intelligence act: Council and Parliament strike a deal on the first rules for AI in the world - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMiggJBVV95cUxQRXAxUkNHZkVWU0pKeVBoUjNUeV8wS3N3b2pIVkdzOTFoRTN5cUFzNzV0djdncE0xVk5SNW1wQkhyVDE1RGZUajRHa0NEQnNIdVF3UGh2OWNOLXo4aklicHFiLTE3RzJaYTcwR2w3OExTeHVGbnJyZTVEN3ZsVFhKS1Jjc1EzMGpUTlRDRVZES3cwaUQ2OVpDamUzUEdFSFJsWE9tbUtOa2kwYUlDMWxrN3ltVWJxT1JRRXJ4U1RsWHRPbVo2dUlBbWUzMk0zdjE4eS1SYThiMkF3OURULUFQaFMzLUZrUHZaUEZub19YOUhFUnhGMTAxa2VoR1dyR2dYSlE?oc=5"
@@ -46,7 +46,7 @@
   summary: "Artificial intelligence act: Council and Parliament strike a deal on the first rules for AI in the world&nbsp;&nbsp;consilium.europa.eu"
   tags: ["global", "eu", "policy"]
   relevance: "This reports a major legislative agreement on the EU AI Act, the world's first comprehensive AI regulation framework. Software developers, AI vendors, compliance officers, and enterprise leaders in Switzerland need to understand these obligations as they will affect cross-border AI deployment, conformity assessment procedures, risk classification of AI systems, and compliance timelines that apply to providers serving EU/EEA markets."
-  accepted: n
+  accepted: y
   featured: n
 
 - title: "Artificial intelligence (AI): Council approves conclusions to strengthen EU’s ambitions - consilium.europa.eu"
@@ -106,7 +106,7 @@
   summary: "Artificial intelligence (AI) act: Council gives final green light to the first worldwide rules on AI&nbsp;&nbsp;consilium.europa.eu"
   tags: ["global", "eu", "policy"]
   relevance: "This announces the Council's final approval of the EU AI Act, the foundational regulatory framework that directly establishes concrete obligations on AI software providers and deployers across the EU, including Switzerland's trading partners. Developers, vendors, and compliance officers need to understand this legislation's requirements for conformity assessment, technical documentation, risk classification, and enforcement mechanisms that will affect their AI systems and business operations."
-  accepted: n
+  accepted: y
   featured: n
 
 - title: "Artificial Intelligence Act: Council calls for promoting safe AI that respects fundamental rights - consilium.europa.eu"
@@ -116,7 +116,7 @@
   summary: "Artificial Intelligence Act: Council calls for promoting safe AI that respects fundamental rights&nbsp;&nbsp;consilium.europa.eu"
   tags: ["global", "eu", "policy"]
   relevance: "This concerns European Council policy on the Artificial Intelligence Act's implementation and fundamental rights safeguards, directly affecting how AI systems must be designed, deployed, and governed across EU member states including Switzerland's regulatory alignment and cross-border AI operations. Software vendors and compliance officers need to understand EU Council positions on AI safety and fundamental rights enforcement obligations."
-  accepted: n
+  accepted: y
   featured: n
 
 - title: "Council agrees position to streamline rules on Artificial Intelligence - cyprus-presidency.consilium.europa.eu"
