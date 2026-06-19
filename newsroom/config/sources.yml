@@ -104,12 +104,12 @@ sources:
     name: "SECO — State Secretariat for Economic Affairs"
     tier: 1
     type: html-scrape
-    url: "https://www.seco.admin.ch/seco/de/home/seco/nsb-news.html?dyn_startDate=01.01.2023"
+    url: "https://www.seco.admin.ch/de/newnsb?publisherIDs=60&topicIDs=all&newsCategoryIDs=all&sort=dateDecreasing&display=list"
     selectors:
-      item: ".mod-teaser, .news-item, article"
-      title: "h3, .mod-teaser__title"
+      item: ".news-item, article"
+      title: "h3, .title"
       link: "a@href"
-      date: "time@datetime, .mod-teaser__date"
+      date: "time@datetime"
     baseUrl: "https://www.seco.admin.ch"
     tags: ["swiss", "federal", "policy", "economic"]
 
