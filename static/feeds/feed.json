@@ -1,0 +1,164 @@
+{
+  "version" : "https://jsonfeed.org/version/1.1",
+  "title" : "mavai.ch — Banking & Finance",
+  "home_page_url" : "https://mavai.ch/banking/",
+  "feed_url" : "https://mavai.ch/banking/feed.json",
+  "description" : "AI regulation news for Swiss banking and financial services",
+  "items" : [ {
+    "id" : "https://www.finma.ch/en/news/2025/04/20250424-mm-umfrage-ki/",
+    "url" : "https://www.finma.ch/en/news/2025/04/20250424-mm-umfrage-ki/",
+    "title" : "FINMA survey: artificial intelligence gaining traction at Swiss financial institutions",
+    "date_published" : "2025-04-24",
+    "summary" : "FINMA surveyed around 400 Swiss financial institutions on their use of AI. About half already use AI or have applications in development, 91% of those use generative AI, and roughly 50% have an explicit AI strategy. The survey highlights data quality, data protection, and explainability as top risk priorities.",
+    "_source" : "FINMA",
+    "tags" : [ "swiss", "financial", "ai-governance" ],
+    "_relevance" : "First comprehensive FINMA survey of AI adoption across Swiss financial institutions — establishes the baseline for supervisory expectations and industry practice.",
+    "_featured" : true
+  }, {
+    "id" : "https://artificialintelligenceact.eu/ai-act-explorer/",
+    "url" : "https://artificialintelligenceact.eu/ai-act-explorer/",
+    "title" : "Implementation Documents",
+    "date_published" : "2026-03-23",
+    "summary" : "Implementation Documents Browse the AI Act online using our AI Act Explorer This page lists all documents associated with the implementation of the AI Act. It will be updated as new documents are published.",
+    "_source" : "artificialintelligenceact.eu",
+    "tags" : [ "global", "eu", "ai-act", "tracker", "implementation" ],
+    "_relevance" : "Resource page for AI Act implementation documents — conformity assessment procedures, technical documentation requirements, and enforcement guidance."
+  }, {
+    "id" : "https://www.edps.europa.eu/system/files/2025-11/2025-11-11_ai_risks_management_guidance_en.pdf",
+    "url" : "https://www.edps.europa.eu/system/files/2025-11/2025-11-11_ai_risks_management_guidance_en.pdf",
+    "title" : "EDPS Guidance for Risk Management of Artificial Intelligence Systems",
+    "date_published" : "2025-11-11",
+    "summary" : "Structured AI risk management guidance covering accountability, procurement, deployment, and risk controls. One of the best official European documents on AI risk management.",
+    "_source" : "EDPS",
+    "tags" : [ "global", "eu", "data-protection", "risk-management", "ai-governance" ],
+    "_relevance" : "Comprehensive AI risk management framework — accountability, procurement, and deployment controls"
+  }, {
+    "id" : "/docs/eba-ai-act-banking-sector.pdf",
+    "url" : "/docs/eba-ai-act-banking-sector.pdf",
+    "title" : "EBA report on AI Act implications for EU banking and payments sector",
+    "date_published" : "2025-11-01",
+    "summary" : "Maps the AI Act against banking-sector obligations and supervisory structures. Covers how banking-specific requirements interact with horizontal AI Act obligations.",
+    "_source" : "EBA",
+    "tags" : [ "eu", "financial", "ai-act" ],
+    "_relevance" : "Maps AI Act obligations onto banking software — essential for developers serving financial institutions",
+    "_featured" : true
+  }, {
+    "id" : "https://www.edps.europa.eu/system/files/2025-09/25-09-15_techdispatch-human-oversight_en.pdf",
+    "url" : "https://www.edps.europa.eu/system/files/2025-09/25-09-15_techdispatch-human-oversight_en.pdf",
+    "title" : "EDPS TechDispatch: Human Oversight of Automated Decision-Making",
+    "date_published" : "2025-09-15",
+    "summary" : "Highlights the need for standardised frameworks and metrics to assess whether human oversight of automated systems is actually effective.",
+    "_source" : "EDPS",
+    "tags" : [ "global", "eu", "human-oversight", "automated-decision-making", "metrics" ],
+    "_relevance" : "Defines measurable criteria for human oversight effectiveness — affects how developers design oversight interfaces"
+  }, {
+    "id" : "https://www.eiopa.europa.eu/document/download/88342342-a17f-4f88-842f-bf62c93012d6_en",
+    "url" : "https://www.eiopa.europa.eu/document/download/88342342-a17f-4f88-842f-bf62c93012d6_en",
+    "title" : "EIOPA Opinion on AI Governance and Risk Management in insurance",
+    "date_published" : "2025-08-01",
+    "summary" : "Supervisory expectations for AI governance and risk management in the insurance sector. Applies a risk-based, proportionate approach.",
+    "_source" : "EIOPA",
+    "tags" : [ "eu", "financial", "insurance", "ai-governance", "risk-management" ],
+    "_relevance" : "AI governance obligations specific to insurance — risk-based approach with sector-specific controls"
+  }, {
+    "id" : "https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act",
+    "url" : "https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act",
+    "title" : "Guidelines on scope of obligations for providers of general-purpose AI models",
+    "date_published" : "2025-07-18",
+    "summary" : "Commission guidelines on GPAI provider obligations: technical documentation, copyright compliance, training data summaries. For systemic risk models: risk assessment, incident reporting, cybersecurity.",
+    "_source" : "European Commission",
+    "tags" : [ "global", "eu", "ai-act", "gpai", "provider-obligations" ],
+    "_relevance" : "Defines obligations for anyone building or substantially modifying general-purpose AI models"
+  }, {
+    "id" : "https://digital-strategy.ec.europa.eu/en/library/ai-continent-action-plan",
+    "url" : "https://digital-strategy.ec.europa.eu/en/library/ai-continent-action-plan",
+    "title" : "AI Continent Action Plan (COM(2025)165)",
+    "date_published" : "2025-04-09",
+    "summary" : "European Commission communication setting out strategic actions for the EU to build AI capacity — computing infrastructure and AI factories, data, skills, and the uptake of trustworthy AI — while aiming to strengthen competitiveness and safeguard fundamental rights.",
+    "_source" : "European Commission",
+    "tags" : [ "global", "eu", "policy", "strategy", "ai-governance" ],
+    "_relevance" : "Signals the EU's intended direction for AI investment, infrastructure, and adoption, which could shape the competitive and regulatory environment Swiss organisations operate in. Useful context for compliance and strategy teams tracking how EU AI policy may influence cross-border obligations and standards."
+  }, {
+    "id" : "https://www.edpb.europa.eu/system/files/2025-04/ai-privacy-risks-and-mitigations-in-llms.pdf",
+    "url" : "https://www.edpb.europa.eu/system/files/2025-04/ai-privacy-risks-and-mitigations-in-llms.pdf",
+    "title" : "EDPB: AI Privacy Risks & Mitigations — Large Language Models",
+    "date_published" : "2025-04-01",
+    "summary" : "Practical risk treatment for LLM deployments. Discusses deployer responsibilities in relation to provider risk treatment, fine-tuning, and retraining.",
+    "_source" : "EDPB",
+    "tags" : [ "global", "eu", "data-protection", "privacy", "llm", "risk-management" ],
+    "_relevance" : "Specific LLM privacy risks and mitigations — directly actionable for developers deploying language models"
+  }, {
+    "id" : "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers",
+    "url" : "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers",
+    "title" : "AI Literacy obligations under Article 4 of the AI Act",
+    "date_published" : "2025-02-02",
+    "summary" : "Article 4 requires providers and deployers to ensure sufficient AI literacy of staff dealing with AI systems. Already in force since February 2025, with enforcement from August 2026.",
+    "_source" : "European Commission",
+    "tags" : [ "global", "eu", "ai-act", "literacy", "article-4" ],
+    "_relevance" : "Active compliance obligation — providers and deployers must ensure staff AI literacy"
+  }, {
+    "id" : "https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/4dokumentation/finma-aufsichtsmitteilungen/20241218-finma-aufsichtsmitteilung-08-2024.pdf",
+    "url" : "https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/4dokumentation/finma-aufsichtsmitteilungen/20241218-finma-aufsichtsmitteilung-08-2024.pdf",
+    "title" : "FINMA Guidance 08/2024: Governance and risk management when using AI",
+    "date_published" : "2024-12-18",
+    "summary" : "FINMA supervisory guidance on AI governance in financial institutions. Explicitly addresses defined thresholds, validation methods, correctness and ongoing quality of outputs, and monitoring changes in input data.",
+    "_source" : "FINMA",
+    "tags" : [ "swiss", "financial", "supervision", "finma", "ai-governance", "thresholds", "monitoring" ],
+    "_relevance" : "Defines concrete AI governance obligations: thresholds, validation, output quality monitoring, and input drift detection",
+    "_featured" : true
+  }, {
+    "id" : "https://www.edpb.europa.eu/system/files/2024-12/edpb_opinion_202428_ai-models_en.pdf",
+    "url" : "https://www.edpb.europa.eu/system/files/2024-12/edpb_opinion_202428_ai-models_en.pdf",
+    "title" : "EDPB Opinion 28/2024 on AI models and personal data",
+    "date_published" : "2024-12-17",
+    "summary" : "Addresses when AI models may be considered anonymous, whether legitimate interests can support model training, and consequences of unlawful personal data processing in model development.",
+    "_source" : "EDPB",
+    "tags" : [ "global", "eu", "data-protection", "privacy", "gdpr", "ai-models" ],
+    "_relevance" : "Directly governs how developers may train AI models with personal data — core reading for any ML team"
+  }, {
+    "id" : "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+    "url" : "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+    "title" : "Regulation (EU) 2024/1689 — the EU AI Act enters into force",
+    "date_published" : "2024-08-01",
+    "summary" : "The EU AI Act entered into force, establishing the world's first comprehensive legal framework for AI. Sets risk-based obligations for providers and deployers including conformity assessment, risk management, documentation, logging, human oversight, and declared accuracy metrics.",
+    "_source" : "European Commission",
+    "tags" : [ "global", "eu", "ai-act", "legislation" ],
+    "_relevance" : "The binding legal framework defining all provider and deployer obligations for AI software in the EU"
+  }, {
+    "id" : "https://www.esma.europa.eu/sites/default/files/2024-05/ESMA35-335435667-5924__Public_Statement_on_AI_and_investment_services.pdf",
+    "url" : "https://www.esma.europa.eu/sites/default/files/2024-05/ESMA35-335435667-5924__Public_Statement_on_AI_and_investment_services.pdf",
+    "title" : "ESMA Statement on AI in investment services (May 2024)",
+    "date_published" : "2024-05-30",
+    "summary" : "Initial guidance for firms using AI in investment services for retail clients. Clearest sectoral supervisory document for securities and investment markets.",
+    "_source" : "ESMA",
+    "tags" : [ "eu", "financial", "investment-services", "ai-governance" ],
+    "_relevance" : "Specific supervisory expectations for AI in investment services — affects software serving financial clients"
+  }, {
+    "id" : "https://www.edpb.europa.eu/system/files/2024-05/edpb_20240523_report_chatgpt_taskforce_en.pdf",
+    "url" : "https://www.edpb.europa.eu/system/files/2024-05/edpb_20240523_report_chatgpt_taskforce_en.pdf",
+    "title" : "EDPB Report of the ChatGPT Taskforce",
+    "date_published" : "2024-05-23",
+    "summary" : "Shows how EU data protection authorities think operationally about generative AI services. Covers governance, transparency, lawful basis, accuracy, and safeguards for LLM deployments.",
+    "_source" : "EDPB",
+    "tags" : [ "global", "eu", "data-protection", "gdpr", "chatgpt", "generative-ai" ],
+    "_relevance" : "Practical supervisory expectations for deploying generative AI — transparency, accuracy, and safeguards"
+  }, {
+    "id" : "https://www.iso.org/standard/81230.html",
+    "url" : "https://www.iso.org/standard/81230.html",
+    "title" : "ISO/IEC 42001:2023 — AI Management System standard published",
+    "date_published" : "2023-12-18",
+    "summary" : "International standard for AI management systems covering risk management, documentation, and continuous improvement for organisations developing or using AI systems.",
+    "_source" : "ISO",
+    "tags" : [ "global", "standard", "iso-42001", "ai-management-system", "certification" ],
+    "_relevance" : "Certification standard for AI management systems — directly applicable to AI software vendors"
+  }, {
+    "id" : "https://doi.org/10.6028/NIST.AI.100-1",
+    "url" : "https://doi.org/10.6028/NIST.AI.100-1",
+    "title" : "NIST AI Risk Management Framework (AI RMF 1.0)",
+    "date_published" : "2023-01-26",
+    "summary" : "Framework for managing AI risks emphasising Govern, Map, Measure, and Manage functions. Unusually strong on measurement and ongoing risk monitoring, including thresholding, validation, and drift detection.",
+    "_source" : "NIST",
+    "tags" : [ "global", "standard", "risk-management", "us", "monitoring", "measurement" ],
+    "_relevance" : "Best-practice engineering framework for AI risk measurement, monitoring, drift detection, and validation"
+  } ]
+}
