@@ -1,4 +1,26 @@
 # -- New candidates --------------------------------------------------------
+- title: "Artificial Intelligence and facial recognition - talk with leading AI experts - consilium.europa.eu"
+  url: "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPdVlNV3NfMVpUMktKSWh3YmQ2d0xQOFpvd1lsWTRJdkxLY1RJYkU0djVZbWJGTnoyZmVPRU9wU2ZINlRRd1h6SE1sa3RER3l3ZGt1M3lZM2RuMmFOdllDYVZXc0p0V21hMHJWUW1ZM0RSOWNHd01MMGxYa24wX3VMWTNXZm5idHVsSDlUWkozTk82YVgzVFVoUk9KTEM1aUJfN2xycktEMFprTGVKbGpOeDhxWV81czQ4YURQSUVES1hUWnUxbHFMaVpWbmVTQkhlSFFvT29MWmN3ei1xQTNRLUpyMW9hMHdPLTl3WUZrSUNBQnc?oc=5"
+  date: "2021-04-29"
+  source: "European Council Press Releases"
+  summary: "Artificial Intelligence and facial recognition - talk with leading AI experts&nbsp;&nbsp;consilium.europa.eu"
+  tags: ["global", "eu", "policy"]
+  relevance: "This item concerns AI regulation and governance, specifically facial recognition technology, which is a high-risk AI application explicitly regulated under the EU AI Act (Articles 5, 6). Leading experts discussing facial recognition in an official EU Council context will likely address regulatory obligations, compliance requirements, and governance frameworks that directly affect organisations deploying such systems across EU member states including Switzerland's cross-border operations."
+  accepted: n
+  featured: n
+
+- title: "New Challenges in the Development of AI and E-communication in the Field of Justice - polish-presidency.consilium.europa.eu"
+  url: "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUFFidUdKcHB0bkptYUVJWkNGRG4xTjhkb3VnTEZPOE1SLWJ2TTB1ODQ5ZG5BN0h5b1hNRTM4WFVIeGZfcjduWVVsY0V1SHlDWUhsWm9IaDlIUS01Y05LdUluSWtaeWc2X2I3RjY0Xy1QYUdlT2UwWXRTelN3Q1Rhclg4OW9wbjU4alk5eGZfUm1idjFQWGV5ZV9qYW9leVZDdk1aRUpsTmU4LVhwX3pucmNCN2ozclB5LU1KbFlrblBvb3pTNVhiVEpGVUx0dzFWOUVNaA?oc=5"
+  date: "2025-05-20"
+  source: "European Council Press Releases"
+  summary: "New Challenges in the Development of AI and E-communication in the Field of Justice&nbsp;&nbsp;polish-presidency.consilium.europa.eu"
+  tags: ["global", "eu", "policy"]
+  relevance: "This item addresses AI governance and regulatory challenges in the justice sector, which directly affects how AI systems are developed, deployed, and governed in legal and judicial contexts. This is relevant to software vendors building AI for justice systems, compliance officers in government implementing AI governance, and policy leaders managing AI regulation in sector-specific applications."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "Council conclusions on the use of Artificial Intelligence in the field of justice - data.consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMie0FVX3lxTE52N3YyX2tPNHAxYjVZcTJLZjlWckxWVFllMjM0cjU4SUVTQURBQTlWbjl1M3MwVGdlLU5jMEpQdjVXbWlOSWZ4SkNWY3hyZE91QWhla21fMFE0enZyWE9mY3BDR3FHMTVPZlFyQXc0eElldWRrZXhKMjVoZw?oc=5"
   date: "2024-12-16"
@@ -159,8 +181,6 @@
   accepted: n
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "MHRA landmark report reveals public views on AI in healthcare"
   url: "https://www.gov.uk/government/news/mhra-landmark-report-reveals-public-views-on-ai-in-healthcare"
   date: "2026-06-11"
