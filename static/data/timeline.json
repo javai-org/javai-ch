@@ -495,6 +495,15 @@
     "source_label": "Read more →"
   },
   {
+    "date_iso": "2026-07-01",
+    "headline": "US lifts export ban on Fable 5 and Mythos 5",
+    "origin": "USA",
+    "category": "regulatory",
+    "summary": "US Commerce Department tells Anthropic in a letter that export restrictions on Fable 5 and Mythos 5 are lifted, citing the company's agreement to proactively detect and address security risks, collaborate on future model releases, and alert the government to malicious activity — Commerce reserves the right to reconsider. Both models had been suspended worldwide since June 12, 2026, after a reported method for bypassing Fable 5's safeguards; Anthropic begins restoring access July 1.",
+    "source": "https://www.bbc.com/news/articles/cdr42623e1do",
+    "source_label": "Read more →"
+  },
+  {
     "date_iso": "2026-08-02",
     "headline": "EU AI Act — watermarking obligations apply",
     "origin": "EU",
@@ -547,5 +556,4 @@
     "summary": "AI systems embedded as safety components in products regulated under sectoral harmonisation legislation must achieve full compliance (Annex I, Chapter III). Originally scheduled for August 2, 2027, postponed via EU omnibus agreement.",
     "source": "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/",
     "source_label": "View Gibson Dunn alert →"
-  }
-]
+  }]
