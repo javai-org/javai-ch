@@ -333,6 +333,45 @@ sources:
 
   # === Tier 3 — Testing, monitoring, conformity, and assurance ===
 
+  - id: etsi-newsroom
+    name: "ETSI Newsroom"
+    tier: 2
+    type: html-scrape
+    url: "https://www.etsi.org/newsroom/"
+    selectors:
+      item: "article, .news-item, .listing-item"
+      title: "h3, h2, .title"
+      link: "a@href"
+      date: "time@datetime, .date"
+    baseUrl: "https://www.etsi.org"
+    tags: ["global", "eu", "standard", "conformity"]
+
+  - id: oecd-newsroom
+    name: "OECD News — Artificial Intelligence"
+    tier: 2
+    type: html-scrape
+    url: "https://www.oecd.org/en/search/news.html?q=artificial+intelligence&orderBy=mostRelevant&page=0&deselected=oecd-languages%3Aen"
+    selectors:
+      item: "article, .news-item, .result"
+      title: "h3, h2, .title"
+      link: "a@href"
+      date: "time@datetime, .date, .publication-date"
+    baseUrl: "https://www.oecd.org"
+    tags: ["global", "international", "policy", "ai"]
+
+  - id: cen-cenelec-news
+    name: "CEN-CENELEC News & Events"
+    tier: 2
+    type: html-scrape
+    url: "https://www.cencenelec.eu/news-events/news/"
+    selectors:
+      item: "article, .news-item, .event-item"
+      title: "h3, h2, .title"
+      link: "a@href"
+      date: "time@datetime, .date"
+    baseUrl: "https://www.cencenelec.eu"
+    tags: ["global", "eu", "standard", "conformity"]
+
   - id: cen-cenelec
     name: "CEN-CENELEC AI Standards"
     tier: 3
