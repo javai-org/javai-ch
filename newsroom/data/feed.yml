@@ -1,4 +1,60 @@
 # -- New candidates --------------------------------------------------------
+- title: "EDPB sheds light on anonymisation and web scraping for generative AI and adopts final version of guidelines on blockchain"
+  url: "https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en"
+  date: "2026-07-08"
+  source: "EDPB"
+  summary: "Brussels, 8 July– During its latest plenary, the EDPB has adopted guidelines on anonymisation and guidelines on web scraping in the context of generative AI. In addition, the Board has adopted the final version of its guidelines on the processing of personal data through blockchain technologies.U..."
+  tags: ["eu", "data-protection", "privacy", "gdpr"]
+  relevance: "This item directly addresses AI-specific data protection obligations. The EDPB guidelines on anonymisation and web scraping specifically concern generative AI model training and data processing practices—core compliance issues for developers and organisations building and deploying AI systems under GDPR. These guidelines clarify what constitutes lawful data handling for AI model development, which is essential regulatory guidance for software vendors and compliance officers managing AI projects."
+  accepted: n
+  featured: n
+
+# WARNING: POTENTIAL DUPLICATE (see "Artificial Intelligence and facial recognition - talk with leading AI experts - consilium.europa.eu" below)
+- title: "Artificial Intelligence and facial recognition - talk with leading AI experts - consilium.europa.eu"
+  url: "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNTE05ZjM0Qkx4d1NKQmVFSlVvbXIwdXA4akhsWVB0b1A2c2RJVHpncFVlQTQ3QU0tZzcxblg4NldSWG1VR0hDUTZPTjh5YmNWejQ0M2xMQnJjc2ZQMjRzUi01cFNkREhXTHVZcjY3TFlOcDNUaTYzTTlGREZjUV80QnJkU25aQ01ZLXRJQ05BSEZiV1BtN3dYVkhHNVFFcmFtVUtHSk9YTGxLYnI2M1ZYRmxiaGUtd0VwNUN0RHBxVlc3TzhQejdWQTJ0alM2NTRkYjJIX0VtQktVZmJKRGVuZWlqU3dPb2lNbFY2c1BOSW1uUmM?oc=5"
+  date: "2021-05-02"
+  source: "European Council Press Releases"
+  summary: "Artificial Intelligence and facial recognition - talk with leading AI experts&nbsp;&nbsp;consilium.europa.eu"
+  tags: ["global", "eu", "policy"]
+  relevance: "This concerns AI regulation and governance at the EU level. Facial recognition is a high-risk AI application under the EU AI Act, and expert dialogue on AI and facial recognition directly informs regulatory implementation, enforcement priorities, and compliance obligations for AI system providers and deployers across the EU, including Switzerland-based organisations subject to extraterritorial AI Act requirements."
+  accepted: n
+  featured: n
+
+# WARNING: POTENTIAL DUPLICATE (see "Council agrees position to streamline rules on Artificial Intelligence - consilium.europa.eu" below)
+- title: "Council agrees position to streamline rules on Artificial Intelligence - consilium.europa.eu"
+  url: "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbVRqc3BCTElDZVFKTXRRTEVUZGZzMjVvVkM0ZVdSMFMydkhXUHpoRXd3b2pZYzVJbnpKTWFoU0xRNGVsaGFGR2U5U3UyQ2gtQmxMVTg5WGdSYzZUcGlZVktReFNYTDA5UHdmLTNkMXI3dW9feDladFUxbjBkeDFaR1FEek5yYlVFZzdCVnluZ0xfUTZNTzlUUTNtZW5GWkRwN1ZtOV9hVDFtTmZubUNxaGlYMEhHdVJXS1h3d3lyeHRXU1d5UzdYUjlKa1dGN3N3NnA1c3F3c0hjZw?oc=5"
+  date: "2026-03-13"
+  source: "European Council Press Releases"
+  summary: "Council agrees position to streamline rules on Artificial Intelligence&nbsp;&nbsp;consilium.europa.eu"
+  tags: ["global", "eu", "policy"]
+  relevance: "This concerns EU Council agreement on AI regulation streamlining, which directly affects how the EU AI Act will be implemented and enforced. Swiss AI software providers and enterprises deploying AI systems need to understand how EU regulatory positions evolve, as the EU framework sets de facto standards for AI governance that influence Swiss regulatory expectations and international compliance requirements."
+  accepted: n
+  featured: n
+
+# WARNING: POTENTIAL DUPLICATE (see "Gender bias in artificial intelligence - consilium.europa.eu" below)
+- title: "Gender bias in artificial intelligence - consilium.europa.eu"
+  url: "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNi1IZ1ppV2s2NlFibXBZRkg5VUljY3hHcEp1LUJnajR5MWpMRUZNeXRWOW9qb2ZWQjc4WUs4Rjk3SDNLdzRfRkx4Z0tOUjBpTm0zdGNUWFZCTndOX0Rybi1YemFUa2xkQ0l0R01xaDJaM0Q2bVNTclJGZ1ZUM2VfNG9iUVFfX0NWdHVHQThKVHd2ckMzTE8wMmJzMl81QnUyMlBoOS1pd3NjNnhTNmlJWE5FY01zR1pmanVENEotMzdSQQ?oc=5"
+  date: "2021-03-22"
+  source: "European Council Press Releases"
+  summary: "Gender bias in artificial intelligence&nbsp;&nbsp;consilium.europa.eu"
+  tags: ["global", "eu", "policy"]
+  relevance: "This concerns gender bias in AI systems, which is directly relevant to AI risk assessment, fairness governance, and compliance obligations under the EU AI Act regarding prohibited practices and high-risk system requirements. Software developers and compliance officers need to understand bias detection, mitigation, and documentation requirements for AI systems they build or deploy."
+  accepted: n
+  featured: n
+
+# WARNING: POTENTIAL DUPLICATE (see "Council agrees position to streamline rules on Artificial Intelligence - consilium.europa.eu" below)
+- title: "Council agrees position to streamline rules on Artificial Intelligence - consilium.europa.eu"
+  url: "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTGN5VTVMY2tHSmx3SllEOFN1a0FKRkprd24xdS1fQVVjRlpsbGh5Rml2VngwMndDQUtMcmNkc2x2N1pIUlJ6bzB6SHhKVUxZNzBsV1N1T2czcWhQak1GZFFGX1hHd1ZKVHRTTk5YTW9CV0xYLTJPMS1XdFoyWnlVaXdwMUpwOWs5OEw0N2U4T0VqOUxoRDRvQjJzYjZSZlZHT19iTVYzbW4zOUh0UEVQSzU0c0hVVlM2YUJTc1VjN1FfN0pVb1lnV3B2TXBreVVXUFBoRg?oc=5"
+  date: "2026-03-13"
+  source: "European Council Press Releases"
+  summary: "Council agrees position to streamline rules on Artificial Intelligence&nbsp;&nbsp;consilium.europa.eu"
+  tags: ["global", "eu", "policy"]
+  relevance: "This concerns formal EU Council agreement on AI Act implementation rules, which directly affects compliance obligations for Swiss AI software providers and deployers targeting EU markets, and establishes the regulatory framework that Swiss government and enterprises must monitor for alignment or mirror obligations."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "Artificial Intelligence: Council gives final green light to simplify and streamline rules - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNbzFsd3pWVzQ0V2t6aWFPMXJteUhfZXEzNGhHbDVlMnZWWlJTT2NWS1lzNDlQcmVOeURvMkZaenhDTUdtWTRvSzFBU1pDQlZMcWYxQ0FxMUQxSm9jSXRUaUkyeW1ZMFZLQkc4b0h0YWRsLTJnemZ4NVU0am5JZWZKU19pR3Y4NjZEOXBzdTlGZkVWbjZQeXA5YkZYeVZYeUFlanlQNUFwQXFYeTV1OHNZR3VXUUF6bmRsdUdDb1pHSHJVUzdwX2U0QWtXVFNERmpUUjBJcmFndFdQLTZKVm1vUEM4LTc5VVJsdHNPbQ?oc=5"
   date: "2026-06-29"
@@ -29,8 +85,6 @@
   accepted: n
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "Artificial Intelligence and facial recognition - talk with leading AI experts - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPdVlNV3NfMVpUMktKSWh3YmQ2d0xQOFpvd1lsWTRJdkxLY1RJYkU0djVZbWJGTnoyZmVPRU9wU2ZINlRRd1h6SE1sa3RER3l3ZGt1M3lZM2RuMmFOdllDYVZXc0p0V21hMHJWUW1ZM0RSOWNHd01MMGxYa24wX3VMWTNXZm5idHVsSDlUWkozTk82YVgzVFVoUk9KTEM1aUJfN2xycktEMFprTGVKbGpOeDhxWV81czQ4YURQSUVES1hUWnUxbHFMaVpWbmVTQkhlSFFvT29MWmN3ei1xQTNRLUpyMW9hMHdPLTl3WUZrSUNBQnc?oc=5"
   date: "2021-04-29"
