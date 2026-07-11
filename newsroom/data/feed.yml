@@ -1,4 +1,16 @@
 # -- New candidates --------------------------------------------------------
+- title: "European Coordinated Plan on Artificial Intelligence - consilium.europa.eu"
+  url: "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcDBRWFNQMTFuZ19LLXNWbWp4cHBKOHBtaWxFR2NRdU5Rd0pSbkhSNXNabHRBTnc2NEkwdnBYQVA3Z2ZzQXh4dWZUcmFxR2U3Q213ZEd6S293a0o4MFFjMVNjc0RnOWNHYl8xVTJob0lIZWdmYllNRURsXzRrVXNyXzlSWkNma0s1QWloRXJFYnFuNGRadzgwcVM3Y1FDOTd2cXRtZXlmdkU3al9LYkdSWlJ4WGRpaGhVb3BzZw?oc=5"
+  date: "2019-02-18"
+  source: "European Council Press Releases"
+  summary: "European Coordinated Plan on Artificial Intelligence&nbsp;&nbsp;consilium.europa.eu"
+  tags: ["global", "eu", "policy"]
+  relevance: "This item concerns the European Coordinated Plan on AI, which directly affects how Swiss and EU organisations must navigate AI regulation, governance frameworks, and compliance obligations. Government officials and compliance officers in Switzerland need to understand EU AI strategy and coordination mechanisms that influence standards, enforcement priorities, and sector-specific AI governance requirements that may affect Swiss enterprises operating in the EU market."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "EDPB sheds light on anonymisation and web scraping for generative AI and adopts final version of guidelines on blockchain"
   url: "https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en"
   date: "2026-07-08"
@@ -9,7 +21,6 @@
   accepted: n
   featured: n
 
-# WARNING: POTENTIAL DUPLICATE (see "Artificial Intelligence and facial recognition - talk with leading AI experts - consilium.europa.eu" below)
 - title: "Artificial Intelligence and facial recognition - talk with leading AI experts - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNTE05ZjM0Qkx4d1NKQmVFSlVvbXIwdXA4akhsWVB0b1A2c2RJVHpncFVlQTQ3QU0tZzcxblg4NldSWG1VR0hDUTZPTjh5YmNWejQ0M2xMQnJjc2ZQMjRzUi01cFNkREhXTHVZcjY3TFlOcDNUaTYzTTlGREZjUV80QnJkU25aQ01ZLXRJQ05BSEZiV1BtN3dYVkhHNVFFcmFtVUtHSk9YTGxLYnI2M1ZYRmxiaGUtd0VwNUN0RHBxVlc3TzhQejdWQTJ0alM2NTRkYjJIX0VtQktVZmJKRGVuZWlqU3dPb2lNbFY2c1BOSW1uUmM?oc=5"
   date: "2021-05-02"
@@ -20,7 +31,6 @@
   accepted: n
   featured: n
 
-# WARNING: POTENTIAL DUPLICATE (see "Council agrees position to streamline rules on Artificial Intelligence - consilium.europa.eu" below)
 - title: "Council agrees position to streamline rules on Artificial Intelligence - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbVRqc3BCTElDZVFKTXRRTEVUZGZzMjVvVkM0ZVdSMFMydkhXUHpoRXd3b2pZYzVJbnpKTWFoU0xRNGVsaGFGR2U5U3UyQ2gtQmxMVTg5WGdSYzZUcGlZVktReFNYTDA5UHdmLTNkMXI3dW9feDladFUxbjBkeDFaR1FEek5yYlVFZzdCVnluZ0xfUTZNTzlUUTNtZW5GWkRwN1ZtOV9hVDFtTmZubUNxaGlYMEhHdVJXS1h3d3lyeHRXU1d5UzdYUjlKa1dGN3N3NnA1c3F3c0hjZw?oc=5"
   date: "2026-03-13"
@@ -31,7 +41,6 @@
   accepted: n
   featured: n
 
-# WARNING: POTENTIAL DUPLICATE (see "Gender bias in artificial intelligence - consilium.europa.eu" below)
 - title: "Gender bias in artificial intelligence - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNi1IZ1ppV2s2NlFibXBZRkg5VUljY3hHcEp1LUJnajR5MWpMRUZNeXRWOW9qb2ZWQjc4WUs4Rjk3SDNLdzRfRkx4Z0tOUjBpTm0zdGNUWFZCTndOX0Rybi1YemFUa2xkQ0l0R01xaDJaM0Q2bVNTclJGZ1ZUM2VfNG9iUVFfX0NWdHVHQThKVHd2ckMzTE8wMmJzMl81QnUyMlBoOS1pd3NjNnhTNmlJWE5FY01zR1pmanVENEotMzdSQQ?oc=5"
   date: "2021-03-22"
@@ -42,7 +51,6 @@
   accepted: n
   featured: n
 
-# WARNING: POTENTIAL DUPLICATE (see "Council agrees position to streamline rules on Artificial Intelligence - consilium.europa.eu" below)
 - title: "Council agrees position to streamline rules on Artificial Intelligence - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTGN5VTVMY2tHSmx3SllEOFN1a0FKRkprd24xdS1fQVVjRlpsbGh5Rml2VngwMndDQUtMcmNkc2x2N1pIUlJ6bzB6SHhKVUxZNzBsV1N1T2czcWhQak1GZFFGX1hHd1ZKVHRTTk5YTW9CV0xYLTJPMS1XdFoyWnlVaXdwMUpwOWs5OEw0N2U4T0VqOUxoRDRvQjJzYjZSZlZHT19iTVYzbW4zOUh0UEVQSzU0c0hVVlM2YUJTc1VjN1FfN0pVb1lnV3B2TXBreVVXUFBoRg?oc=5"
   date: "2026-03-13"
@@ -53,8 +61,6 @@
   accepted: n
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "Artificial Intelligence: Council gives final green light to simplify and streamline rules - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNbzFsd3pWVzQ0V2t6aWFPMXJteUhfZXEzNGhHbDVlMnZWWlJTT2NWS1lzNDlQcmVOeURvMkZaenhDTUdtWTRvSzFBU1pDQlZMcWYxQ0FxMUQxSm9jSXRUaUkyeW1ZMFZLQkc4b0h0YWRsLTJnemZ4NVU0am5JZWZKU19pR3Y4NjZEOXBzdTlGZkVWbjZQeXA5YkZYeVZYeUFlanlQNUFwQXFYeTV1OHNZR3VXUUF6bmRsdUdDb1pHSHJVUzdwX2U0QWtXVFNERmpUUjBJcmFndFdQLTZKVm1vUEM4LTc5VVJsdHNPbQ?oc=5"
   date: "2026-06-29"
