@@ -1,4 +1,36 @@
 # -- New candidates --------------------------------------------------------
+- title: "ETSI launches new Technical Committee on Federated Network, Edge, Cloud and AI Technologies"
+  url: "https://www.etsi.org/newsroom/press-releases/etsi-launches-new-technical-committee-on-federated-network-edge-cloud-and-ai-technologies/"
+  date: "2026-07-15"
+  source: "ETSI Newsroom"
+  summary: "Press Release 25 June 2026 ETSI launches new Technical Committee on Federated Network, Edge, Cloud and AI Technologies The specification ensures that emergency communications operate successfully despite growing complexity in the network environment. Read more ETSI launches new Technical Committe..."
+  tags: ["global", "eu", "standard", "conformity"]
+  relevance: "ETSI's creation of a new Technical Committee on Federated Network, Edge, Cloud and AI Technologies directly signals development of harmonised standards for AI systems in distributed environments. This affects software developers and vendors building AI solutions on edge/cloud infrastructure who must understand emerging ETSI technical standards that may inform or align with EU AI Act conformity assessment requirements and ISO/IEC 42001 compliance obligations."
+  accepted: n
+  featured: n
+
+- title: "ETSI releases Standard on Securing AI Computing Platforms"
+  url: "https://www.etsi.org/newsroom/press-releases/etsi-releases-standard-on-securing-ai-comuting-platforms/"
+  date: "2026-07-15"
+  source: "ETSI Newsroom"
+  summary: "Press Release 2 June 2026 ETSI releases Standard on Securing AI Computing Platforms The specification ensures that emergency communications operate successfully despite growing complexity in the network environment. Read more ETSI releases Standard on Securing AI Computing Platforms"
+  tags: ["global", "eu", "standard", "conformity"]
+  relevance: "ETSI's new standard on securing AI computing platforms directly addresses technical security requirements for AI infrastructure. This is a harmonised or emerging standard that AI system deployers and developers—particularly in critical sectors like emergency communications—must understand and potentially implement to meet AI governance and conformity requirements. It represents a concrete technical standard applicable to organisations building or operating AI systems."
+  accepted: n
+  featured: n
+
+- title: "ETSI UCAAT 2026 returns to ETSI Headquarters, spotlighting AI quality and the future of testing"
+  url: "https://www.etsi.org/newsroom/news/etsi-ucaat-2026-returns-to-etsi-headquarters/"
+  date: "2026-07-15"
+  source: "ETSI Newsroom"
+  summary: "News 6 May 2026 ETSI UCAAT 2026 returns to ETSI Headquarters, spotlighting AI quality and the future of testing After 11 years, the ETSI User Conference on Advanced Automated Testing (UCAAT), held from 14 to 16 April 2026, returned to ETSI headquarters, making one... Read more ETSI UCAAT 2026 ret..."
+  tags: ["global", "eu", "standard", "conformity"]
+  relevance: "ETSI UCAAT 2026 directly addresses AI quality and testing standards, which are core technical compliance requirements for developers building AI systems. Testing and validation of AI systems are key implementation obligations under EU AI Act conformity assessment procedures, and ETSI conference outcomes on testing methodologies directly inform the harmonised standards (CEN-CENELEC JTC 21) that vendors and organisations must follow."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "European Coordinated Plan on Artificial Intelligence - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcDBRWFNQMTFuZ19LLXNWbWp4cHBKOHBtaWxFR2NRdU5Rd0pSbkhSNXNabHRBTnc2NEkwdnBYQVA3Z2ZzQXh4dWZUcmFxR2U3Q213ZEd6S293a0o4MFFjMVNjc0RnOWNHYl8xVTJob0lIZWdmYllNRURsXzRrVXNyXzlSWkNma0s1QWloRXJFYnFuNGRadzgwcVM3Y1FDOTd2cXRtZXlmdkU3al9LYkdSWlJ4WGRpaGhVb3BzZw?oc=5"
   date: "2019-02-18"
@@ -9,8 +41,6 @@
   accepted: n
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "EDPB sheds light on anonymisation and web scraping for generative AI and adopts final version of guidelines on blockchain"
   url: "https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en"
   date: "2026-07-08"
