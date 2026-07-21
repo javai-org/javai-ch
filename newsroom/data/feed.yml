@@ -1,4 +1,16 @@
 # -- New candidates --------------------------------------------------------
+- title: "Commission publishes guidelines on transparency obligations for providers and deployers of certain AI systems"
+  url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1653"
+  date: "2026-07-19"
+  source: "European Commission Press Releases"
+  summary: "European Commission Press release Brussels, 20 Jul 2026 Today, the European Commission published guidelines to assist providers and deployers of artificial intelligence (AI) systems in meeting the AI Act's transparency obligations, which start to apply on 2 August 2026."
+  tags: ["global", "eu", "policy"]
+  relevance: "These guidelines directly specify transparency obligations under the EU AI Act that apply to AI system providers and deployers starting 2 August 2026, providing concrete compliance requirements that software vendors and enterprises deploying AI systems in Switzerland and the EU must implement."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "ETSI launches new Technical Committee on Federated Network, Edge, Cloud and AI Technologies"
   url: "https://www.etsi.org/newsroom/press-releases/etsi-launches-new-technical-committee-on-federated-network-edge-cloud-and-ai-technologies/"
   date: "2026-07-15"
@@ -29,8 +41,6 @@
   accepted: n
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "European Coordinated Plan on Artificial Intelligence - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcDBRWFNQMTFuZ19LLXNWbWp4cHBKOHBtaWxFR2NRdU5Rd0pSbkhSNXNabHRBTnc2NEkwdnBYQVA3Z2ZzQXh4dWZUcmFxR2U3Q213ZEd6S293a0o4MFFjMVNjc0RnOWNHYl8xVTJob0lIZWdmYllNRURsXzRrVXNyXzlSWkNma0s1QWloRXJFYnFuNGRadzgwcVM3Y1FDOTd2cXRtZXlmdkU3al9LYkdSWlJ4WGRpaGhVb3BzZw?oc=5"
   date: "2019-02-18"
