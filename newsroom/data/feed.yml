@@ -1,4 +1,96 @@
 # -- New candidates --------------------------------------------------------
+- title: "NIST Expands AI Consortium’s Scope, Calls for New Members"
+  url: "https://www.nist.gov/news-events/news/2026/05/nist-expands-ai-consortiums-scope-calls-new-members"
+  date: "2026-05-29"
+  source: "NIST AI / Information Technology"
+  summary: "The consortium will focus on AI innovation and adoption, with six task groups concentrating on different aspects of AI measurement science and evaluation."
+  tags: ["global", "standard", "risk-management", "us", "monitoring"]
+  relevance: "NIST's expansion of its AI consortium and focus on AI measurement science and evaluation directly informs technical standards development for AI systems testing and validation. Software developers and compliance officers in Swiss enterprises need to understand international measurement standards and evaluation frameworks that will influence harmonised standards (CEN-CENELEC JTC 21) and ISO/IEC standards for AI, which Switzerland and the EU adopt. Task groups on AI measurement science are foundational to the technical requirements developers must"
+  accepted: n
+  featured: n
+
+- title: "NIST Mathematical Proof Supports Transition to a Continuous-Monitor-and-Update Security Model for AI Systems"
+  url: "https://www.nist.gov/news-events/news/2026/06/nist-mathematical-proof-supports-transition-continuous-monitor-and-update"
+  date: "2026-06-09"
+  source: "NIST AI / Information Technology"
+  summary: "The proof extends to AI the logic used by famed mathematician Kurt Gödel, whose incompleteness theorems have had a profound effect on math for nearly a century."
+  tags: ["global", "standard", "risk-management", "us", "monitoring"]
+  relevance: "This item directly concerns AI system governance and lifecycle assurance. The mathematical framework for continuous monitoring and updating of AI systems addresses a core technical and compliance requirement for developers and organisations deploying AI — specifically, how to ensure ongoing performance validation, drift detection, and robustness assurance throughout an AI system's operational life. This supports implementation of EU AI Act conformity assessment procedures (Articles 6–8) and post-market monitoring obligations (Article 72), as well as ISO"
+  accepted: n
+  featured: n
+
+- title: "NIST NCCoE Genomic Data PETs Testbed &amp; Dioptra Webinar"
+  url: "https://www.nist.gov/news-events/events/2026/06/nist-nccoe-genomic-data-pets-testbed-dioptra-webinar"
+  date: "2026-06-09"
+  source: "NIST AI / Information Technology"
+  summary: "Event Date/Time: June 9, 2026 | 1:00 P.M. – 3:30 P.M. EDT The NIST NCCoE is hosting a webinar to showcase recent work demonstrating the use of the NIST Privacy-Enhancing Technologies (PETs) Testbed and the NIST Dioptra platform to enhance AI"
+  tags: ["global", "standard", "risk-management", "us", "monitoring"]
+  relevance: "This concerns NIST Dioptra, a platform for testing and validating AI robustness and performance — directly relevant to developers and vendors needing to understand testing, validation, and governance practices for AI systems, and to compliance officers assessing technical standards and assurance mechanisms for AI deployments."
+  accepted: n
+  featured: n
+
+- title: "NIST NCCoE Cyber AI Profile Virtual Working Session Series: Usability of the Profile"
+  url: "https://www.nist.gov/news-events/events/2026/05/nist-nccoe-cyber-ai-profile-virtual-working-session-series-usability"
+  date: "2026-05-12"
+  source: "NIST AI / Information Technology"
+  summary: "Event Date/Time: May 12, 2026 | 1:00 P.M. – 4:00 P.M. Join the NIST NCCoE for the third session of a virtual working series to provide input on the NIST Cybersecurity Framework (CSF) Cyber Artificial Intelligence (AI) Profile (“Cyber AI Profile\"). To"
+  tags: ["global", "standard", "risk-management", "us", "monitoring"]
+  relevance: "This session addresses the NIST Cybersecurity Framework Cyber AI Profile, a concrete technical governance framework for securing AI systems. Software vendors, AI system deployers, and compliance officers need to understand how this profile defines cybersecurity obligations and conformity practices specific to AI systems, which directly affects their implementation and compliance responsibilities."
+  accepted: n
+  featured: n
+
+- title: "NIST NCCoE Cyber AI Profile Virtual Working Session Series: Extending the Technical Content"
+  url: "https://www.nist.gov/news-events/events/2026/05/nist-nccoe-cyber-ai-profile-virtual-working-session-series-extending"
+  date: "2026-05-05"
+  source: "NIST AI / Information Technology"
+  summary: "Event Date/Time: May 5, 2026 | 1:00 P.M. – 4:00 P.M. Join the NIST NCCoE for the second session of a virtual working series to provide input on the NIST Cybersecurity Framework (CSF) Cyber Artificial Intelligence (AI) Profile (“Cyber AI Profile\"). To"
+  tags: ["global", "standard", "risk-management", "us", "monitoring"]
+  relevance: "This concerns the NIST Cybersecurity Framework Cyber AI Profile, a concrete technical standard and governance framework for AI systems. Software vendors and enterprise IT leaders building or deploying AI systems need to understand how this profile will establish security and risk management requirements for AI systems, particularly in critical infrastructure and government sectors that follow NIST guidance. The working session directly shapes technical content that will affect AI system design, testing, and compliance obligations."
+  accepted: n
+  featured: n
+
+- title: "NIST NCCoE Cyber AI Profile Virtual Working Session Series: Updates to Profile Elements and Contents"
+  url: "https://www.nist.gov/news-events/events/2026/04/nist-nccoe-cyber-ai-profile-virtual-working-session-series-updates"
+  date: "2026-04-28"
+  source: "NIST AI / Information Technology"
+  summary: "Event Date/Time: April 28, 2026 | 1:00 P.M. – 4:00 P.M. Join the NIST NCCoE for the first session of a virtual working series to provide input on the NIST Cybersecurity Framework (CSF) Cyber Artificial Intelligence (AI) Profile (“Cyber AI Profile\")"
+  tags: ["global", "standard", "risk-management", "us", "monitoring"]
+  relevance: "NIST's Cybersecurity Framework AI Profile directly establishes technical governance requirements and best practices for AI systems security that software developers and AI vendors need to understand for compliance with U.S. cybersecurity standards, which influence international AI governance frameworks including those applicable to Swiss organizations deploying AI systems."
+  accepted: n
+  featured: n
+
+- title: "NIST Workshop on AI Incident Management"
+  url: "https://www.nist.gov/news-events/events/2026/05/nist-workshop-ai-incident-management"
+  date: "2026-05-14"
+  source: "NIST AI / Information Technology"
+  summary: "The National Institute of Standards and Technology (NIST), within the U.S. Department of Commerce, invites stakeholders to participate in an upcoming workshop on AI Incident Management. As AI systems become increasingly integral to critical"
+  tags: ["global", "standard", "risk-management", "us", "monitoring"]
+  relevance: "NIST workshops on AI incident management directly inform technical standards and governance practices for managing AI system failures and adverse events. Swiss software vendors and organisations deploying AI systems need to understand incident reporting, documentation, and response requirements that are emerging from U.S. standards bodies and may inform international harmonised standards (CEN-CENELEC JTC 21) and ISO/IEC frameworks that apply in Switzerland."
+  accepted: n
+  featured: n
+
+- title: "Technologies and Use Cases for Smart Standards"
+  url: "https://www.nist.gov/news-events/events/2026/03/technologies-and-use-cases-smart-standards"
+  date: "2026-03-19"
+  source: "NIST AI / Information Technology"
+  summary: "The rapid development and deployment of emerging technologies such as artificial intelligence, blockchain, and the internet of things is driving an increased need for standards that can keep pace with the accelerating rate of technological change. As"
+  tags: ["global", "standard", "risk-management", "us", "monitoring"]
+  relevance: "This directly addresses the development of technical standards for emerging technologies including AI, which is fundamental to understanding how harmonised standards (like those from CEN-CENELEC JTC 21 and ISO/IEC standards) are being shaped to address AI systems. Software developers and compliance officers need to understand how standards frameworks are evolving to support AI implementation and conformity assessment requirements under the AI Act and related governance frameworks."
+  accepted: n
+  featured: n
+
+- title: "New Concept Paper on Identity and Authority of Software Agents"
+  url: "https://www.nist.gov/news-events/news/2026/02/new-concept-paper-identity-and-authority-software-agents"
+  date: "2026-02-05"
+  source: "NIST AI / Information Technology"
+  summary: "The NIST National Cybersecurity Center of Excellence is interested in launching a project to demonstrate how identity standards and best practices can be applied to software agents, with a focus on agentic AI applications. Artificial Intelligence (AI"
+  tags: ["global", "standard", "risk-management", "us", "monitoring"]
+  relevance: "This item directly concerns governance and standards frameworks for AI systems—specifically, identity management and authentication standards for agentic AI applications. Software vendors building autonomous AI agents and compliance officers implementing AI governance need to understand how identity and authority standards will apply to their systems, as this will likely inform both technical implementation requirements and regulatory compliance obligations for AI agent deployment."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "Commission publishes guidelines on transparency obligations for providers and deployers of certain AI systems"
   url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1653"
   date: "2026-07-19"
@@ -9,8 +101,6 @@
   accepted: n
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "ETSI launches new Technical Committee on Federated Network, Edge, Cloud and AI Technologies"
   url: "https://www.etsi.org/newsroom/press-releases/etsi-launches-new-technical-committee-on-federated-network-edge-cloud-and-ai-technologies/"
   date: "2026-07-15"
