@@ -1,4 +1,4 @@
-# -- New candidates --------------------------------------------------------
+# -- Published feed ---------------------------------------------------------
 - title: "NIST Expands AI Consortium’s Scope, Calls for New Members"
   url: "https://www.nist.gov/news-events/news/2026/05/nist-expands-ai-consortiums-scope-calls-new-members"
   date: "2026-05-29"
@@ -89,8 +89,6 @@
   accepted: n
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "Commission publishes guidelines on transparency obligations for providers and deployers of certain AI systems"
   url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1653"
   date: "2026-07-19"
