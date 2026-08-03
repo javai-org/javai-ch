@@ -1,4 +1,56 @@
 # -- New candidates --------------------------------------------------------
+- title: "Daily News 31 / 07 / 2026"
+  url: "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1715"
+  date: "2026-07-31"
+  source: "European Commission Press Releases"
+  summary: "European Commission Daily news Brussels, 31 Jul 2026 Commission starts enforcing AI Act rules and new transparency requirements on 2 August From 2 August 2026, the European Commission's AI Office, together with na..."
+  tags: ["global", "eu", "policy"]
+  relevance: "This announces the start of enforcement of AI Act rules and transparency requirements by the European Commission's AI Office, which directly establishes concrete obligations and compliance deadlines for AI system providers and deployers across the EU, including Swiss organisations subject to EU market access requirements. Developers and compliance officers need to understand these enforcement actions and their implications for AI governance, technical documentation, and regulatory obligations."
+  accepted: n
+  featured: n
+
+- title: "Commission starts enforcing AI Act rules and new transparency requirements on 2 August"
+  url: "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1714"
+  date: "2026-07-31"
+  source: "European Commission Press Releases"
+  summary: "European Commission Press release Brussels, 31 Jul 2026 From 2 August 2026, the European Commission's AI Office, together with national authorities, will begin enforcing the Artificial Intelligence (AI) Act. On the same date, new transparency rules will start to apply."
+  tags: ["global", "eu", "policy"]
+  relevance: "This announces the start of enforcement of the EU AI Act and activation of transparency requirements—direct, concrete obligations that will affect AI system providers and deployers across Switzerland and EU member states regarding compliance timelines, documentation, and regulatory authority oversight. Software developers and compliance officers need to understand enforcement mechanisms and when obligations become legally binding."
+  accepted: n
+  featured: n
+
+- title: "Guidance: London Region I MHRA Regulatory Sandbox: call for expressions of interest"
+  url: "https://www.gov.uk/government/publications/london-region-i-mhra-regulatory-sandbox-call-for-expressions-of-interest"
+  date: "2026-07-30"
+  source: "MHRA"
+  summary: "Expressions of interest are invited from AI-enabled medical device manufacturers and NHS provider organisations interested in participating in the London Region I MHRA Regulatory Sandbox."
+  tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+  relevance: "This directly concerns sector-specific AI regulation in healthcare/medical devices. The MHRA (UK Medicines and Healthcare products Regulatory Agency) regulatory sandbox for AI-enabled medical devices is a concrete governance mechanism that medical device manufacturers and healthcare organisations need to understand regarding AI device approval pathways, testing requirements, and regulatory oversight of AI systems in clinical settings."
+  accepted: n
+  featured: n
+
+- title: "MHRA clarifies regulatory status of ambient voice technologies used in the NHS"
+  url: "https://www.gov.uk/government/news/mhra-clarifies-regulatory-status-of-ambient-voice-technologies-used-in-the-nhs"
+  date: "2026-07-29"
+  source: "MHRA"
+  summary: "The Medicines and Healthcare products Regulatory Agency has published guidance, developed in close partnership with NHS England, clarifying how existing medical device law applies to ambient voice technology (AVT) products used in health and care settings in Great Britain."
+  tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+  relevance: "This directly addresses sector-specific AI regulation in healthcare. Ambient voice technologies are AI-driven automated decision-making systems (speech recognition and processing) used in medical contexts. The MHRA guidance clarifies how medical device regulatory obligations apply to these AI systems in NHS settings, which affects healthcare compliance officers, medical device vendors deploying AI voice systems, and UK/international regulators monitoring AI governance in regulated sectors. This is a concrete regulatory clarification on AI system classification and conform"
+  accepted: n
+  featured: n
+
+- title: "Guidance: Digital mental health technology: qualification and classification"
+  url: "https://www.gov.uk/government/publications/digital-mental-health-technology-qualification-and-classification"
+  date: "2026-07-29"
+  source: "MHRA"
+  summary: "Helping manufacturers define the characteristics of their devices and determine the appropriate regulatory qualification and classification."
+  tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+  relevance: "This guidance directly addresses how digital mental health technology manufacturers must qualify and classify their devices under MHRA regulation. For vendors building AI-powered mental health software (including diagnostic algorithms, treatment recommendation systems, or monitoring tools), this clarifies regulatory obligations and classification pathways that determine conformity assessment requirements and approval timelines—critical compliance information for UK/EU market entry."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "Speech by President António Costa at the UN Security Council on Artificial Intelligence and International Peace and Security - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMinAJBVV95cUxPZnBmeXRaRVI5MWcxU0lZSzFmUV9FNl9wTzVtV3JiS1k2QWR6WGZwa093VnFtTl94c0Vfa2dqRnVJU3cxbW5hWXZFcWc4a2RxWFc0azJMekQ5OEk2dTRpNWs2d0xsVmRyZDZhb3ZyMzE1YUZzTFJiamVDYzRhUVM1a2FTc2RVaWhDb0phajM4c1dvYjh1SktEUlhDNmxhVjAwRFg5OHFMbFRrMVhOSUNuSU50NFRMdkVaU0J1by10V2dXSUxsRVc5eGUwMjc5UEV4WmtCOGFuOEZVZDIzYVNpSnVWYk5JZTZQYW03UzJwRVAzYnM5dWgxYTdiWW9XVWlMbGVxN0JpSklsdnhZT2RrTVFDenJqLS1qZFcxcw?oc=5"
   date: "2025-09-25"
@@ -27,8 +79,6 @@
   accepted: n
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "NIST Expands AI Consortium’s Scope, Calls for New Members"
   url: "https://www.nist.gov/news-events/news/2026/05/nist-expands-ai-consortiums-scope-calls-new-members"
   date: "2026-05-29"
