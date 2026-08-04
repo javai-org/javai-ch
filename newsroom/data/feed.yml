@@ -16,8 +16,8 @@
   summary: "European Commission Press release Brussels, 31 Jul 2026 From 2 August 2026, the European Commission's AI Office, together with national authorities, will begin enforcing the Artificial Intelligence (AI) Act. On the same date, new transparency rules will start to apply."
   tags: ["global", "eu", "policy"]
   relevance: "This announces the start of enforcement of the EU AI Act and activation of transparency requirements—direct, concrete obligations that will affect AI system providers and deployers across Switzerland and EU member states regarding compliance timelines, documentation, and regulatory authority oversight. Software developers and compliance officers need to understand enforcement mechanisms and when obligations become legally binding."
-  accepted: n
-  featured: n
+  accepted: y
+  featured: y
 
 - title: "Guidance: London Region I MHRA Regulatory Sandbox: call for expressions of interest"
   url: "https://www.gov.uk/government/publications/london-region-i-mhra-regulatory-sandbox-call-for-expressions-of-interest"
@@ -26,7 +26,7 @@
   summary: "Expressions of interest are invited from AI-enabled medical device manufacturers and NHS provider organisations interested in participating in the London Region I MHRA Regulatory Sandbox."
   tags: ["uk", "pharma", "medicine", "health", "regulatory"]
   relevance: "This directly concerns sector-specific AI regulation in healthcare/medical devices. The MHRA (UK Medicines and Healthcare products Regulatory Agency) regulatory sandbox for AI-enabled medical devices is a concrete governance mechanism that medical device manufacturers and healthcare organisations need to understand regarding AI device approval pathways, testing requirements, and regulatory oversight of AI systems in clinical settings."
-  accepted: n
+  accepted: y
   featured: n
 
 - title: "MHRA clarifies regulatory status of ambient voice technologies used in the NHS"
@@ -36,7 +36,7 @@
   summary: "The Medicines and Healthcare products Regulatory Agency has published guidance, developed in close partnership with NHS England, clarifying how existing medical device law applies to ambient voice technology (AVT) products used in health and care settings in Great Britain."
   tags: ["uk", "pharma", "medicine", "health", "regulatory"]
   relevance: "This directly addresses sector-specific AI regulation in healthcare. Ambient voice technologies are AI-driven automated decision-making systems (speech recognition and processing) used in medical contexts. The MHRA guidance clarifies how medical device regulatory obligations apply to these AI systems in NHS settings, which affects healthcare compliance officers, medical device vendors deploying AI voice systems, and UK/international regulators monitoring AI governance in regulated sectors. This is a concrete regulatory clarification on AI system classification and conform"
-  accepted: n
+  accepted: y
   featured: n
 
 - title: "Guidance: Digital mental health technology: qualification and classification"
@@ -46,7 +46,7 @@
   summary: "Helping manufacturers define the characteristics of their devices and determine the appropriate regulatory qualification and classification."
   tags: ["uk", "pharma", "medicine", "health", "regulatory"]
   relevance: "This guidance directly addresses how digital mental health technology manufacturers must qualify and classify their devices under MHRA regulation. For vendors building AI-powered mental health software (including diagnostic algorithms, treatment recommendation systems, or monitoring tools), this clarifies regulatory obligations and classification pathways that determine conformity assessment requirements and approval timelines—critical compliance information for UK/EU market entry."
-  accepted: n
+  accepted: y
   featured: n
 
 
