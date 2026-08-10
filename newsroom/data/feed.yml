@@ -1,4 +1,27 @@
 # -- New candidates --------------------------------------------------------
+# WARNING: POTENTIAL DUPLICATE (see "Artificial Intelligence: Council and Parliament agree to simplify and streamline rules - consilium.europa.eu" below)
+- title: "Artificial Intelligence: Council and Parliament agree to simplify and streamline rules - consilium.europa.eu"
+  url: "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOcC0wYi0yOE9RRTNMbVl4RDFDN2xDenV6bVF6VXVBSm5pS0xiMVZwS0ZGTEhPQ3RvcXItd2VyQkxDdWNRQnNvN3RJSkVxUFUzSUpMVFFrQmZobVZuMzBHNWpIZjlmUGVUa05zWFVZWnNpbEpnd243TE1paE1QdmtLU2ZGZlAtM0tkUWg2SUI4RUZrU3QzdC1kMDRyQlB5cTJQelRMUFNaQk5DcExPa2l5NEFNanpvM1A3cURWdkRjOW9GdGJ5OXV1eW45MDZvN21JQlI4cUlSb2xLVGwxT2Y4bzhCaFE5bDZR?oc=5"
+  date: "2026-05-07"
+  source: "European Council Press Releases"
+  summary: "Artificial Intelligence: Council and Parliament agree to simplify and streamline rules&nbsp;&nbsp;consilium.europa.eu"
+  tags: ["global", "eu", "policy"]
+  relevance: "This announces agreement between EU Council and Parliament on AI Act amendments to simplify and streamline rules. Software developers, vendors, and compliance officers in Swiss enterprises need to understand EU AI regulatory changes, as they affect market access, compliance obligations, and technical implementation requirements for AI systems sold into or operating in EU jurisdictions."
+  accepted: n
+  featured: n
+
+- title: "Regulamentul privind inteligența artificială - consilium.europa.eu"
+  url: "https://news.google.com/rss/articles/CBMifEFVX3lxTE1DZFVyT3dwd2VHbEtfSzQzcWFXWE1GYjFIUEFHclBPdjNjOHRwNHozMjNlQjM1UDVSVHRmRlNfV3NiVXZ4WUZha2IwRDFiZ0hQWjBUYi1ueEtySnJ5Y1laZG82bkJPNm5xSm5ydjU4VWlkN0N1eFlhLUNjeHU?oc=5"
+  date: "2026-03-06"
+  source: "European Council Press Releases"
+  summary: "Regulamentul privind inteligența artificială&nbsp;&nbsp;consilium.europa.eu"
+  tags: ["global", "eu", "policy"]
+  relevance: "This is an official European Council resource on the AI Regulation (EU AI Act), which directly establishes concrete legal obligations for AI system providers and deployers across the EU, including Switzerland-adjacent jurisdictions. Swiss software vendors, compliance officers, and enterprise leaders need to understand EU AI Act requirements as they affect market access, conformity assessment, technical documentation, and risk classification obligations for AI systems."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "Daily News 31 / 07 / 2026"
   url: "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1715"
   date: "2026-07-31"
@@ -49,8 +72,6 @@
   accepted: y
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "Speech by President António Costa at the UN Security Council on Artificial Intelligence and International Peace and Security - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMinAJBVV95cUxPZnBmeXRaRVI5MWcxU0lZSzFmUV9FNl9wTzVtV3JiS1k2QWR6WGZwa093VnFtTl94c0Vfa2dqRnVJU3cxbW5hWXZFcWc4a2RxWFc0azJMekQ5OEk2dTRpNWs2d0xsVmRyZDZhb3ZyMzE1YUZzTFJiamVDYzRhUVM1a2FTc2RVaWhDb0phajM4c1dvYjh1SktEUlhDNmxhVjAwRFg5OHFMbFRrMVhOSUNuSU50NFRMdkVaU0J1by10V2dXSUxsRVc5eGUwMjc5UEV4WmtCOGFuOEZVZDIzYVNpSnVWYk5JZTZQYW03UzJwRVAzYnM5dWgxYTdiWW9XVWlMbGVxN0JpSklsdnhZT2RrTVFDenJqLS1qZFcxcw?oc=5"
   date: "2025-09-25"
