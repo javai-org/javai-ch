@@ -1,5 +1,36 @@
 # -- New candidates --------------------------------------------------------
-# WARNING: POTENTIAL DUPLICATE (see "Artificial Intelligence: Council and Parliament agree to simplify and streamline rules - consilium.europa.eu" below)
+- title: "Regulamento Inteligência Artificial: Conselho e Parlamento alcançam acordo sobre as primeiras regras em matéria de IA no mundo - consilium.europa.eu"
+  url: "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPN0ZXSjEtdHdwdWdEZnQzZ0ZYMnRjWXRsbEJRUTBQNVk2Mk45eDFvdk12ek9xQVFtamc2TUo5LTBLb2xTaEV6eHZ2WmFRaEgwUWQ2UHR1Y09VQ3hXMUNleklfbG5XQlNLN2FlRng2R0hWcjVzUWhzcnVOTW5pS1docUoxYXZRT0gybUxpUmwwSUlFYTIyOG1VV19NUHh6bjJJLXZaUzAxZ2hiTlU5T3lsUEJNM01aN0xGOUlVLXk5aWc1Qmg1LTBMMW82VTlQNmhMTjVrZkViUkZtRzBYTkE4NHBZM2llNzQ4ZDJPWmhnUkJyYnhIMU5vdW56OTM?oc=5"
+  date: "2023-12-09"
+  source: "European Council Press Releases"
+  summary: "Regulamento Inteligência Artificial: Conselho e Parlamento alcançam acordo sobre as primeiras regras em matéria de IA no mundo&nbsp;&nbsp;consilium.europa.eu"
+  tags: ["global", "eu", "policy"]
+  relevance: "This announces agreement between EU Council and Parliament on the AI Act, the world's first comprehensive AI regulation. This directly affects AI software providers and deployers who must comply with EU AI Act obligations, and is essential for Swiss enterprises and government officials monitoring international AI governance standards and their implications for cross-border AI operations."
+  accepted: n
+  featured: n
+
+- title: "MHRA and Manchester NHS partner on health innovation sandbox"
+  url: "https://www.gov.uk/government/news/mhra-and-manchester-nhs-partner-on-health-innovation-sandbox"
+  date: "2026-09-02"
+  source: "MHRA"
+  summary: "New partnership to create health innovation sandbox that will test promising new technologies and build evidence to accelerate the safe adoption of technologies, including AI, in the NHS."
+  tags: ["uk", "pharma", "medicine", "health", "regulatory"]
+  relevance: "Healthcare compliance officers and medical device/AI system vendors need to understand NHS approval pathways and regulatory sandboxes for AI technologies in clinical settings, as this affects validation requirements, evidence generation timelines, and market access strategy for AI systems in UK healthcare—insights transferable to similar European regulatory frameworks including Switzerland's medical device and healthcare AI governance."
+  accepted: n
+  featured: n
+
+- title: "ETSI launches new framework to measure data quality, a key enabler for trustworthy AI"
+  url: "https://www.etsi.org/newsroom/press-releases/etsi-launches-new-framework-to-measure-data-quality-a-key-enabler-for-trustworthy-ai/"
+  date: "2026-09-06"
+  source: "ETSI Newsroom"
+  summary: "Press Release 3 September 2026 ETSI launches new framework to measure data quality, a key enabler for trustworthy AI New Technical Report defines 18 standardised metrics to assess data quality, with Proof of Concept demonstrating how they can be applied to real-world datasets Read more ETSI launc..."
+  tags: ["global", "eu", "standard", "conformity"]
+  relevance: "ETSI's new framework defining 18 standardised metrics for data quality directly supports AI developers and compliance officers implementing trustworthy AI systems. Data quality measurement is a concrete technical requirement for AI system validation, governance, and conformity assessment under the EU AI Act and aligns with ISO/IEC 42001 quality management standards. This enables organisations to document and demonstrate compliance with AI reliability and robustness obligations."
+  accepted: n
+  featured: n
+
+
+# -- Published feed ---------------------------------------------------------
 - title: "Artificial Intelligence: Council and Parliament agree to simplify and streamline rules - consilium.europa.eu"
   url: "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOcC0wYi0yOE9RRTNMbVl4RDFDN2xDenV6bVF6VXVBSm5pS0xiMVZwS0ZGTEhPQ3RvcXItd2VyQkxDdWNRQnNvN3RJSkVxUFUzSUpMVFFrQmZobVZuMzBHNWpIZjlmUGVUa05zWFVZWnNpbEpnd243TE1paE1QdmtLU2ZGZlAtM0tkUWg2SUI4RUZrU3QzdC1kMDRyQlB5cTJQelRMUFNaQk5DcExPa2l5NEFNanpvM1A3cURWdkRjOW9GdGJ5OXV1eW45MDZvN21JQlI4cUlSb2xLVGwxT2Y4bzhCaFE5bDZR?oc=5"
   date: "2026-05-07"
@@ -20,8 +51,6 @@
   accepted: n
   featured: n
 
-
-# -- Published feed ---------------------------------------------------------
 - title: "Daily News 31 / 07 / 2026"
   url: "https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1715"
   date: "2026-07-31"
